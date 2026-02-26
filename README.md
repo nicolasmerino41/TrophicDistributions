@@ -90,10 +90,10 @@ Windows (Powershell)
 $env:JULIA_NUM_THREADS = 7
 julia --project=. SimulationsCode\MainScript.jl
 ```
-MacOS/Linux
+MacOS🍎/Linux🐧
 ```
-$env:JULIA_NUM_THREADS = 7
-julia --project=. SimulationsCode\MainScript.jl
+export JULIA_NUM_THREADS=$(7)
+julia --project=. SimulationsCode/MainScript.jl
 ```
 
 
