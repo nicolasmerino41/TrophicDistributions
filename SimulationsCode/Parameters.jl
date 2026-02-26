@@ -46,11 +46,11 @@ const AUTOCORR_ALPHA = 0.55 # 0..1 (higher = smoother)
 # Sweep axes
 const CONNECTANCE_RANGE = (0.005, 0.15)
 const CORR_RANGE       = (0.0, 1.0)
-const N_CONNECT = 2
-const N_CORR    = 2
+const N_CONNECT = 10
+const N_CORR    = 10
 
 # Replicates per heatmap cell
-const NREP = 2
+const NREP = 5
 
 const TAIL_THRESH = 0.8 # threshold for tail detection
 
