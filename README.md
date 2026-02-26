@@ -87,12 +87,12 @@ If you plan on executing extensive parameter sweeps, you will have to parallelis
 
 Windows (Powershell)
 ```
-$env:JULIA_NUM_THREADS = 7
+$env:JULIA_NUM_THREADS = 7 # Choose as many as cores your computer has minus 1 
 julia --project=. SimulationsCode\MainScript.jl
 ```
 MacOS🍎/Linux🐧
 ```
-export JULIA_NUM_THREADS=$(7)
+export JULIA_NUM_THREADS=$((7)) # Choose as many as cores your computer has minus 1 
 julia --project=. SimulationsCode/MainScript.jl
 ```
 
