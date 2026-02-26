@@ -57,7 +57,7 @@ TROPHICDISTRIBUTIONS/
 │   ├── Functions.jl
 │   ├── MainScript.jl # THIS IS THE ONLY SCRIPT YOU HAVE TO RUN
 │   ├── PackageLoading.jl
-│   ├── Parameters.jl # TWEAK THIS SCIRPT TO CHANGE THE PARAMETRISATION
+│   ├── Parameters.jl # TWEAK THIS SCRIPT TO CHANGE THE PARAMETRISATION
 │   └── PlottingHeatmaps.R # Run this script after running the simulations
 ├── ThermalAnalysis/
 │   ├── MainThermalAnalysis.jl
