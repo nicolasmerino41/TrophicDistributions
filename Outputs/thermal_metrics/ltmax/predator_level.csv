@@ -1,0 +1,13 @@
+pred,pred_trait,mean_prey_trait,trait_source_pred,nprey
+Alosa sapidissima,35.0,36.22545454545455,ThermoFresh,1
+Pleuronectes platessa,34.0,35.075,ThermoFresh,2
+Oncorhynchus keta,28.85,27.85,ThermoFresh,1
+Anguilla anguilla,36.14999999999999,34.3815303030303,ThermoFresh,15
+Acipenser brevirostrum,35.45,35.711666666666666,ThermoFresh,1
+Cyprinus carpio,40.37142857142857,35.61272727272727,ThermoFresh,2
+Ictalurus punctatus,38.51,38.76192911255411,ThermoFresh,4
+Lates calcarifer,40.97,41.15380952380952,ThermoFresh,3
+Platichthys flesus,31.0,35.41130952380952,ThermoFresh,7
+Oreochromis niloticus,37.983333333333334,37.983333333333334,ThermoFresh,1
+Lepomis macrochirus,39.908333333333324,38.29844155844155,ThermoFresh,2
+Clupea pallasii,27.85,27.85,ThermoFresh,1

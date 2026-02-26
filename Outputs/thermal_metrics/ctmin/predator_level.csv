@@ -1,0 +1,15 @@
+pred,pred_trait,mean_prey_trait,trait_source_pred,nprey
+Paralichthys californicus,7.5,7.5,ThermoFresh,1
+Cyprinodon variegatus,6.266666666666667,6.266666666666667,ThermoFresh,1
+Dicentrarchus labrax,5.18,5.18,ThermoFresh,1
+Micropterus salmoides,8.303333333333331,6.238064102564101,ThermoFresh,13
+Lepomis cyanellus,5.799999999999999,7.526666666666666,ThermoFresh,1
+Anguilla anguilla,0.9333333333333332,4.618333333333333,ThermoFresh,2
+Sciaenops ocellatus,3.1774999999999998,5.656944444444444,ThermoFresh,3
+Pungitius pungitius,1.8633333333333333,1.8633333333333333,ThermoFresh,1
+Bathygobius fuscus,11.083333333333334,11.083333333333334,ThermoFresh,1
+Ictalurus punctatus,6.333333333333333,6.266249999999999,ThermoFresh,4
+Lota lota,3.3,3.0084999999999997,ThermoFresh,4
+Oreochromis mossambicus,11.072222222222221,11.072222222222221,ThermoFresh,1
+Gambusia affinis,7.526666666666666,6.391666666666667,ThermoFresh,2
+Oncorhynchus mykiss,0.7333333333333334,0.5316666666666667,ThermoFresh,2

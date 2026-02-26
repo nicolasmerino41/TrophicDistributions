@@ -1,0 +1,2 @@
+metric,edges,predators,prey,obs_mean_absdiff,null_mean,null_sd,z,p_one_sided
+lt50,110,27,52,5.228314533534101,8.171137663416777,0.45710226269673565,-6.437997293037011,0.0
