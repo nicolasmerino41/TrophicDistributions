@@ -17,7 +17,7 @@ We want this repository to be as easy-to-use and transparent as possible. The re
 
 If you only want to run a simulation (most likely), you only need to access two scripts. Parameters.jl gathers all possible parameters you could want to tweak (the default parameter configuration is a light version of the one used for the article). MainScript.jl is the script that executes the simulation and saves the outputs. After that, PlottingHeatmaps.R will read the outputs and produce all the heatmaps.  
 
-NOTE: The compiled thermal data is now available in this repository for easy access but it'll be removed after the reviewing process since we don't own the data. After the reviewing period, you can email me at nicolasmerino41@gmail.com and I'll provide the .csv's. 
+NOTE: The compiled thermal data is now available in this repository for easy access but it'll be removed after the reviewing process since we don't own the data. After the reviewing period, you can email me at nicolasmerino41@gmail.com and I'll provide the .csv's. They can also be found in the original sources (ThermoFresh, GlobTherm, Comte & Olden 2017, GloBI & TETRA‐EU 1.0) but that would require you some data mining you probably want to avoid :)
 
 ## 🗂️ Repository structure
 ```bash
