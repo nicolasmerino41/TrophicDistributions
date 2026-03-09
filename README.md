@@ -10,7 +10,7 @@ Official repository for the paper:
 
 ## 📌 Overview
 
-This repository contains all the Julia/R code and data needed to reproduce the analyses and figures presented in the article -. It includes the scripts to run the simulations and calculating distribution divergence metrics. It also provides the code to analyse the empirical data on consumer-resource thermal niche correlation. You can also find the MetawebCompilation.xlsx for table S1, which created Figure 2 of the main text. 
+This repository contains all the Julia/R code and data needed to reproduce the analyses and figures presented in the article *Connectance and niche overlap determine when trophic interactions affect species distributions*. It includes the scripts to run the simulations and calculating distribution divergence metrics. It also provides the code to analyse the empirical data on consumer-resource thermal niche correlation. You can also find the MetawebCompilation.xlsx for table S1, which created Figure 2 of the main text. 
 
 ## 📓 Instructions
 We want this repository to be as easy-to-use and transparent as possible. The repo is built so you can run everything straight from cloning, as long as you set the right environment (see ⚙️ Installation). Additionally, we structured the code in a modular way, so each part of the model is defined in an individual script that makes it more digestable (for instance, if you'd like to know how we built the different types of networks, you can go to Networks.jl).
