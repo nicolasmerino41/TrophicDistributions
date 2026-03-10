@@ -29,7 +29,7 @@ TROPHICDISTRIBUTIONS/
 │   ├── TetraEU_pairwise_interactions.csv
 │   ├── thermofresh_globi_metaweb_fish_predators.csv
 │   ├── thermtol_comb_final.csv
-│   └── MetawebCompilation.xlsx # TABLE S1
+│   └── SupplementaryTable1.xlsx
 ├── Outputs/
 │   ├── heatmaps/
 │   ├── meanMetrics/
