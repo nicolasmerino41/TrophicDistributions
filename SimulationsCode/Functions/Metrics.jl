@@ -7,6 +7,8 @@ export gamma_richness_cons,
        mean_jaccard_mismatch,
        frac_affected,
        realized_overlap,
+       jaccard_mismatch_by_species,
+       realized_overlap_by_species,
        jaccard_mismatch_vec,
        mismatch_q90,
        mismatch_frac_gt
@@ -20,19 +22,30 @@ function gamma_richness_cons(pres::Vector{BitVector}, basal_mask::BitVector)
     return c
 end
 
-function mean_jaccard_mismatch(A::Vector{BitVector}, AB::Vector{BitVector}, basal_mask::BitVector)
-    vals = Float64[]
+function jaccard_mismatch_by_species(
+    A::Vector{BitVector},
+    AB::Vector{BitVector},
+    basal_mask::BitVector
+)
+    vals = fill(NaN, S)
+    eligible = BitVector(falses(S))
     for i in 1:S
         basal_mask[i] && continue
         Ai = A[i]
         count(Ai) == 0 && continue
+        eligible[i] = true
         ABi = AB[i]
         inter = count(Ai .& ABi)
         uni   = count(Ai .| ABi)
         J = uni == 0 ? 1.0 : (inter / uni)
-        push!(vals, 1 - J)
+        vals[i] = 1 - J
     end
-    return isempty(vals) ? NaN : mean(vals)
+    return vals, eligible
+end
+
+function mean_jaccard_mismatch(A::Vector{BitVector}, AB::Vector{BitVector}, basal_mask::BitVector)
+    vals, eligible = jaccard_mismatch_by_species(A, AB, basal_mask)
+    return any(eligible) ? mean(vals[eligible]) : NaN
 end
 
 function frac_affected(A::Vector{BitVector}, AB::Vector{BitVector}, basal_mask::BitVector)
@@ -48,8 +61,12 @@ function frac_affected(A::Vector{BitVector}, AB::Vector{BitVector}, basal_mask::
     return den == 0 ? NaN : num / den
 end
 
-function realized_overlap(A_raw::Vector{BitVector}, prey::Vector{Vector{Int}}, basal_mask::BitVector)
-    vals = Float64[]
+function realized_overlap_by_species(
+    A_raw::Vector{BitVector},
+    prey::Vector{Vector{Int}},
+    basal_mask::BitVector
+)
+    vals = fill(NaN, S)
     for i in 1:S
         basal_mask[i] && continue
         Ai = A_raw[i]
@@ -59,24 +76,20 @@ function realized_overlap(A_raw::Vector{BitVector}, prey::Vector{Vector{Int}}, b
         for j in prey[i]
             s += count(Ai .& A_raw[j]) / a
         end
-        push!(vals, s / length(prey[i]))
+        vals[i] = s / length(prey[i])
     end
+    return vals
+end
+
+function realized_overlap(A_raw::Vector{BitVector}, prey::Vector{Vector{Int}}, basal_mask::BitVector)
+    by_species = realized_overlap_by_species(A_raw, prey, basal_mask)
+    vals = filter(isfinite, by_species)
     return isempty(vals) ? NaN : mean(vals)
 end
 
 function jaccard_mismatch_vec(A::Vector{BitVector}, AB::Vector{BitVector}, basal_mask::BitVector)
-    vals = Float64[]
-    for i in 1:S
-        basal_mask[i] && continue
-        Ai = A[i]
-        count(Ai) == 0 && continue
-        ABi = AB[i]
-        inter = count(Ai .& ABi)
-        uni   = count(Ai .| ABi)
-        J = (uni == 0) ? 1.0 : (inter / uni)
-        push!(vals, 1.0 - J)
-    end
-    return vals
+    vals, _ = jaccard_mismatch_by_species(A, AB, basal_mask)
+    return filter(isfinite, vals)
 end
 
 function q_from_sorted(v::Vector{Float64}, p::Float64)

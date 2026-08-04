@@ -6,18 +6,18 @@ using .Functions.Sweep: sweep_all
 using .Functions.IO: save_cache, load_cache, save_all_tsv
 using .Parameters: OUTDIR
 
-store, Cvals, Rvals = sweep_all()
+results = sweep_all()
 
 cache_path = joinpath(OUTDIR, "cache.jls")
-save_cache(cache_path, (store=store, Cvals=Cvals, Rvals=Rvals))
+save_cache(cache_path, results)
 
 # Load a previous cache 
 # cache_path = joinpath(OUTDIR, "cache.jls")
 # data = load_cache(cache_path)
-# store = data.store
-# Cvals = data.Cvals
-# Rvals = data.Rvals
+# results = load_cache(cache_path)
 
-save_all_tsv(store)
+paths = save_all_tsv(results)
 
+println("Saved outputs:")
+foreach(path -> println("  ", path), values(paths))
 println("Done.")

@@ -1,256 +1,169 @@
 module Networks
 
 using Random
-using ..Parameters: S, BASAL_FRAC, N_MODULES, MODULAR_IN_BIAS,
-                    HEAVYTAIL_GAMMA, HEAVYTAIL_KMAX_FRAC, CASCADE_LAMBDA
-using Random
+using ..Parameters: S, BASAL_FRAC, DEGREE_CLASSES, N_MODULES,
+                    MODULAR_IN_BIAS, CASCADE_LAMBDA
 
 export consumers_and_basal,
+       assign_balanced_degrees,
+       realized_degrees,
        realized_connectance,
-       ensure_min1_prey!,
+       validate_metaweb,
        build_metaweb_random,
        build_metaweb_modular,
-       build_metaweb_heavytail,
        build_metaweb_cascade
 
 function consumers_and_basal()
     nb = round(Int, BASAL_FRAC * S)
     basal_mask = BitVector(falses(S))
     basal_mask[1:nb] .= true
-    consumers = collect((nb+1):S)
+    consumers = collect((nb + 1):S)
     return nb, basal_mask, consumers
 end
 
+"""Assign the requested degree classes as evenly as possible, then shuffle them."""
+function assign_balanced_degrees(
+    rng::AbstractRNG,
+    basal_mask::BitVector;
+    degree_classes::Vector{Int} = DEGREE_CLASSES
+)
+    isempty(degree_classes) && error("DEGREE_CLASSES must not be empty")
+    any(d -> d < 1 || d >= S, degree_classes) &&
+        error("Every degree class must be between 1 and S-1")
+
+    consumers = findall(!, basal_mask)
+    assigned = [degree_classes[mod1(i, length(degree_classes))] for i in eachindex(consumers)]
+    shuffle!(rng, assigned)
+
+    target_degree = zeros(Int, S)
+    for (i, consumer) in enumerate(consumers)
+        target_degree[consumer] = assigned[i]
+    end
+    return target_degree
+end
+
+realized_degrees(prey::Vector{Vector{Int}}) = length.(prey)
+
 function realized_connectance(prey::Vector{Vector{Int}}, basal_mask::BitVector)
-    L = 0
+    links = sum(length(prey[i]) for i in eachindex(prey) if !basal_mask[i])
+    return links / (S^2)
+end
+
+function validate_metaweb(
+    prey::Vector{Vector{Int}},
+    basal_mask::BitVector,
+    target_degree::Vector{Int}
+)
+    length(prey) == S || error("Expected prey lists for S=$S species")
+    length(target_degree) == S || error("Expected S=$S target degrees")
+
     for i in 1:S
-        basal_mask[i] && continue
-        L += length(prey[i])
+        basal_mask[i] && !isempty(prey[i]) && error("Basal species $i has prey")
+        !basal_mask[i] && length(prey[i]) != target_degree[i] &&
+            error("Consumer $i has degree $(length(prey[i])); expected $(target_degree[i])")
+        i in prey[i] && error("Self-link detected for species $i")
+        length(unique(prey[i])) == length(prey[i]) ||
+            error("Duplicate prey detected for consumer $i")
     end
-    return L / (S^2)
+    return true
 end
 
-function ensure_min1_prey!(rng::AbstractRNG, prey::Vector{Vector{Int}}, basal_mask::BitVector)
-    # Guarantee each consumer has at least one prey.
-    for i in 1:S
-        basal_mask[i] && continue
-        if isempty(prey[i])
-            candidates = findall(basal_mask)
-            if isempty(candidates)
-                explained = [j for j in 1:S if j != i]
-                push!(prey[i], explained[rand(rng, 1:length(explained))])
-            else
-                push!(prey[i], candidates[rand(rng, 1:length(candidates))])
-            end
-        end
-    end
-end
+function weighted_sample_without_replacement(
+    rng::AbstractRNG,
+    candidates::Vector{Int},
+    weights::Vector{Float64},
+    n::Int
+)
+    n <= length(candidates) || error("Requested degree $n exceeds available prey")
+    pool = copy(candidates)
+    w = copy(weights)
+    selected = Int[]
+    sizehint!(selected, n)
 
-function build_metaweb_random(rng::AbstractRNG, C::Float64, basal_mask::BitVector)
-    # Random consumer->prey edges; exact Ltarget achieved (after ensuring 1 prey each).
-    prey = [Int[] for _ in 1:S]
-    consumers = findall(!, basal_mask)
-    Ltarget = round(Int, C * S^2)
-    # Step 1: 1 prey each
-    for i in consumers
-        cand = [j for j in 1:S if j != i]
-        push!(prey[i], cand[rand(rng, 1:length(cand))])
-    end
-    # Step 2: fill remaining edges uniformly without duplicates
-    L = length(consumers)
-    while L < Ltarget
-        i = consumers[rand(rng, 1:length(consumers))]
-        cand = rand(rng, 1:S)
-        if cand == i; continue; end
-        if cand ∉ prey[i]
-            push!(prey[i], cand)
-            L += 1
-        end
-    end
-    return prey
-end
-
-function build_metaweb_modular(rng::AbstractRNG, C::Float64, basal_mask::BitVector)
-    # Modular SBM-like: higher probability within module.
-    prey = [Int[] for _ in 1:S]
-    consumers = findall(!, basal_mask)
-    # module assignment for all species
-    MODULE = Vector{Int}(undef, S)
-    for i in 1:S
-        MODULE[i] = 1 + (i - 1) % N_MODULES
-    end
-    Ltarget = round(Int, C * S^2)
-
-    function sample_prey(i::Int)
-        inmod = Int[]
-        outmod = Int[]
-        mi = MODULE[i]
-        for j in 1:S
-            if j == i; continue; end
-            if MODULE[j] == mi
-                push!(inmod, j)
-            else
-                push!(outmod, j)
-            end
-        end
-        # weight within vs outside
-        if isempty(inmod)
-            return outmod[rand(rng, 1:length(outmod))]
-        elseif isempty(outmod)
-            return inmod[rand(rng, 1:length(inmod))]
-        else
-            if rand(rng) < MODULAR_IN_BIAS / (MODULAR_IN_BIAS + 1.0)
-                return inmod[rand(rng, 1:length(inmod))]
-            else
-                return outmod[rand(rng, 1:length(outmod))]
-            end
-        end
-    end
-
-    # Step 1: 1 prey each
-    for i in consumers
-        push!(prey[i], sample_prey(i))
-    end
-    # Step 2: fill remaining
-    L = length(consumers)
-    while L < Ltarget
-        i = consumers[rand(rng, 1:length(consumers))]
-        j = sample_prey(i)
-        if j ∉ prey[i]
-            push!(prey[i], j)
-            L += 1
-        end
-    end
-    return prey, MODULE
-end
-
-function build_metaweb_heavytail(rng::AbstractRNG, C::Float64, basal_mask::BitVector)
-    # Heavy-tailed consumer out-degree, overall Ltarget.
-    prey = [Int[] for _ in 1:S]
-    consumers = findall(!, basal_mask)
-    nC = length(consumers)
-    Ltarget = round(Int, C * S^2)
-
-    # weights ~ Pareto-like
-    w = zeros(Float64, nC)
-    for k in 1:nC
-        # Pareto with exponent gamma: inverse-CDF with u^( -1/(gamma-1) )
-        u = rand(rng)
-        w[k] = u^(-1/(HEAVYTAIL_GAMMA-1))
-    end
-    w ./= sum(w)
-
-    deg = ones(Int, nC)
-    remaining = max(0, Ltarget - nC)
-    
-    for _ in 1:remaining
-        r = rand(rng)
-        acc = 0.0
-        idx = 1
-        for k in 1:nC
-            acc += w[k]
-            if r <= acc
-                idx = k
+    for _ in 1:n
+        total = sum(w)
+        total > 0 || error("Prey-selection weights must have positive mass")
+        draw = rand(rng) * total
+        cumulative = 0.0
+        chosen = length(pool)
+        for idx in eachindex(pool)
+            cumulative += w[idx]
+            if draw <= cumulative
+                chosen = idx
                 break
             end
         end
-        deg[idx] += 1
+        push!(selected, pool[chosen])
+        deleteat!(pool, chosen)
+        deleteat!(w, chosen)
     end
+    return selected
+end
 
-    # cap degrees and reassign overflow to keep total ~ Ltarget
-    kmax = max(2, round(Int, HEAVYTAIL_KMAX_FRAC * (S-1)))
-    overflow = 0
-    for k in 1:nC
-        if deg[k] > kmax
-            overflow += deg[k] - kmax
-            deg[k] = kmax
-        end
-    end
-    # redistribute overflow
-    for _ in 1:overflow
-        k = rand(rng, 1:nC)
-        if deg[k] < kmax
-            deg[k] += 1
-        end
-    end
-
-    # choose prey sets
-    for (kk, i) in enumerate(consumers)
+function build_metaweb_random(
+    rng::AbstractRNG,
+    basal_mask::BitVector,
+    target_degree::Vector{Int}
+)
+    prey = [Int[] for _ in 1:S]
+    for i in findall(!, basal_mask)
         candidates = [j for j in 1:S if j != i]
         shuffle!(rng, candidates)
-        d = min(deg[kk], length(candidates))
-        prey[i] = candidates[1:d]
+        prey[i] = candidates[1:target_degree[i]]
     end
-    ensure_min1_prey!(rng, prey, basal_mask)
+    validate_metaweb(prey, basal_mask, target_degree)
     return prey
 end
 
-function build_metaweb_cascade(rng::AbstractRNG, C::Float64, basal_mask::BitVector)
-    # Cascade hierarchy: consumers feed on lower-ranked species.
+function build_metaweb_modular(
+    rng::AbstractRNG,
+    basal_mask::BitVector,
+    target_degree::Vector{Int}
+)
     prey = [Int[] for _ in 1:S]
+    modules = [mod1(i, N_MODULES) for i in 1:S]
+
+    for i in findall(!, basal_mask)
+        candidates = [j for j in 1:S if j != i]
+        weights = [modules[j] == modules[i] ? MODULAR_IN_BIAS : 1.0 for j in candidates]
+        prey[i] = weighted_sample_without_replacement(
+            rng, candidates, weights, target_degree[i]
+        )
+    end
+    validate_metaweb(prey, basal_mask, target_degree)
+    return prey, modules
+end
+
+function build_metaweb_cascade(
+    rng::AbstractRNG,
+    basal_mask::BitVector,
+    target_degree::Vector{Int}
+)
+    prey = [Int[] for _ in 1:S]
+    basal = findall(identity, basal_mask)
     consumers = findall(!, basal_mask)
-    nC = length(consumers)
-    Ltarget = round(Int, C * S^2)
 
-    # ranks for all species; enforce every consumer has at least one lower-ranked prey candidate
-    ranks = zeros(Float64, S)
-    for attempt in 1:200
-        for i in 1:S
-            ranks[i] = rand(rng)
-        end
-        ok = true
-        for i in consumers
-            lower = findall(j -> ranks[j] < ranks[i] && j != i, 1:S)
-            if isempty(lower)
-                ok = false
-                break
-            end
-        end
-        ok && break
-        attempt == 200 && error("Failed to sample cascade ranks with valid lower-prey candidates for all consumers")
+    # All basal species are below consumers. Consumer order is randomized, so degree
+    # remains independent of position while every consumer has at least |basal| prey.
+    consumer_order = shuffle(rng, copy(consumers))
+    ranks = zeros(Int, S)
+    for (rank, species) in enumerate(basal)
+        ranks[species] = rank
+    end
+    for (offset, species) in enumerate(consumer_order)
+        ranks[species] = length(basal) + offset
     end
 
-    # helper: sample prey among lower ranks with exponential bias toward nearby ranks
-    function sample_lower_prey(i::Int)
-        lower = Int[]
-        w = Float64[]
-        ri = ranks[i]
-        for j in 1:S
-            if j == i; continue; end
-            if ranks[j] < ri
-                push!(lower, j)
-                # weight: exp(-λ * (ri-rj))
-                push!(w, exp(-CASCADE_LAMBDA * (ri - ranks[j])))
-            end
-        end
-        # normalize and sample
-        sw = sum(w)
-        r = rand(rng) * sw
-        acc = 0.0
-        for k in 1:length(lower)
-            acc += w[k]
-            if r <= acc
-                return lower[k]
-            end
-        end
-        return lower[end]
-    end
-
-    # Step 1: 1 prey each
     for i in consumers
-        push!(prey[i], sample_lower_prey(i))
+        candidates = [j for j in 1:S if ranks[j] < ranks[i]]
+        weights = [exp(-CASCADE_LAMBDA * (ranks[i] - ranks[j]) / S) for j in candidates]
+        prey[i] = weighted_sample_without_replacement(
+            rng, candidates, weights, target_degree[i]
+        )
+        all(ranks[j] < ranks[i] for j in prey[i]) ||
+            error("Cascade constraint failed for consumer $i")
     end
-    # Step 2: fill remaining edges
-    L = nC
-    while L < Ltarget
-        i = consumers[rand(rng, 1:nC)]
-        j = sample_lower_prey(i)
-        if j ∉ prey[i]
-            push!(prey[i], j)
-            L += 1
-        end
-    end
-
+    validate_metaweb(prey, basal_mask, target_degree)
     return prey, ranks
 end
 

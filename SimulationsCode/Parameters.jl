@@ -6,17 +6,18 @@ export NX, NY, NCELLS,
        E_MIN, E_MAX,
        SUIT_THRESH,
        AUTOCORR_ITERS, AUTOCORR_ALPHA,
-       CONNECTANCE_RANGE, CORR_RANGE, N_CONNECT, N_CORR,
+       DEGREE_CLASSES, CORR_RANGE, N_CORR,
        NREP,
        N_MODULES, MODULAR_IN_BIAS,
-       HEAVYTAIL_GAMMA, HEAVYTAIL_KMAX_FRAC,
        CASCADE_LAMBDA,
-       RELAX_ITERS, MU_NOISE_SD, TARGET_R_TOL,
+       CORR_CALIBRATION_ITERS, CORR_CALIBRATION_RESTARTS,
+       CORR_CALIBRATION_DAMPING, CORR_WITHIN_DEGREE_SD,
+       TARGET_R_TOL, DEGREE_TARGET_R_TOL,
        BASE_SEED,
        OUTDIR
 
 # ============================================================
-# 1) Parameters (Have fun with these!)
+# 1) Parameters
 # ============================================================
 # Spatial grid
 const NX = 60
@@ -43,28 +44,31 @@ const SUIT_THRESH = 0.25
 const AUTOCORR_ITERS = 18
 const AUTOCORR_ALPHA = 0.55 # 0..1 (higher = smoother)
 
-# Sweep axes
-const CONNECTANCE_RANGE = (0.005, 0.15)
+# Focal-consumer degree design and community-level correlation sweep.
+# Degree classes are assigned as evenly as possible within every community.
+const DEGREE_CLASSES = [1, 2, 3, 4, 5, 6, 8, 10, 13, 17, 22, 28, 35, 44, 55]
 const CORR_RANGE       = (0.0, 1.0)
-const N_CONNECT = 10
-const N_CORR    = 10
+const N_CORR    = 15
 
 # Replicates per heatmap cell
-const NREP = 5
+const NREP = 100
 
 const TAIL_THRESH = 0.8 # threshold for tail detection
 
 # Network-family knobs
 const N_MODULES = 6
 const MODULAR_IN_BIAS = 6.0 # >1 increases within-module links vs between
-const HEAVYTAIL_GAMMA = 2.2 # out-degree heaviness
-const HEAVYTAIL_KMAX_FRAC = 0.35 # kmax = round(frac*(S-1))
 const CASCADE_LAMBDA = 2.5 # 0 = uniform among lower ranks; higher = interval-like
 
-# Mechanistic niche-correlation
-const RELAX_ITERS = 30
-const MU_NOISE_SD = 1.8            # consumer μ jitter during relaxation
+# Degree-stratified niche-correlation calibration
+const CORR_CALIBRATION_ITERS = 120
+const CORR_CALIBRATION_RESTARTS = 3
+const CORR_CALIBRATION_DAMPING = 0.70
+# Preserve the expected SD of the original Uniform(E_MIN, E_MAX) optima.
+# The calibrator scales it down only when required to remain inside the domain.
+const CORR_WITHIN_DEGREE_SD = (E_MAX - E_MIN) / sqrt(12)
 const TARGET_R_TOL = 0.03
+const DEGREE_TARGET_R_TOL = 0.05
 
 # Thread-safe seeds
 const BASE_SEED = 20260202

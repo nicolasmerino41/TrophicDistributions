@@ -1,48 +1,64 @@
 module IO
 
 using ..Parameters: OUTDIR
-using ..Sweep: ENVKINDS, NETFAMS
-using ..Niches: regimes
 using Serialization
 using Printf
 
-export save_matrix_tsv, save_all_tsv, save_cache, load_cache
+export save_table_tsv, save_all_tsv, save_cache, load_cache
 
-function save_cache(cache_path::String, data)
-    serialize(cache_path, data)
+save_cache(cache_path::String, data) = serialize(cache_path, data)
+load_cache(cache_path::String) = deserialize(cache_path)
+
+function format_tsv_value(value)
+    if value === missing || (value isa AbstractFloat && !isfinite(value))
+        return "NA"
+    elseif value isa AbstractFloat
+        return @sprintf("%.10g", value)
+    end
+    return replace(string(value), '\t' => ' ', '\n' => ' ', '\r' => ' ')
 end
 
-function load_cache(cache_path::String)
-    return deserialize(cache_path)
-end
-
-function save_matrix_tsv(path::String, M::Matrix{Float64})
+function save_table_tsv(path::String, rows)
+    isempty(rows) && error("Cannot save an empty table to $path")
+    headers = propertynames(first(rows))
     open(path, "w") do io
-        nr, nc = size(M)
-        for r in 1:nr
-            println(io, join([@sprintf("%.6f", M[r,c]) for c in 1:nc], '\t'))
+        println(io, join(string.(headers), '\t'))
+        for row in rows
+            println(io, join((format_tsv_value(getproperty(row, header)) for header in headers), '\t'))
         end
     end
+    return path
 end
 
-function save_all_tsv(store)
-    mean_dir = joinpath(OUTDIR, "meanMetrics")
-    tail_dir = joinpath(OUTDIR, "tailMetrics")
-    isdir(mean_dir) || mkpath(mean_dir)
-    isdir(tail_dir) || mkpath(tail_dir)
+function save_all_tsv(results)
+    degree_dir = joinpath(OUTDIR, "degreeResults")
+    community_dir = joinpath(OUTDIR, "communityMetrics")
+    mkpath(degree_dir)
+    mkpath(community_dir)
 
-    for env in ENVKINDS, net in NETFAMS, (ri, reg) in enumerate(regimes)
-        for metric in [:dSrel, :mean_jaccard_mismatch, :frac_affected, :realized_overlap, :achieved_r, :Creal]
-            M = store[(env, net, ri, metric)]
-            fname = "mat_$(env)_$(net)_reg$(ri)_$(metric).tsv"
-            save_matrix_tsv(joinpath(mean_dir, fname), M)
-        end
-        for metric in [:mismatch_q90, :mismatch_frac_gt]
-            M = store[(env, net, ri, metric)]
-            fname = "mat_$(env)_$(net)_reg$(ri)_$(metric).tsv"
-            save_matrix_tsv(joinpath(tail_dir, fname), M)
-        end
-    end
+    paths = (
+        consumer_results=save_table_tsv(
+            joinpath(degree_dir, "consumer_results.tsv"),
+            results.consumer_results
+        ),
+        degree_replicate=save_table_tsv(
+            joinpath(degree_dir, "degree_replicate_summary.tsv"),
+            results.degree_replicate
+        ),
+        degree_summary=save_table_tsv(
+            joinpath(degree_dir, "degree_summary.tsv"),
+            results.degree_summary
+        ),
+        degree_correlations=save_table_tsv(
+            joinpath(degree_dir, "degree_correlations.tsv"),
+            results.degree_correlations
+        ),
+        community_results=save_table_tsv(
+            joinpath(community_dir, "community_results.tsv"),
+            results.community_results
+        )
+    )
+    return paths
 end
 
 end
