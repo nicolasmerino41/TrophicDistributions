@@ -1,8 +1,24 @@
-script_arg <- grep("^--file=", commandArgs(), value = TRUE)
-script_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[1]))) else getwd()
+find_script_dir <- function() {
+  script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+  if (length(script_arg)) {
+    candidate <- dirname(normalizePath(sub("^--file=", "", script_arg[1]), mustWork = TRUE))
+    if (file.exists(file.path(candidate, "PlotFunctions.R"))) return(candidate)
+  }
+  frame_files <- Filter(Negate(is.null), lapply(sys.frames(), function(frame) frame$ofile))
+  if (length(frame_files)) {
+    candidate <- dirname(normalizePath(tail(frame_files, 1)[[1]], mustWork = TRUE))
+    if (file.exists(file.path(candidate, "PlotFunctions.R"))) return(candidate)
+  }
+  candidates <- c(getwd(), file.path(getwd(), "sdm"))
+  matches <- candidates[file.exists(file.path(candidates, "PlotFunctions.R"))]
+  if (length(matches)) return(normalizePath(matches[1], mustWork = TRUE))
+  stop("Cannot locate the sdm folder containing PlotFunctions.R")
+}
+
+script_dir <- find_script_dir()
+output_dir <- file.path(script_dir, "Outputs")
 source(file.path(script_dir, "PlotFunctions.R"))
 
-output_dir <- Sys.getenv("SDM_OUTPUT_DIR", file.path(script_dir, "Outputs"))
 summary <- read_sdm_table(file.path(output_dir, "final_summary.tsv"))
 surface_dir <- file.path(output_dir, "all_surfaces")
 dir.create(surface_dir, recursive = TRUE, showWarnings = FALSE)

@@ -1,5 +1,23 @@
-script_arg <- grep("^--file=", commandArgs(), value = TRUE)
-script_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[1]))) else getwd()
+find_script_dir <- function() {
+  script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+  if (length(script_arg)) {
+    candidate <- dirname(normalizePath(sub("^--file=", "", script_arg[1]), mustWork = TRUE))
+    if (file.exists(file.path(candidate, "PlotFunctions.R"))) return(candidate)
+  }
+  frame_files <- Filter(Negate(is.null), lapply(sys.frames(), function(frame) frame$ofile))
+  if (length(frame_files)) {
+    candidate <- dirname(normalizePath(tail(frame_files, 1)[[1]], mustWork = TRUE))
+    if (file.exists(file.path(candidate, "PlotFunctions.R"))) return(candidate)
+  }
+  candidates <- c(getwd(), file.path(getwd(), "sdm"))
+  matches <- candidates[file.exists(file.path(candidates, "PlotFunctions.R"))]
+  if (length(matches)) return(normalizePath(matches[1], mustWork = TRUE))
+  stop("Cannot locate the sdm folder containing PlotFunctions.R")
+}
+
+script_dir <- find_script_dir()
+repository_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
+output_dir <- file.path(script_dir, "Outputs")
 source(file.path(script_dir, "PlotFunctions.R"))
 
 # Reference treatment shown in the main figure. Change these three values if a
@@ -7,11 +25,10 @@ source(file.path(script_dir, "PlotFunctions.R"))
 reference_environment <- "autocorr"
 reference_network <- "random"
 reference_regime <- "Broad + LowVar"
-output_dir <- Sys.getenv("SDM_OUTPUT_DIR", file.path(script_dir, "Outputs"))
 
 sdm_summary <- read_sdm_table(file.path(output_dir, "final_summary.tsv"))
 relationship <- read_sdm_table(file.path(output_dir, "relationship_summary.tsv"))
-truth_path <- file.path(script_dir, "..", "Outputs", "degreeResults", "degree_summary.tsv")
+truth_path <- file.path(repository_dir, "Outputs", "degreeResults", "degree_summary.tsv")
 truth <- read_sdm_table(truth_path)
 
 keep_sdm <- sdm_summary$environment == reference_environment &
