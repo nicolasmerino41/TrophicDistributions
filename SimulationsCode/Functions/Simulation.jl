@@ -20,13 +20,19 @@ using ..Metrics: gamma_richness_cons, frac_affected, realized_overlap,
                  realized_overlap_by_species, jaccard_mismatch_by_species,
                  mismatch_q90, mismatch_frac_gt
 
-export simulate_one!, count_links
+export simulate_world!, summarize_world, simulate_one!, count_links
 
 @inline function count_links(prey::Vector{Vector{Int}}, basal_mask::BitVector)
     return sum(length(prey[i]) for i in 1:S if !basal_mask[i])
 end
 
-function simulate_one!(
+"""
+Generate one complete virtual community and retain the spatial truth required by
+downstream applications. The standard sweep calls `summarize_world` immediately;
+the SDM application consumes the returned maps directly without serializing the
+full set of species distributions.
+"""
+function simulate_world!(
     rng::AbstractRNG,
     ws::CCWorkspace,
     envkind::Symbol,
@@ -35,7 +41,7 @@ function simulate_one!(
     target_r::Float64,
     community_id::Int
 )
-    nb, basal_mask, consumers = consumers_and_basal()
+    _, basal_mask, consumers = consumers_and_basal()
     target_degree = assign_balanced_degrees(rng, basal_mask)
     environment = make_environment(rng, envkind)
 
@@ -56,10 +62,11 @@ function simulate_one!(
     corr_by_degree = degree_corr_diagnostics(mu, prey, basal_mask)
     overall_correlation_ok = target_within_tolerance(achieved_r, target_r)
     degree_correlation_ok = degree_targets_within_tolerance(corr_by_degree, target_r)
-    correlation_ok = overall_correlation_ok && degree_correlation_ok
-    maximum_degree_correlation_error = max_degree_target_error(corr_by_degree, target_r)
 
-    A_raw = [suitability_mask_1d(environment, mu[i], sigma[i], SUIT_THRESH) for i in 1:S]
+    A_raw = [
+        suitability_mask_1d(environment, mu[i], sigma[i], SUIT_THRESH)
+        for i in 1:S
+    ]
     AB_raw = fixed_point_AB(A_raw, prey, basal_mask)
 
     A = Vector{BitVector}(undef, S)
@@ -69,37 +76,69 @@ function simulate_one!(
         AB[i] = apply_connectivity_filter(ws, AB_raw[i], Emin_patch)
     end
 
-    mismatch, eligible = jaccard_mismatch_by_species(A, AB, basal_mask)
-    overlap_by_species = realized_overlap_by_species(A_raw, prey, basal_mask)
+    return (
+        community_id=community_id,
+        envkind=envkind,
+        netfamily=netfamily,
+        regime_name=regime.name,
+        target_r=target_r,
+        achieved_r=achieved_r,
+        correlation_ok=overall_correlation_ok && degree_correlation_ok,
+        overall_correlation_ok=overall_correlation_ok,
+        degree_correlation_ok=degree_correlation_ok,
+        max_degree_correlation_error=max_degree_target_error(corr_by_degree, target_r),
+        degree_correlations=corr_by_degree,
+        environment=environment,
+        basal_mask=basal_mask,
+        consumers=consumers,
+        prey=prey,
+        target_degree=target_degree,
+        realized_degree=realized_degree,
+        mu=mu,
+        sigma=sigma,
+        A_raw=A_raw,
+        AB_raw=AB_raw,
+        A=A,
+        AB=AB
+    )
+end
+
+function summarize_world(world)
+    mismatch, eligible = jaccard_mismatch_by_species(
+        world.A, world.AB, world.basal_mask
+    )
+    overlap_by_species = realized_overlap_by_species(
+        world.A_raw, world.prey, world.basal_mask
+    )
     eligible_mismatch = mismatch[eligible]
 
-    SA = gamma_richness_cons(A, basal_mask)
-    SAB = gamma_richness_cons(AB, basal_mask)
+    SA = gamma_richness_cons(world.A, world.basal_mask)
+    SAB = gamma_richness_cons(world.AB, world.basal_mask)
     dSrel = SA == 0 ? NaN : 1.0 - SAB / SA
 
     consumer_results = [(
-        community_id=community_id,
+        community_id=world.community_id,
         consumer_id=i,
-        target_degree=target_degree[i],
-        realized_degree=realized_degree[i],
+        target_degree=world.target_degree[i],
+        realized_degree=world.realized_degree[i],
         eligible=eligible[i],
         mismatch=mismatch[i],
         realized_overlap=overlap_by_species[i]
-    ) for i in consumers]
+    ) for i in world.consumers]
 
     community_metrics = (
-        community_id=community_id,
-        target_r=target_r,
-        achieved_r=achieved_r,
-        correlation_ok=correlation_ok,
-        overall_correlation_ok=overall_correlation_ok,
-        degree_correlation_ok=degree_correlation_ok,
-        max_degree_correlation_error=maximum_degree_correlation_error,
+        community_id=world.community_id,
+        target_r=world.target_r,
+        achieved_r=world.achieved_r,
+        correlation_ok=world.correlation_ok,
+        overall_correlation_ok=world.overall_correlation_ok,
+        degree_correlation_ok=world.degree_correlation_ok,
+        max_degree_correlation_error=world.max_degree_correlation_error,
         dSrel=dSrel,
         mean_jaccard_mismatch=isempty(eligible_mismatch) ? NaN : mean(eligible_mismatch),
-        frac_affected=frac_affected(A, AB, basal_mask),
-        realized_overlap=realized_overlap(A_raw, prey, basal_mask),
-        realized_connectance=realized_connectance(prey, basal_mask),
+        frac_affected=frac_affected(world.A, world.AB, world.basal_mask),
+        realized_overlap=realized_overlap(world.A_raw, world.prey, world.basal_mask),
+        realized_connectance=realized_connectance(world.prey, world.basal_mask),
         mismatch_q90=mismatch_q90(eligible_mismatch),
         mismatch_frac_gt=mismatch_frac_gt(eligible_mismatch, TAIL_THRESH),
         n_eligible=count(eligible)
@@ -108,8 +147,23 @@ function simulate_one!(
     return (
         consumers=consumer_results,
         community=community_metrics,
-        degree_correlations=corr_by_degree
+        degree_correlations=world.degree_correlations
     )
+end
+
+function simulate_one!(
+    rng::AbstractRNG,
+    ws::CCWorkspace,
+    envkind::Symbol,
+    netfamily::Symbol,
+    regime::BreadthRegime,
+    target_r::Float64,
+    community_id::Int
+)
+    world = simulate_world!(
+        rng, ws, envkind, netfamily, regime, target_r, community_id
+    )
+    return summarize_world(world)
 end
 
 end

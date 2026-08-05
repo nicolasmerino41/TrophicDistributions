@@ -47,11 +47,11 @@ const AUTOCORR_ALPHA = 0.55 # 0..1 (higher = smoother)
 # Focal-consumer degree design and community-level correlation sweep.
 # Degree classes are assigned as evenly as possible within every community.
 const DEGREE_CLASSES = [1, 2, 3, 4, 5, 6, 8, 10, 13, 17, 22, 28, 35, 44, 55]
-const CORR_RANGE       = (0.0, 1.0)
+const CORR_RANGE       = (0.0, 0.95)
 const N_CORR    = 15
 
 # Replicates per heatmap cell
-const NREP = 100
+const NREP = 50
 
 const TAIL_THRESH = 0.8 # threshold for tail detection
 
