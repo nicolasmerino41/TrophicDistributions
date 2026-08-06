@@ -1,90 +1,75 @@
-# Figure 5: SDMs under imperfect information
+# Figure 5: translating the framework into SDM performance
 
-This folder contains the complete SDM application of the virtual trophic worlds.
-It uses Julia for simulation and model fitting and dependency-free R scripts for
-the figures.
+This folder contains one controlled application of the theoretical framework.
+It asks a single question:
 
-## Experimental design
+> Does adding resource distributions improve an SDM most strongly where the
+> framework predicts that trophic interactions alter consumer distributions?
 
-The experiment mirrors the main simulation grid:
+## Method
 
-- 15 focal-consumer degrees;
-- 15 community niche-correlation treatments from 0 to 0.95;
-- random and autocorrelated environments;
-- random, modular, and cascade food webs;
-- all four niche-breadth regimes;
-- the replicate count defined by `NREP` in `SimulationsCode/Parameters.jl`.
+For every simulated community and focal-consumer degree:
 
-For each community, one eligible focal consumer is selected from every degree
-class. Each focal species is fitted with the same spatially biased presence
-sample and target-group background under six models:
+1. The existing simulation generates the environmental raster, food web,
+   abiotic distribution (`A`), and interaction-constrained distribution (`AB`).
+2. A finite, spatially biased sample of focal-consumer presences is drawn from
+   the true `AB` distribution.
+3. An abiotic presence-background SDM is fitted using the environment and its
+   quadratic term.
+4. A resource-informed SDM adds the true spatial availability of at least one
+   prey species.
+5. Both models are evaluated against the complete simulated `AB` distribution.
 
-1. abiotic-only baseline;
-2. true prey availability and complete trophic information (`oracle`);
-3. prey availability estimated from finite, biased prey occurrences with 100%
-   of trophic links known;
-4. the same estimated prey distributions with 75% of links known;
-5. the same with 50% of links known;
-6. the same with 25% of links known.
+The main performance measure is the increase in conventional whole-landscape
+AUC:
 
-Unknown-link treatments use nested subsets of each consumer's true prey list.
-Every prey SDM is fitted only once per community and reused by all focal
-consumers. Predicted resource availability is the probability that at least one
-known prey is present. All focal models are evaluated against the complete true
-interaction-constrained (`AB`) distribution.
+`AUC(resource-informed model) - AUC(abiotic model)`
 
-## Data handoff
+Positive values mean that adding resource distributions improved discrimination.
+Brier prediction error is retained in the result table as a secondary metric.
 
-`SimulationsCode/Functions/Simulation.jl` exposes `simulate_world!`, which
-returns the environment, food web, degrees, niches, abiotic distributions (`A`),
-interaction-constrained distributions (`AB`), and correlation diagnostics in
-memory. The SDM workflow calls this function directly. It does not require the
-main sweep to write thousands of full distribution rasters to disk.
+The abiotic model is expected to perform strongly because the simulated niche
+is generated from one environmental variable and the fitted SDM uses the
+matching linear and quadratic terms. Figure 5 therefore tests for a modest but
+systematic improvement from biotic information rather than expecting a poorly
+performing abiotic baseline.
 
-## Run the analysis
+The experiment uses imperfect focal-occurrence data but complete resource-range
+information. It is therefore a controlled demonstration of applicability, not
+an analysis of uncertainty in empirical prey distributions.
 
-From the repository root, first run the reduced end-to-end check:
+## Files
 
-```powershell
-& 'C:\Users\nicol\.julia\juliaup\julia-1.12.5+0.x64.w64.mingw32\bin\julia.exe' --project=. sdm\SmokeTestSDM.jl
-```
+- `Parameters.jl`: SDM sampling, model, grid, and highlighted-scenario settings.
+- `Functions.jl`: sampling, logistic SDMs, evaluation, sweep, and summaries.
+- `MainSDM.jl`: ready-to-run analysis.
+- `PlotFigure5.R`: self-contained two-panel Figure 5 script.
 
-Then run the complete analysis. Using multiple Julia threads is strongly
-recommended:
+## Run
+
+From the repository root:
 
 ```powershell
 $env:JULIA_NUM_THREADS = 'auto'
 & 'C:\Users\nicol\.julia\juliaup\julia-1.12.5+0.x64.w64.mingw32\bin\julia.exe' --project=. sdm\MainSDM.jl
+& 'C:\Program Files\R\R-4.3.2\bin\Rscript.exe' sdm\PlotFigure5.R
 ```
 
-Every completed community is checkpointed in `sdm/Outputs/checkpoints`. Restart
-the same command after an interruption and completed communities are loaded
-instead of rerun. Delete that versioned checkpoint directory only when changing
-the experimental design or model definitions.
+The Julia run checkpoints every community and safely resumes after interruption.
+The valid resource-informed results from the previously completed run have
+already been preserved in the current output files, so rerunning is unnecessary
+unless parameters change.
 
 ## Outputs
 
-- `community_diagnostics.tsv`: simulation and prey-model diagnostics;
-- `focal_metadata.tsv`: focal identity, true mismatch, degree, and sample sizes;
-- `model_results.tsv`: absolute metrics for every fitted model;
-- `model_comparisons.tsv`: paired biotic-minus-abiotic comparisons;
-- `final_summary.tsv`: replicate-level degree-by-correlation summaries;
-- `relationship_summary.tsv`: binned relationship between true mismatch and SDM gain;
-- `exclusions.tsv`: communities or degree classes that could not be analysed;
-- `run_metadata.tsv`: complete parameter record for the run.
+- `oracle_comparisons.tsv`: one paired SDM comparison per focal consumer.
+- `oracle_summary.tsv`: replicate summary for every treatment, degree, and correlation.
+- `figure5_selected_scenarios.tsv`: the four values plotted in Panel B.
+- `figure5_sdm_application.png` and `.pdf`: final two-panel figure.
+- `run_metadata.tsv`: settings used by a newly completed Julia run.
 
-Positive `delta_auc`, `delta_brier`, `delta_logloss`, and `delta_jaccard` always
-mean that the biotic model outperformed the abiotic-only baseline.
-
-## Create figures
-
-```powershell
-& 'C:\Program Files\R\R-4.3.2\bin\Rscript.exe' sdm\PlotFigure5.R
-& 'C:\Program Files\R\R-4.3.2\bin\Rscript.exe' sdm\PlotAllSurfaces.R
-```
-
-`PlotFigure5.R` combines the perfect-information mismatch surface, four SDM
-improvement surfaces, and the mismatch-performance relationship. The reference
-environment, architecture, and breadth regime are set at the top of that file.
-`PlotAllSurfaces.R` creates the complete set of treatment-specific supplementary
-heatmaps.
+Panel A averages theoretical mismatch across both environments, all three
+food-web architectures, and all four niche regimes. Panel B shows the mean and
+95% interval for degree 2 and degree 6 at correlations approximately 0.1 and
+0.8. The exact simulated correlation treatments are 0.0679 and 0.8143. Colors
+correspond directly to the markers in Panel A.
