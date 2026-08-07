@@ -55,7 +55,6 @@ theme_heat <- function() {
       legend.position = "bottom"
     )
 }
-
 plot_degree_heatmap <- function(metric_name) {
   ggplot(degree_df, aes(x = degree, y = target_r, fill = .data[[metric_name]])) +
     geom_tile() +
