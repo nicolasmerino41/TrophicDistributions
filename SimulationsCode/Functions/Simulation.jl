@@ -6,25 +6,19 @@ using ..Parameters: S, SUIT_THRESH, Emin_patch, E_MIN, E_MAX, TAIL_THRESH
 using ..Environment: make_environment
 using ..Niches: suitability_mask_1d, draw_sigmas, BreadthRegime
 using ..Networks: consumers_and_basal, assign_balanced_degrees,
-                  realized_degrees, realized_connectance,
-                  build_metaweb_random, build_metaweb_modular,
-                  build_metaweb_cascade
+                  realized_degrees, build_trophic_community
 using ..MechanisticCorrelation: assign_mus_with_target_corr!,
                                 degree_corr_diagnostics,
                                 target_within_tolerance,
                                 degree_targets_within_tolerance,
                                 max_degree_target_error
-using ..Dynamics: fixed_point_AB
+using ..Dynamics: trophic_distributions
 using ..Connectivity: apply_connectivity_filter, CCWorkspace
 using ..Metrics: gamma_richness_cons, frac_affected, realized_overlap,
                  realized_overlap_by_species, jaccard_mismatch_by_species,
                  mismatch_q90, mismatch_frac_gt
 
-export simulate_world!, summarize_world, simulate_one!, count_links
-
-@inline function count_links(prey::Vector{Vector{Int}}, basal_mask::BitVector)
-    return sum(length(prey[i]) for i in 1:S if !basal_mask[i])
-end
+export simulate_world!, summarize_world, simulate_one!
 
 """
 Generate one complete virtual community and retain the spatial truth required by
@@ -36,7 +30,6 @@ function simulate_world!(
     rng::AbstractRNG,
     ws::CCWorkspace,
     envkind::Symbol,
-    netfamily::Symbol,
     regime::BreadthRegime,
     target_r::Float64,
     community_id::Int
@@ -45,15 +38,7 @@ function simulate_world!(
     target_degree = assign_balanced_degrees(rng, basal_mask)
     environment = make_environment(rng, envkind)
 
-    prey = if netfamily == :random
-        build_metaweb_random(rng, basal_mask, target_degree)
-    elseif netfamily == :modular
-        first(build_metaweb_modular(rng, basal_mask, target_degree))
-    elseif netfamily == :cascade
-        first(build_metaweb_cascade(rng, basal_mask, target_degree))
-    else
-        error("Unknown netfamily: $netfamily")
-    end
+    prey = build_trophic_community(rng, basal_mask, target_degree)
     realized_degree = realized_degrees(prey)
 
     sigma = draw_sigmas(rng, regime)
@@ -67,19 +52,15 @@ function simulate_world!(
         suitability_mask_1d(environment, mu[i], sigma[i], SUIT_THRESH)
         for i in 1:S
     ]
-    AB_raw = fixed_point_AB(A_raw, prey, basal_mask)
-
     A = Vector{BitVector}(undef, S)
-    AB = Vector{BitVector}(undef, S)
     for i in 1:S
         A[i] = apply_connectivity_filter(ws, A_raw[i], Emin_patch)
-        AB[i] = apply_connectivity_filter(ws, AB_raw[i], Emin_patch)
     end
+    AB_direct, AB = trophic_distributions(A, prey, basal_mask)
 
     return (
         community_id=community_id,
         envkind=envkind,
-        netfamily=netfamily,
         regime_name=regime.name,
         target_r=target_r,
         achieved_r=achieved_r,
@@ -97,8 +78,8 @@ function simulate_world!(
         mu=mu,
         sigma=sigma,
         A_raw=A_raw,
-        AB_raw=AB_raw,
         A=A,
+        AB_direct=AB_direct,
         AB=AB
     )
 end
@@ -107,6 +88,10 @@ function summarize_world(world)
     mismatch, eligible = jaccard_mismatch_by_species(
         world.A, world.AB, world.basal_mask
     )
+    direct_mismatch, direct_eligible = jaccard_mismatch_by_species(
+        world.A, world.AB_direct, world.basal_mask
+    )
+    eligible == direct_eligible || error("Direct and recursive eligibility differ")
     overlap_by_species = realized_overlap_by_species(
         world.A_raw, world.prey, world.basal_mask
     )
@@ -123,6 +108,8 @@ function summarize_world(world)
         realized_degree=world.realized_degree[i],
         eligible=eligible[i],
         mismatch=mismatch[i],
+        direct_mismatch=direct_mismatch[i],
+        indirect_increment=eligible[i] ? mismatch[i] - direct_mismatch[i] : NaN,
         realized_overlap=overlap_by_species[i]
     ) for i in world.consumers]
 
@@ -136,9 +123,11 @@ function summarize_world(world)
         max_degree_correlation_error=world.max_degree_correlation_error,
         dSrel=dSrel,
         mean_jaccard_mismatch=isempty(eligible_mismatch) ? NaN : mean(eligible_mismatch),
+        mean_direct_mismatch=isempty(eligible_mismatch) ? NaN : mean(direct_mismatch[eligible]),
+        mean_indirect_increment=isempty(eligible_mismatch) ? NaN :
+            mean(mismatch[eligible] .- direct_mismatch[eligible]),
         frac_affected=frac_affected(world.A, world.AB, world.basal_mask),
         realized_overlap=realized_overlap(world.A_raw, world.prey, world.basal_mask),
-        realized_connectance=realized_connectance(world.prey, world.basal_mask),
         mismatch_q90=mismatch_q90(eligible_mismatch),
         mismatch_frac_gt=mismatch_frac_gt(eligible_mismatch, TAIL_THRESH),
         n_eligible=count(eligible)
@@ -155,13 +144,12 @@ function simulate_one!(
     rng::AbstractRNG,
     ws::CCWorkspace,
     envkind::Symbol,
-    netfamily::Symbol,
     regime::BreadthRegime,
     target_r::Float64,
     community_id::Int
 )
     world = simulate_world!(
-        rng, ws, envkind, netfamily, regime, target_r, community_id
+        rng, ws, envkind, regime, target_r, community_id
     )
     return summarize_world(world)
 end

@@ -67,7 +67,7 @@ degrees <- sort(unique(truth_average$degree))
 correlations <- sort(unique(truth_average$target_r))
 
 figure_degrees <- c(2, 6)
-requested_correlations <- c(0.1, 0.8)
+requested_correlations <- c(min(correlations), max(correlations))
 figure_correlations <- vapply(
   requested_correlations,
   function(value) correlations[which.min(abs(correlations - value))],
@@ -80,8 +80,8 @@ selected <- expand.grid(
 )
 selected <- selected[c(1, 3, 2, 4), ]
 selected$requested_correlation <- rep(requested_correlations, each = 2)[c(1, 3, 2, 4)]
-selected$label <- c("Degree 2 / correlation ~0.1", "Degree 2 / correlation ~0.8",
-                    "Degree 6 / correlation ~0.1", "Degree 6 / correlation ~0.8")
+selected$label <- c("Degree 2 / correlation 0", "Degree 2 / correlation 0.95",
+                    "Degree 6 / correlation 0", "Degree 6 / correlation 0.95")
 selected$colour <- c("#D55E00", "#E69F00", "#0072B2", "#009E73")
 selected <- merge(selected, sdm_average, by = c("degree", "target_r"), sort = FALSE)
 selected$order <- match(paste(selected$degree, selected$target_r),
@@ -89,9 +89,9 @@ selected$order <- match(paste(selected$degree, selected$target_r),
                               c(figure_correlations[1], figure_correlations[2],
                                 figure_correlations[1], figure_correlations[2])))
 selected <- selected[order(selected$order), ]
-selected$requested_correlation <- c(0.1, 0.8, 0.1, 0.8)
-selected$label <- c("Degree 2 / correlation ~0.1", "Degree 2 / correlation ~0.8",
-                    "Degree 6 / correlation ~0.1", "Degree 6 / correlation ~0.8")
+selected$requested_correlation <- rep(requested_correlations, each = 2)[c(1, 3, 2, 4)]
+selected$label <- c("Degree 2 / correlation 0", "Degree 2 / correlation 0.95",
+                    "Degree 6 / correlation 0", "Degree 6 / correlation 0.95")
 selected$colour <- c("#D55E00", "#E69F00", "#0072B2", "#009E73")
 
 truth_matrix <- make_matrix(truth_average, "value", degrees, correlations)
@@ -146,7 +146,7 @@ draw_figure <- function() {
   degree_labels <- paste("Degree", selected$degree)
   niche_labels <- as.expression(lapply(seq_len(nrow(selected)), function(i) {
     correlation_text <- format(selected$requested_correlation[i], nsmall = 1)
-    bquote(paste("niche ", italic(r), " ~", .(correlation_text)))
+    bquote(paste("niche ", italic(r), " = ", .(correlation_text)))
   }))
   axis(1, at = seq_len(nrow(selected)), labels = degree_labels,
        tick = FALSE, line = 0.1, cex.axis = 1.0)
@@ -160,9 +160,6 @@ draw_figure <- function() {
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 png(file.path(output_dir, "figure5_sdm_application.png"), width = 2500, height = 1250, res = 220)
-draw_figure()
-dev.off()
-pdf(file.path(output_dir, "figure5_sdm_application.pdf"), width = 12.5, height = 6.2)
 draw_figure()
 dev.off()
 write.table(selected, file.path(output_dir, "figure5_selected_scenarios.tsv"),

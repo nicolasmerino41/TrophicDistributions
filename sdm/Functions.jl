@@ -211,20 +211,23 @@ function run_focal_sdm(
 end
 
 function build_jobs(;
-    environments=ENVIRONMENTS, networks=NETWORKS,
-    regime_indices=REGIME_INDICES, correlations=CORRELATIONS,
+    environments=ENVIRONMENTS, regime_indices=REGIME_INDICES,
+    correlations=CORRELATIONS,
     replicates=N_REPLICATES
 )
     jobs = NamedTuple[]
     community_id = 0
-    for environment in environments, network in networks,
-        regime_index in regime_indices, target_r in correlations,
+    for (environment_index, environment) in enumerate(environments),
+        regime_index in regime_indices,
+        target_r in correlations,
         replicate in 1:replicates
         community_id += 1
         push!(jobs, (
-            community_id=community_id, environment=environment, network=network,
+            community_id=community_id, environment=environment,
             regime_index=regime_index, target_r=Float64(target_r),
-            replicate=replicate, seed=BASE_SEED + 1_000_003 * community_id
+            replicate=replicate,
+            seed=BASE_SEED + 10_000_000 * environment_index +
+                 100_000 * regime_index + replicate
         ))
     end
     return jobs
@@ -232,14 +235,14 @@ end
 
 function run_world_sdms(job, workspace)
     world = simulate_world!(
-        MersenneTwister(job.seed), workspace, job.environment, job.network,
+        MersenneTwister(job.seed), workspace, job.environment,
         regimes[job.regime_index], job.target_r, job.community_id
     )
     rows = NamedTuple[]
     exclusions = NamedTuple[]
     world.correlation_ok || return (rows=rows, exclusions=[(
         community_id=job.community_id, environment=String(job.environment),
-        network=String(job.network), regime=String(world.regime_name),
+        regime=String(world.regime_name),
         target_r=world.target_r, degree=0, reason="correlation_calibration_failed"
     )])
 
@@ -251,7 +254,7 @@ function run_world_sdms(job, workspace)
         if focal === nothing
             push!(exclusions, (
                 community_id=job.community_id, environment=String(job.environment),
-                network=String(job.network), regime=String(world.regime_name),
+                regime=String(world.regime_name),
                 target_r=world.target_r, degree=degree, reason="no_eligible_focal"
             ))
             continue
@@ -262,7 +265,7 @@ function run_world_sdms(job, workspace)
         )
         push!(rows, merge((
             community_id=job.community_id, replicate=job.replicate,
-            environment=String(job.environment), network=String(job.network),
+            environment=String(job.environment),
             regime=String(world.regime_name), target_r=world.target_r,
             achieved_r=world.achieved_r, focal_consumer=focal,
             degree=world.realized_degree[focal]
@@ -276,13 +279,13 @@ function checkpoint_path(job, directory)
 end
 
 function run_experiment(;
-    environments=ENVIRONMENTS, networks=NETWORKS,
-    regime_indices=REGIME_INDICES, correlations=CORRELATIONS,
+    environments=ENVIRONMENTS, regime_indices=REGIME_INDICES,
+    correlations=CORRELATIONS,
     replicates=N_REPLICATES, checkpoint_dir=CHECKPOINT_DIR, resume=true
 )
     jobs = build_jobs(
-        environments=environments, networks=networks,
-        regime_indices=regime_indices, correlations=correlations,
+        environments=environments, regime_indices=regime_indices,
+        correlations=correlations,
         replicates=replicates
     )
     mkpath(checkpoint_dir)
@@ -320,14 +323,14 @@ end
 function summarize_results(rows)
     groups = Dict{Tuple,Vector{NamedTuple}}()
     for row in rows
-        key = (row.environment, row.network, row.regime, row.target_r, row.degree)
+        key = (row.environment, row.regime, row.target_r, row.degree)
         push!(get!(groups, key, NamedTuple[]), row)
     end
     summary = NamedTuple[]
     for (key, group) in groups
-        environment, network, regime, target_r, degree = key
+        environment, regime, target_r, degree = key
         push!(summary, (
-            environment=environment, network=network, regime=regime,
+            environment=environment, regime=regime,
             target_r=target_r, degree=degree, n=length(group),
             mean_achieved_r=finite_mean(getproperty.(group, :achieved_r)),
             mean_true_mismatch=finite_mean(getproperty.(group, :true_mismatch)),
@@ -337,7 +340,7 @@ function summarize_results(rows)
             se_delta_brier=finite_se(getproperty.(group, :delta_brier))
         ))
     end
-    sort!(summary, by=row -> (row.environment, row.network, row.regime,
+    sort!(summary, by=row -> (row.environment, row.regime,
                               row.target_r, row.degree))
     return summary
 end

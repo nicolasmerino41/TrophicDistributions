@@ -8,8 +8,7 @@ using .SDMParameters
 using .SDMFunctions: run_experiment, summarize_results
 
 mkpath(OUTPUT_DIR)
-println("Starting the Figure 5 SDM experiment")
-println("Comparison: abiotic-only versus true-resource-informed SDMs")
+println("Comparison: abiotic-only versus resource-informed SDMs")
 println("Julia threads: $(Threads.nthreads())")
 
 results = run_experiment()
@@ -26,7 +25,6 @@ metadata = [(
     completed_at=string(now()),
     comparison="abiotic versus true-resource-informed",
     environments=join(string.(ENVIRONMENTS), ","),
-    networks=join(string.(NETWORKS), ","),
     regime_indices=join(REGIME_INDICES, ","),
     degrees=join(DEGREES, ","),
     correlations=join(CORRELATIONS, ","),
@@ -38,6 +36,10 @@ metadata = [(
     julia_threads=Threads.nthreads()
 )]
 save_table_tsv(joinpath(OUTPUT_DIR, "run_metadata.tsv"), metadata)
+
+# Checkpoints are only needed while a run is incomplete. Once the final tables
+# are safely written, remove them so the published output stays compact.
+isdir(CHECKPOINT_DIR) && rm(CHECKPOINT_DIR; recursive=true, force=true)
 
 println("Saved oracle_comparisons.tsv and oracle_summary.tsv")
 println("Run sdm/PlotFigure5.R to create the figure.")

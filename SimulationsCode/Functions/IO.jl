@@ -1,13 +1,9 @@
 module IO
 
 using ..Parameters: OUTDIR
-using Serialization
 using Printf
 
-export save_table_tsv, save_all_tsv, save_cache, load_cache
-
-save_cache(cache_path::String, data) = serialize(cache_path, data)
-load_cache(cache_path::String) = deserialize(cache_path)
+export save_table_tsv, save_all_tsv
 
 function format_tsv_value(value)
     if value === missing || (value isa AbstractFloat && !isfinite(value))
@@ -48,10 +44,6 @@ function save_all_tsv(results)
         degree_summary=save_table_tsv(
             joinpath(degree_dir, "degree_summary.tsv"),
             results.degree_summary
-        ),
-        degree_correlations=save_table_tsv(
-            joinpath(degree_dir, "degree_correlations.tsv"),
-            results.degree_correlations
         ),
         community_results=save_table_tsv(
             joinpath(community_dir, "community_results.tsv"),

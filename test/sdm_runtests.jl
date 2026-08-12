@@ -25,7 +25,7 @@ end
 
 @testset "Minimal framework-to-SDM handoff" begin
     job = only(build_jobs(
-        environments=[:autocorr], networks=[:random], regime_indices=[3],
+        environments=[:autocorr], regime_indices=[3],
         correlations=[0.475], replicates=1
     ))
     result = run_world_sdms(job, make_workspaces()[1])
@@ -36,4 +36,14 @@ end
     @test all(row -> isfinite(row.delta_auc), result.rows)
     @test all(row -> isfinite(row.delta_brier), result.rows)
     @test all(row -> 0.0 <= row.predictor_prevalence <= 1.0, result.rows)
+end
+
+@testset "Correlation treatments use paired worlds" begin
+    jobs = build_jobs(
+        environments=[:random], regime_indices=[1],
+        correlations=[0.0, 0.95], replicates=2
+    )
+    @test jobs[1].seed == jobs[3].seed
+    @test jobs[2].seed == jobs[4].seed
+    @test jobs[1].community_id != jobs[3].community_id
 end
