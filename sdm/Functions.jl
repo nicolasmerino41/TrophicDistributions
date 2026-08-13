@@ -13,8 +13,8 @@ using ..SDMParameters
 
 export LogisticModel, fit_ridge_logistic, predict_probability,
        sampling_bias_surface, true_resource_availability,
-       choose_focal_consumer, run_focal_sdm, build_jobs,
-       run_world_sdms, run_experiment, summarize_results
+       eligible_focal_consumers, run_focal_sdm, build_jobs,
+       run_world_sdms, run_experiment, summarize_communities, summarize_results
 
 struct LogisticModel
     coefficients::Vector{Float64}
@@ -162,14 +162,12 @@ function focal_truth_mismatch(world, focal_consumer::Int)
     return union_size == 0 ? NaN : 1.0 - count(abiotic .& realized) / union_size
 end
 
-function choose_focal_consumer(rng::AbstractRNG, world, degree::Int)
-    candidates = [
+function eligible_focal_consumers(world, degree::Int)
+    return [
         consumer for consumer in world.consumers
         if world.realized_degree[consumer] == degree &&
            count(world.AB[consumer]) >= MIN_FOCAL_PRESENCE_CELLS
     ]
-    isempty(candidates) && return nothing
-    return rand(rng, candidates)
 end
 
 function run_focal_sdm(
@@ -243,33 +241,46 @@ function run_world_sdms(job, workspace)
     world.correlation_ok || return (rows=rows, exclusions=[(
         community_id=job.community_id, environment=String(job.environment),
         regime=String(world.regime_name),
-        target_r=world.target_r, degree=0, reason="correlation_calibration_failed"
+        target_r=world.target_r, degree=0, focal_consumer=0,
+        reason="correlation_calibration_failed"
     )])
 
     environment_z = standardized_environment(world.environment)
     accessibility = sampling_bias_surface()
-    selection_rng = MersenneTwister(job.seed + 17)
     for degree in DEGREES
-        focal = choose_focal_consumer(selection_rng, world, degree)
-        if focal === nothing
+        all_focals = [consumer for consumer in world.consumers
+                      if world.realized_degree[consumer] == degree]
+        focals = eligible_focal_consumers(world, degree)
+        if isempty(focals)
             push!(exclusions, (
                 community_id=job.community_id, environment=String(job.environment),
-                regime=String(world.regime_name),
-                target_r=world.target_r, degree=degree, reason="no_eligible_focal"
+                regime=String(world.regime_name), target_r=world.target_r,
+                degree=degree, focal_consumer=0, reason="no_eligible_focal"
             ))
             continue
         end
-        result = run_focal_sdm(
-            MersenneTwister(job.seed + 1_000_033 * focal), world, focal,
-            environment_z, accessibility
-        )
-        push!(rows, merge((
-            community_id=job.community_id, replicate=job.replicate,
-            environment=String(job.environment),
-            regime=String(world.regime_name), target_r=world.target_r,
-            achieved_r=world.achieved_r, focal_consumer=focal,
-            degree=world.realized_degree[focal]
-        ), result))
+        eligible_set = Set(focals)
+        for focal in all_focals
+            if !(focal in eligible_set)
+                push!(exclusions, (
+                    community_id=job.community_id, environment=String(job.environment),
+                    regime=String(world.regime_name), target_r=world.target_r,
+                    degree=degree, focal_consumer=focal, reason="insufficient_presence_cells"
+                ))
+                continue
+            end
+            result = run_focal_sdm(
+                MersenneTwister(job.seed + 1_000_033 * focal), world, focal,
+                environment_z, accessibility
+            )
+            push!(rows, merge((
+                community_id=job.community_id, replicate=job.replicate,
+                environment=String(job.environment),
+                regime=String(world.regime_name), target_r=world.target_r,
+                achieved_r=world.achieved_r, focal_consumer=focal,
+                degree=world.realized_degree[focal]
+            ), result))
+        end
     end
     return (rows=rows, exclusions=exclusions)
 end
@@ -312,7 +323,10 @@ function run_experiment(;
     )
 end
 
-finite_mean(values) = mean(filter(isfinite, Float64.(values)))
+function finite_mean(values)
+    valid = filter(isfinite, Float64.(values))
+    return isempty(valid) ? NaN : mean(valid)
+end
 
 function finite_se(values)
     valid = filter(isfinite, Float64.(values))
@@ -320,24 +334,50 @@ function finite_se(values)
     return std(valid) / sqrt(length(valid))
 end
 
-function summarize_results(rows)
+function summarize_communities(rows)
     groups = Dict{Tuple,Vector{NamedTuple}}()
     for row in rows
+        key = (row.community_id, row.replicate, row.environment,
+               row.regime, row.target_r, row.degree)
+        push!(get!(groups, key, NamedTuple[]), row)
+    end
+    summary = NamedTuple[]
+    for (key, group) in groups
+        community_id, replicate, environment, regime, target_r, degree = key
+        push!(summary, (
+            community_id=community_id, replicate=replicate,
+            environment=environment, regime=regime, target_r=target_r,
+            degree=degree, n_consumers=length(group),
+            mean_achieved_r=finite_mean(getproperty.(group, :achieved_r)),
+            mean_true_mismatch=finite_mean(getproperty.(group, :true_mismatch)),
+            mean_delta_auc=finite_mean(getproperty.(group, :delta_auc)),
+            mean_delta_brier=finite_mean(getproperty.(group, :delta_brier)),
+        ))
+    end
+    sort!(summary, by=row -> (row.community_id, row.degree))
+    return summary
+end
+
+function summarize_results(community_rows)
+    groups = Dict{Tuple,Vector{NamedTuple}}()
+    for row in community_rows
         key = (row.environment, row.regime, row.target_r, row.degree)
         push!(get!(groups, key, NamedTuple[]), row)
     end
     summary = NamedTuple[]
     for (key, group) in groups
         environment, regime, target_r, degree = key
+        valid_auc_communities = count(isfinite, getproperty.(group, :mean_delta_auc))
         push!(summary, (
             environment=environment, regime=regime,
-            target_r=target_r, degree=degree, n=length(group),
-            mean_achieved_r=finite_mean(getproperty.(group, :achieved_r)),
-            mean_true_mismatch=finite_mean(getproperty.(group, :true_mismatch)),
-            mean_delta_auc=finite_mean(getproperty.(group, :delta_auc)),
-            se_delta_auc=finite_se(getproperty.(group, :delta_auc)),
-            mean_delta_brier=finite_mean(getproperty.(group, :delta_brier)),
-            se_delta_brier=finite_se(getproperty.(group, :delta_brier))
+            target_r=target_r, degree=degree, n=valid_auc_communities,
+            mean_consumers_per_community=finite_mean(getproperty.(group, :n_consumers)),
+            mean_achieved_r=finite_mean(getproperty.(group, :mean_achieved_r)),
+            mean_true_mismatch=finite_mean(getproperty.(group, :mean_true_mismatch)),
+            mean_delta_auc=finite_mean(getproperty.(group, :mean_delta_auc)),
+            se_delta_auc=finite_se(getproperty.(group, :mean_delta_auc)),
+            mean_delta_brier=finite_mean(getproperty.(group, :mean_delta_brier)),
+            se_delta_brier=finite_se(getproperty.(group, :mean_delta_brier))
         ))
     end
     sort!(summary, by=row -> (row.environment, row.regime,

@@ -164,4 +164,4 @@ draw_figure()
 dev.off()
 write.table(selected, file.path(output_dir, "figure5_selected_scenarios.tsv"),
             sep = "\t", row.names = FALSE, quote = FALSE)
-cat("Saved the simplified Figure 5 and its four-scenario summary to", output_dir, "\n")
+cat("Saved Figure 5 and its four-scenario summary to", output_dir, "\n")
