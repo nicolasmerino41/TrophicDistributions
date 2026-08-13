@@ -60,7 +60,7 @@ const CORR_CALIBRATION_DAMPING = 0.70
 # Preserve the expected SD of the original Uniform(E_MIN, E_MAX) optima.
 # The calibrator scales it down only when required to remain inside the domain.
 const CORR_WITHIN_DEGREE_SD = (E_MAX - E_MIN) / sqrt(12)
-const TARGET_R_TOL = 0.03
+const TARGET_R_TOL = 0.05
 const DEGREE_TARGET_R_TOL = 0.05
 
 # Thread-safe seeds

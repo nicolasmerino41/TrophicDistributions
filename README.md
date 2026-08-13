@@ -23,6 +23,8 @@ The `sdm` folder contains the application linking the simulation framework to fi
 
 The `sensitivity` folder contains the sensitivity analysis for grid dimension, minimum viable patch size, suitability threshold, and species richness. Run `MainSensitivity.jl` followed by `PlotSensitivity.R` to produce the combined sensitivity figure.
 
+The `EmpiricalDegrees` folder estimates recorded consumer degree for the species represented in the thermal analysis using GloBI, and for all consumers in the TetraEU metaweb. Run `MainEmpiricalDegrees.R` followed by `PlotEmpiricalDegrees.R`.
+
 NOTE: The compiled thermal data is now available in this repository for easy access but it'll be removed after the reviewing process since we don't own the data. After the reviewing period, you can email me at nicolasmerino41@gmail.com and I'll provide the .csv's. They can also be found in the original sources (ThermoFresh, GlobTherm, Comte & Olden 2017, GloBI & TETRA‐EU 1.0) but that would require you some data mining you probably want to avoid :)
 
 ## 🗂️ Repository structure
@@ -66,6 +68,13 @@ TROPHICDISTRIBUTIONS/
 ├── ThermalAnalysis/
 │   ├── MainThermalAnalysis.jl
 │   └── PlotThermalMetrics.R
+├── EmpiricalDegrees/
+│   ├── Data/
+│   │   └── thermal_consumers.csv
+│   ├── Functions.R
+│   ├── MainEmpiricalDegrees.R
+│   ├── PlotEmpiricalDegrees.R
+│   └── README.md
 ├── test/
 │   ├── runtests.jl
 │   └── sdm_runtests.jl

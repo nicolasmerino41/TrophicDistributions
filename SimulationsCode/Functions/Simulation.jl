@@ -52,11 +52,16 @@ function simulate_world!(
         suitability_mask_1d(environment, mu[i], sigma[i], SUIT_THRESH)
         for i in 1:S
     ]
+    AB_direct_raw, AB_raw = trophic_distributions(A_raw, prey, basal_mask)
+
     A = Vector{BitVector}(undef, S)
+    AB_direct = Vector{BitVector}(undef, S)
+    AB = Vector{BitVector}(undef, S)
     for i in 1:S
         A[i] = apply_connectivity_filter(ws, A_raw[i], Emin_patch)
+        AB_direct[i] = apply_connectivity_filter(ws, AB_direct_raw[i], Emin_patch)
+        AB[i] = apply_connectivity_filter(ws, AB_raw[i], Emin_patch)
     end
-    AB_direct, AB = trophic_distributions(A, prey, basal_mask)
 
     return (
         community_id=community_id,
@@ -78,6 +83,8 @@ function simulate_world!(
         mu=mu,
         sigma=sigma,
         A_raw=A_raw,
+        AB_direct_raw=AB_direct_raw,
+        AB_raw=AB_raw,
         A=A,
         AB_direct=AB_direct,
         AB=AB

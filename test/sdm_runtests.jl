@@ -9,7 +9,8 @@ include(joinpath(@__DIR__, "..", "sdm", "Functions.jl"))
 using .Functions.Connectivity: make_workspaces
 using .SDMParameters: DEGREES
 using .SDMFunctions: fit_ridge_logistic, predict_probability,
-                     build_jobs, run_world_sdms
+                     build_jobs, run_world_sdms, summarize_communities,
+                     summarize_results
 
 @testset "Ridge logistic SDM solver" begin
     predictor = collect(range(-3.0, 3.0, length=200))
@@ -36,6 +37,12 @@ end
     @test all(row -> isfinite(row.delta_auc), result.rows)
     @test all(row -> isfinite(row.delta_brier), result.rows)
     @test all(row -> 0.0 <= row.predictor_prevalence <= 1.0, result.rows)
+    community_rows = summarize_communities(result.rows)
+    @test length(community_rows) <= length(result.rows)
+    @test all(row -> row.n_consumers >= 1, community_rows)
+    summary = summarize_results(community_rows)
+    @test !isempty(summary)
+    @test all(row -> row.n >= 1, summary)
 end
 
 @testset "Correlation treatments use paired worlds" begin
