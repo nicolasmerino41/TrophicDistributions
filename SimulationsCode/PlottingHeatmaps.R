@@ -41,12 +41,13 @@ heatmap <- ggplot(degree_df, aes(x = degree, y = target_r, fill = mean_mismatch)
     guide = guide_colorbar(
       direction = "horizontal",
       title.position = "top",
+      title.hjust = 0.5,
       barwidth = unit(8, "cm"),
       barheight = unit(0.5, "cm")
     )
   ) +
   labs(
-    x = "Focal consumer degree",
+    x = "Consumer degree",
     y = "Consumer-resource niche correlation",
     fill = "Mean consumer Jaccard mismatch"
   ) +
