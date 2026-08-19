@@ -19,7 +19,7 @@ We want this repository to be as easy-to-use and transparent as possible. The re
 
 If you only want to run the main simulations, you only need to access three scripts. `Parameters.jl` gathers the parameters you may want to tweak. `MainScript.jl` executes the simulations and saves the results. After that, `PlottingHeatmaps.R` reads those results and produces the main heatmap figure.
 
-The `sdm` folder contains the application linking the simulation framework to fitted species distribution models. Run `MainSDM.jl` followed by `PlotFigure5.R` to produce Figure 5 of the article.
+The `sdm` folder contains the application linking the simulation framework to fitted species distribution models. Run `MainSDM.jl` followed by `PlotFigure3.R` to produce Figure 3 of the article.
 
 The `sensitivity` folder contains the sensitivity analysis for grid dimension, minimum viable patch size, suitability threshold, and species richness. Run `MainSensitivity.jl` followed by `PlotSensitivity.R` to produce the combined sensitivity figure.
 
@@ -58,7 +58,7 @@ TROPHICDISTRIBUTIONS/
 ├── sdm/
 │   ├── MainSDM.jl             # Run the SDM application
 │   ├── Parameters.jl
-│   ├── PlotFigure5.R          # Produce Figure 5
+│   ├── PlotFigure3.R          # Produce Figure 3
 │   └── README.md
 ├── sensitivity/
 │   ├── MainSensitivity.jl     # Run all sensitivity scenarios

@@ -1,2 +1,2 @@
-metric,edges,predators,prey,obs_mean_absdiff,null_mean,null_sd,z,p_one_sided
-lt50,110,27,52,5.228314533534101,8.171137663416777,0.45710226269673565,-6.437997293037011,0.0
+metric,edges,predators,prey,obs_mean_absdiff,null_mean,null_sd,z,p_one_sided,median_recorded_prey_coverage
+lt50,220,44,78,8.621032563209736,10.950681095903127,0.3826745739699668,-6.087805909143644,0.0,0.038603085114713

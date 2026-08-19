@@ -1,2 +1,2 @@
-metric,edges,predators,prey,obs_mean_absdiff,null_mean,null_sd,z,p_one_sided
-ctmax,2487,304,543,3.2920167257637325,4.735998377100954,0.05341192969431122,-27.034815248231276,0.0
+metric,edges,predators,prey,obs_mean_absdiff,null_mean,null_sd,z,p_one_sided,median_recorded_prey_coverage
+ctmax,5064,465,710,3.8724563800669323,5.165132905152204,0.04028342992385249,-32.089534767243244,0.0,0.111111111111111

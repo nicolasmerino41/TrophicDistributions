@@ -119,7 +119,7 @@ if (nrow(null_df) > 0 && nrow(summ_df) > 0) {
     geom_vline(data = summ_null, aes(xintercept = observed), color = "red", linewidth = 1.2) +
     facet_wrap(~ trait, ncol = 2, scales = "free") +
     labs(
-      title = "Null model: mean |Predator − Prey| thermal difference",
+      title = "Null model: mean |Predator - Prey| thermal difference",
       x = "Mean |Δ thermal limit|",
       y = "Count"
     ) +

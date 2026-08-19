@@ -1,0 +1,12 @@
+item,value
+Build time UTC,2026-08-19 10:07:08 UTC
+GloBI endpoint,https://api.globalbioticinteractions.org/interaction.csv
+GloBI interaction umbrella,eats
+GloBI queried species,4541
+TetraEU source,Data/TetraEU_pairwise_interactions.csv
+Trait sources,ThermoFresh;GlobTherm;ComteOlden
+Trait selection priority,ThermoFresh > ComteOlden > GlobTherm
+Species in master,19912
+Species with usable traits,4518
+Recorded consumer-resource pairs,164379
+Analysis-ready pairs,5227

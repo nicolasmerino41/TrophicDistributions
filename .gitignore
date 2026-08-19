@@ -2,3 +2,4 @@
 *.jls
 *.png
 Outputs/empirical_degrees/globi_cache/
+Outputs/thermal_metrics/globi_cache/
