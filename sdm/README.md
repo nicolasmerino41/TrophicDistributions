@@ -1,4 +1,4 @@
-# Figure 5 SDM application
+# Figure 3 SDM application
 
 This pipeline tests whether resource information improves fitted SDMs in
 the degree-correlation conditions where the simulation predicts larger trophic
@@ -19,7 +19,7 @@ world as independent observations and removes random focal-consumer selection.
 The correlation treatments use matched seeds: within each environment, niche
 regime, and replicate they begin with the same degree assignment, trophic
 community, environment, and niche breadth. Consumer optima and therefore focal eligibility can
-change with the correlation treatment. Figure 5 highlights the low and high
+change with the correlation treatment. Figure 3 highlights the low and high
 correlation treatments (`0` and `0.95`) at degrees 2 and 6.
 
 The primary result is
@@ -31,7 +31,7 @@ Run from the repository root:
 ```powershell
 $env:JULIA_NUM_THREADS = 'auto'
 julia --project=. sdm\MainSDM.jl
-& 'C:\Program Files\R\R-4.3.2\bin\Rscript.exe' sdm\PlotFigure5.R
+& 'C:\Program Files\R\R-4.3.2\bin\Rscript.exe' sdm\PlotFigure3.R
 ```
 
 Outputs:
@@ -40,8 +40,8 @@ Outputs:
 - `oracle_community_results.tsv`: consumer means within each community and degree;
 - `oracle_summary.tsv`: community-level summaries by environment, niche regime, degree, and
   community niche correlation;
-- `figure5_selected_scenarios.tsv`: the four cases shown in Panel B;
-- `figure5_sdm_application.png`: the final two-panel figure;
+- `figure3_selected_scenarios.tsv`: the four cases shown in Panel B;
+- `Figure3.png`: the final two-panel figure;
 - `run_metadata.tsv`: run settings.
 
 The pipeline checkpoints communities and resumes safely after interruption.

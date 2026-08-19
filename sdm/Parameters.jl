@@ -29,12 +29,12 @@ const LOGISTIC_RIDGE = 0.1
 const LOGISTIC_MAX_ITERS = 100
 const LOGISTIC_TOL = 1e-8
 
-# Four low-versus-high framework cells highlighted in Figure 5.
+# Four low-versus-high framework cells highlighted in Figure 3.
 const FIGURE_DEGREES = copy(DEGREES)
 const FIGURE_CORRELATIONS = copy(CORRELATIONS)
 
 const BASE_SEED = 20260805
-const PIPELINE_VERSION = "figure5-all-focal-consumers-v4"
+const PIPELINE_VERSION = "figure3-all-focal-consumers-v4"
 const OUTPUT_DIR = joinpath(@__DIR__, "Outputs")
 const CHECKPOINT_DIR = joinpath(OUTPUT_DIR, "checkpoints", PIPELINE_VERSION)
 

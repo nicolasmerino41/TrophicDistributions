@@ -62,4 +62,4 @@ end
 remove_checkpoints(CHECKPOINT_DIR)
 
 println("Saved consumer-level, community-level, and summary SDM results")
-println("Run sdm/PlotFigure5.R to create the figure.")
+println("Run sdm/PlotFigure3.R to create the figure.")

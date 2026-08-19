@@ -104,7 +104,7 @@ draw_figure <- function() {
   par(mar = c(5.0, 5.0, 3.5, 1.0), mgp = c(2.7, 0.8, 0), tcl = -0.25)
   image(seq_along(degrees), seq_along(correlations), t(truth_matrix),
         col = palette, breaks = breaks, axes = FALSE, useRaster = TRUE,
-        xlab = "Focal consumer degree", ylab = bquote(paste("Consumer-resource niche correlation   ", italic(r))),
+        xlab = "Consumer in-degree", ylab = bquote(paste("Consumer-resource niche correlation   ", italic(r))),
         cex.lab = 1.25
         # main = "Interaction relevance space"
         )
@@ -159,9 +159,9 @@ draw_figure <- function() {
 }
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
-png(file.path(output_dir, "figure5_sdm_application.png"), width = 2500, height = 1250, res = 220)
+png(file.path(output_dir, "Figure3.png"), width = 2500, height = 1250, res = 220)
 draw_figure()
 dev.off()
-write.table(selected, file.path(output_dir, "figure5_selected_scenarios.tsv"),
+write.table(selected, file.path(output_dir, "figure3_selected_scenarios.tsv"),
             sep = "\t", row.names = FALSE, quote = FALSE)
-cat("Saved Figure 5 and its four-scenario summary to", output_dir, "\n")
+cat("Saved Figure 3 and its four-scenario summary to", output_dir, "\n")

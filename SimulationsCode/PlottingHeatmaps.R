@@ -47,7 +47,7 @@ heatmap <- ggplot(degree_df, aes(x = degree, y = target_r, fill = mean_mismatch)
     )
   ) +
   labs(
-    x = "Consumer degree",
+    x = "Consumer in-degree",
     y = "Consumer-resource niche correlation",
     fill = "Mean consumer Jaccard mismatch"
   ) +
