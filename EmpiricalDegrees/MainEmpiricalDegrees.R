@@ -73,7 +73,7 @@ write_csv(tetra$links, file.path(output_dir, "tetraeu_resource_links.csv"))
 write_csv(tetra$degree, file.path(output_dir, "tetraeu_consumer_degrees.csv"))
 
 globi_degree <- merge(thermal, globi$degree, by = "consumer", all.x = TRUE, sort = TRUE)
-globi_degree$dataset <- "Thermal consumers (GloBI)"
+globi_degree$dataset <- "GloBI consumers"
 tetra_degree <- tetra$degree
 tetra_degree$dataset <- "TetraEU consumers"
 tetra_degree$metrics <- ""
@@ -86,9 +86,15 @@ write_csv(combined, file.path(output_dir, "consumer_degrees_combined.csv"))
 
 manifest <- data.frame(
   item = c("GloBI endpoint", "GloBI interaction umbrella", "GloBI extraction time (UTC)",
-           "Thermal consumers", "TetraEU source file", "Primary degree definition"),
+           "GloBI consumers retained in thermal analysis",
+           "GloBI consumers with positive species-level degree",
+           "TetraEU consumers", "TetraEU consumers with positive species-level degree",
+           "TetraEU source file", "Primary degree definition"),
   value = c("https://api.globalbioticinteractions.org/interaction.csv", "eats",
             format(Sys.time(), tz = "UTC", usetz = TRUE), length(consumers),
+            sum(is.finite(globi_degree$degree_species) & globi_degree$degree_species > 0),
+            nrow(tetra_degree),
+            sum(is.finite(tetra_degree$degree_species) & tetra_degree$degree_species > 0),
             "Data/TetraEU_pairwise_interactions.csv",
             "Unique species-level non-self resources per consumer"),
   stringsAsFactors = FALSE

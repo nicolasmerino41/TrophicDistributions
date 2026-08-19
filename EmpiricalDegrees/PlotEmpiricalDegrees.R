@@ -20,7 +20,7 @@ if (length(script_arg)) {
 script_dir <- dirname(normalizePath(script_path, mustWork = TRUE))
 root_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
 input_file <- file.path(root_dir, "Outputs", "empirical_degrees", "consumer_degrees_combined.csv")
-output_file <- file.path(root_dir, "Outputs", "empirical_degrees", "empirical_degree_distributions.png")
+output_file <- file.path(root_dir, "Outputs", "empirical_degrees", "Figure4.png")
 
 dat <- read.csv(input_file, stringsAsFactors = FALSE)
 dat <- dat[is.finite(dat$degree) & dat$degree > 0, , drop = FALSE]
@@ -41,7 +41,7 @@ par(mar = c(5.0, 5.2, 1.6, 1.6), mgp = c(2.6, 0.65, 0), las = 1,
 ticks <- 2^(0:10)
 xlim <- c(min(dat$degree) / 1.12, max(dat$degree) * 1.12)
 plot(NA, xlim = xlim, ylim = c(0.62, 2.38), log = "x", axes = FALSE,
-     xlab = "Recorded consumer degree (log scale)", ylab = "")
+     xlab = "Consumer in-degree (log scale)", ylab = "")
 axis(1, at = ticks[ticks <= max(dat$degree)],
      labels = ticks[ticks <= max(dat$degree)], gap.axis = 0.15)
 axis(
@@ -70,7 +70,7 @@ par(mar = c(5.0, 5.3, 1.6, 1.2), mgp = c(2.6, 0.65, 0), las = 1,
     cex.axis = 0.90, cex.lab = 1.05)
 x_positions <- seq_along(degree_classes)
 plot(NA, xlim = c(0.55, length(degree_classes) + 0.45), ylim = c(0, 1), axes = FALSE,
-     xlab = "Degree threshold", ylab = "Proportion of consumers at or above threshold")
+     xlab = "In-degree", ylab = "Proportion of consumers ≥ n in-degree")
 axis(1, at = x_positions, labels = degree_classes, las = 2, cex.axis = 0.80)
 axis(2, at = seq(0, 1, 0.2), labels = paste0(seq(0, 100, 20), "%"))
 box(bty = "l")
