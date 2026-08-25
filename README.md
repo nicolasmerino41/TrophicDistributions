@@ -17,7 +17,7 @@ This repository contains all the Julia/R code and data needed to reproduce the a
 
 We want this repository to be as easy-to-use and transparent as possible. The repo is built so you can run everything straight from cloning, as long as you set the right environment (see ⚙️ Installation). Additionally, we structured the code in a modular way, so each part of the model is defined in an individual script that makes it more digestible. For instance, the construction of niches can be found in `Niches.jl` or the construction of the environments is in `Environment.jl`.
 
-If you only want to run the main simulations, you only need to access three scripts. `Parameters.jl` gathers the parameters you may want to tweak. `MainScript.jl` executes the simulations and saves the results. After that, `PlottingHeatmaps.R` reads those results and produces the main heatmap figure.
+If you only want to run the main simulations, you only need to access three scripts. `Parameters.jl` gathers the parameters you may want to tweak. `MainScript.jl` executes the simulations and saves the results. After that, `PlottingHeatmaps.R` reads those results and produces the main heatmap figure. `PlotScenarioContrasts.R` uses the same simulation outputs to quantify and plot the secondary niche-breadth and environmental-structure contrasts.
 
 The `sdm` folder contains the application linking the simulation framework to fitted species distribution models. Run `MainSDM.jl` followed by `PlotFigure3.R` to produce Figure 3 of the article.
 
@@ -36,6 +36,8 @@ TROPHICDISTRIBUTIONS/
 ├── Outputs/
 │   ├── heatmaps/
 │   │   └── Main simulation heatmap
+│   ├── scenarioContrasts/
+│   │   └── Supplementary treatment contrasts
 │   └── thermal_metrics/
 │       └── Empirical thermal-analysis figures
 ├── SimulationsCode/
@@ -54,7 +56,8 @@ TROPHICDISTRIBUTIONS/
 │   ├── Functions.jl
 │   ├── MainScript.jl          # THIS IS THE ONLY SCRIPT YOU HAVE TO RUN
 │   ├── Parameters.jl          # TWEAK THIS SCRIPT TO CHANGE THE PARAMETRISATION
-│   └── PlottingHeatmaps.R     # Run this script after running the simulations
+│   ├── PlottingHeatmaps.R     # Run this script after running the simulations
+│   └── PlotScenarioContrasts.R # Produce the supplementary treatment contrasts
 ├── sdm/
 │   ├── MainSDM.jl             # Run the SDM application
 │   ├── Parameters.jl
