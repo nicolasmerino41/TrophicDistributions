@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19053674.svg)](https://doi.org/10.5281/zenodo.19053674)
 
 Official repository for the paper:
-> **"Connectance and niche overlap determine when trophic interactions affect species distributions"**  
+> **"When trophic interactions affect species distributions"**  
 > *Nicolàs Merino, Núria Galiana, Miguel B. Araújo*  
 > Ecology Letters, 2026
 
