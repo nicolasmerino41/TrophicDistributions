@@ -11,7 +11,7 @@ Official repository for the paper:
 
 ## 📌 Overview
 
-This repository contains all the Julia/R code and data needed to reproduce the analyses and figures presented in the article *Consumer degree and niche overlap determine when trophic interactions affect species distributions*. It includes the scripts used to run the simulations, calculate A-AB distribution mismatch, test their application in sdm's, and evaluate the sensitivity of the results to modelling choices. It also provides the code used to analyse empirical consumer-resource thermal niche correlation.
+This repository contains all the Julia/R code and data needed to reproduce the analyses and figures presented in the article *When trophic interactions affect species distributions*. It includes the scripts used to run the simulations, calculate A-AB distribution mismatch, test their application in sdm's, and evaluate the sensitivity of the results to modelling choices. It also provides the code used to analyse empirical consumer-resource thermal niche correlation.
 
 ## 📓 Instructions
 
