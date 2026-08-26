@@ -85,9 +85,9 @@ p_edge <- ggplot(edges_df, aes(x = pred_trait, y = prey_trait)) +
   ) +
   facet_wrap(~ trait, ncol = 2, scales = "free") +
   labs(
-    title = "Pairwise Predator vs Prey Thermal Limits",
-    x = "Predator thermal limit (°C)",
-    y = "Prey thermal limit (°C)"
+    title = "Pairwise Consumer vs Resource Thermal Limits",
+    x = "Consumer thermal limit (°C)",
+    y = "Resource thermal limit (°C)"
   ) +
   theme_nature()
 
@@ -103,9 +103,9 @@ p_node <- ggplot(nodes_df, aes(x = pred_trait, y = mean_prey_trait)) +
   ) +
   facet_wrap(~ trait, ncol = 2, scales = "free") +
   labs(
-    title = "Predator vs Mean Prey Thermal Limits",
-    x = "Predator thermal limit (°C)",
-    y = "Mean prey thermal limit (°C)"
+    title = "Consumer vs Mean Resource Thermal Limits",
+    x = "Consumer thermal limit (°C)",
+    y = "Mean resource thermal limit (°C)"
   ) +
   theme_nature()
 
@@ -119,7 +119,7 @@ if (nrow(null_df) > 0 && nrow(summ_df) > 0) {
     geom_vline(data = summ_null, aes(xintercept = observed), color = "red", linewidth = 1.2) +
     facet_wrap(~ trait, ncol = 2, scales = "free") +
     labs(
-      title = "Null model: mean |Predator - Prey| thermal difference",
+      title = "Null model: mean |Consumer - Resource| thermal difference",
       x = "Mean |Δ thermal limit|",
       y = "Count"
     ) +

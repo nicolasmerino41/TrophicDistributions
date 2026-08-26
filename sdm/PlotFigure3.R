@@ -97,6 +97,10 @@ selected$colour <- c("#D55E00", "#E69F00", "#0072B2", "#009E73")
 truth_matrix <- make_matrix(truth_average, "value", degrees, correlations)
 palette <- hcl.colors(100, "Viridis")
 breaks <- seq(0, 1, length.out = length(palette) + 1)
+base_pointsize <- 12
+axis_tick_cex <- 14 / base_pointsize
+axis_label_cex <- 16 / base_pointsize
+scenario_label_cex <- 14 / base_pointsize
 
 draw_figure <- function() {
   layout(matrix(c(1, 2, 3), nrow = 1), widths = c(1.05, 0.13, 1.0))
@@ -104,13 +108,15 @@ draw_figure <- function() {
   par(mar = c(5.0, 5.0, 3.5, 1.0), mgp = c(2.7, 0.8, 0), tcl = -0.25)
   image(seq_along(degrees), seq_along(correlations), t(truth_matrix),
         col = palette, breaks = breaks, axes = FALSE, useRaster = TRUE,
-        xlab = "Consumer in-degree", ylab = bquote(paste("Consumer-resource niche correlation   ", italic(r))),
-        cex.lab = 1.25
+        xlab = "Consumer in-degree",
+        ylab = expression(bold("Consumer-resource niche correlation  ")),
+        cex.lab = axis_label_cex, font.lab = 2
         # main = "Interaction relevance space"
         )
-  axis(1, at = seq_along(degrees), labels = degrees, las = 2, cex.axis = 1.0)
+  axis(1, at = seq_along(degrees), labels = degrees, las = 2, cex.axis = axis_tick_cex)
   y_keep <- unique(round(seq(1, length(correlations), length.out = 5)))
-  axis(2, at = y_keep, labels = sprintf("%.2f", correlations[y_keep]), las = 1)
+  axis(2, at = y_keep, labels = sprintf("%.2f", correlations[y_keep]), las = 3,
+       cex.axis = axis_tick_cex)
   box()
   for (i in seq_len(nrow(selected))) {
     points(match(selected$degree[i], degrees), match(selected$target_r[i], correlations),
@@ -121,7 +127,8 @@ draw_figure <- function() {
   par(mar = c(5.0, 0.7, 3.5, 2.8))
   image(1, seq(0, 1, length.out = 100), matrix(seq(0, 1, length.out = 100), nrow = 1),
         col = palette, axes = FALSE, xlab = "", ylab = "")
-  axis(4, at = seq(0, 1, by = 0.25), labels = sprintf("%.2f", seq(0, 1, by = 0.25)), las = 1)
+  axis(4, at = seq(0, 1, by = 0.25), labels = sprintf("%.2f", seq(0, 1, by = 0.25)),
+       las = 1, cex.axis = axis_tick_cex)
   mtext("Mismatch", side = 3, line = 0.5, cex = 0.78)
   box()
 
@@ -133,7 +140,7 @@ draw_figure <- function() {
   plot(seq_len(nrow(selected)), selected$mean_delta_auc,
        xlim = c(0.55, 4.45), ylim = c(ylim[1] - padding, ylim[2] + padding),
        xaxt = "n", xlab = "", ylab = "Increase in AUC after adding resource distributions",
-       cex.lab = 1.25,
+       cex.lab = axis_label_cex, cex.axis = axis_tick_cex, font.lab = 2,
       #  main = "sdm application: benefit of adding resource distributions",
        pch = 21, bg = selected$colour, col = "white", lwd = 2,
        cex = 2.1)
@@ -149,9 +156,9 @@ draw_figure <- function() {
     bquote(paste("niche ", italic(r), " = ", .(correlation_text)))
   }))
   axis(1, at = seq_len(nrow(selected)), labels = degree_labels,
-       tick = FALSE, line = 0.1, cex.axis = 1.0)
+       tick = FALSE, line = 0.1, cex.axis = scenario_label_cex)
   axis(1, at = seq_len(nrow(selected)), labels = niche_labels,
-       tick = FALSE, line = 1.4, cex.axis = 1.0)
+       tick = FALSE, line = 1.4, cex.axis = scenario_label_cex)
   box()
   mtext("B", side = 3, adj = -0.10, line = 1.2, font = 2, cex = 1.35)
   # mtext("Points are means; bars are 95% intervals",
@@ -159,7 +166,8 @@ draw_figure <- function() {
 }
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
-png(file.path(output_dir, "Figure3.png"), width = 2500, height = 1250, res = 220)
+png(file.path(output_dir, "Figure3.png"), width = 2500, height = 1250, res = 220,
+    pointsize = base_pointsize)
 draw_figure()
 dev.off()
 write.table(selected, file.path(output_dir, "figure3_selected_scenarios.tsv"),

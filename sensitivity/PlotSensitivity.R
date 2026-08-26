@@ -76,7 +76,6 @@ plot_data <- summary %>%
 
 sensitivity_plot <- ggplot(plot_data, aes(x = value_display, y = median_change)) +
   geom_hline(yintercept = 0, colour = "grey45", linewidth = 0.45, linetype = 2) +
-  geom_linerange(aes(ymin = q05_change, ymax = q95_change), linewidth = 0.55, colour = "#6A6A6A") +
   geom_linerange(aes(ymin = q25_change, ymax = q75_change), linewidth = 2.2, colour = "#2C7FB8") +
   geom_point(aes(fill = baseline), shape = 21, size = 3.1, stroke = 0.6, colour = "black") +
   facet_wrap(~sensitivity_variable, scales = "free_x", nrow = 1) +

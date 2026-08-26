@@ -69,14 +69,17 @@ TROPHICDISTRIBUTIONS/
 │   ├── PlotSensitivity.R      # Produce the sensitivity figure
 │   └── README.md
 ├── ThermalAnalysis/
+│   ├── BuildThermalDataset.R
 │   ├── MainThermalAnalysis.jl
-│   └── PlotThermalMetrics.R
+│   ├── PlotThermalMetrics.R
+│   └── Figure5.R
 ├── EmpiricalDegrees/
 │   ├── Data/
 │   │   └── thermal_consumers.csv
 │   ├── Functions.R
 │   ├── MainEmpiricalDegrees.R
 │   ├── PlotEmpiricalDegrees.R
+│   ├── ConsumerValidation.R
 │   └── README.md
 ├── test/
 │   ├── runtests.jl

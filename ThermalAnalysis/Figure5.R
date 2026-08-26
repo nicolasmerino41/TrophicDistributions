@@ -150,7 +150,7 @@ add_metric_label <- function(p, x_pos, y_text, label, fill_col) {
              fontface = "bold",
              fill = fill_col,
              color = "white",
-             label.size = 1.1,
+             linewidth = 1.1,
              label.padding = unit(0.35, "lines"))
 }
 
@@ -228,7 +228,7 @@ make_node_plot <- function(trait, bg_color) {
              fontface = "bold",
              fill = unname(bg_color),
              color = "white",
-             label.size = 1.1,
+             linewidth = 1.1,
              label.padding = unit(0.35, "lines")) +
     
     labs(

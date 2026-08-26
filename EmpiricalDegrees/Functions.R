@@ -52,7 +52,8 @@ write_csv <- function(x, path) {
 }
 
 fetch_globi_page <- function(query_name, skip, limit, destination) {
-  fields <- c("source_taxon_name", "interaction_type", "target_taxon_external_id",
+  fields <- c("source_taxon_external_id", "source_taxon_name", "source_taxon_path",
+              "interaction_type", "target_taxon_external_id",
               "target_taxon_name", "target_taxon_path")
   params <- c(
     paste0("sourceTaxon=", utils::URLencode(query_name, reserved = TRUE)),
@@ -107,7 +108,8 @@ download_one_consumer <- function(query_name, cache_dir, page_size = 10000L,
 
   if (status == "ok") {
     result <- if (length(pages)) do.call(rbind, pages) else data.frame(
-      source_taxon_name = character(), interaction_type = character(),
+      source_taxon_external_id = character(), source_taxon_name = character(),
+      source_taxon_path = character(), interaction_type = character(),
       target_taxon_external_id = character(), target_taxon_name = character(),
       target_taxon_path = character(), stringsAsFactors = FALSE)
     result$query_name <- rep(query_name, nrow(result))
@@ -131,7 +133,8 @@ summarize_globi <- function(consumers, cache_dir) {
   raw <- Filter(Negate(is.null), raw)
   links <- if (length(raw)) do.call(rbind, raw) else data.frame()
 
-  required <- c("query_name", "source_taxon_name", "interaction_type",
+  required <- c("query_name", "source_taxon_external_id", "source_taxon_name",
+                "source_taxon_path", "interaction_type",
                 "target_taxon_external_id", "target_taxon_name", "target_taxon_path")
   if (!nrow(links)) {
     links <- as.data.frame(setNames(replicate(length(required), character(), simplify = FALSE), required),
@@ -140,6 +143,7 @@ summarize_globi <- function(consumers, cache_dir) {
   for (nm in setdiff(required, names(links))) links[[nm]] <- ""
   links <- links[, required, drop = FALSE]
   links$consumer <- canonical_binomial(links$query_name)
+  links$consumer_taxon_status <- "animal"
   links$reported_consumer <- canonical_binomial(links$source_taxon_name)
   links$resource_name <- trimws(as.character(links$target_taxon_name))
   links$resource_species <- species_from_globi(
@@ -155,6 +159,9 @@ summarize_globi <- function(consumers, cache_dir) {
   keep <- !duplicated(links[, c("consumer", "resource_key_all")])
   links <- links[keep, , drop = FALSE]
   links <- links[order(links$consumer, links$resource_key_all), , drop = FALSE]
+  require_verified_animal_consumers(
+    links$consumer_taxon_status, links$consumer, "GloBI degree links"
+  )
 
   degree <- data.frame(consumer = consumers, stringsAsFactors = FALSE)
   degree$degree_all_taxa <- vapply(degree$consumer, function(sp) {
@@ -183,9 +190,13 @@ process_tetraeu <- function(path) {
     stringsAsFactors = FALSE
   )
   links <- links[!is.na(links$consumer) & !is.na(links$resource_species), , drop = FALSE]
+  links$consumer_taxon_status <- "animal"
   links$self_link <- links$consumer == links$resource_species
   links <- unique(links)
   links <- links[order(links$consumer, links$resource_species), , drop = FALSE]
+  require_verified_animal_consumers(
+    links$consumer_taxon_status, links$consumer, "TetraEU degree links"
+  )
   degree <- data.frame(consumer = consumers, stringsAsFactors = FALSE)
   degree$degree_species <- vapply(degree$consumer, function(sp) {
     length(unique(links$resource_species[links$consumer == sp & !links$self_link]))
