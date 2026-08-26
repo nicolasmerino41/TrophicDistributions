@@ -7,7 +7,7 @@ mismatch.
 For every eligible focal consumer of degree 2 and 6 in each simulated community, it:
 
 1. draws up to 50 spatially biased presences from the recursive `AB` truth;
-2. draws 500 biased background cells;
+2. draws 180 (5% of the landscape, 3600 cells) biased background cells;
 3. fits an abiotic logistic model with `E` and `E²`;
 4. fits the same model with true local prey availability added;
 5. evaluates both models against the complete `AB` map over all grid cells.
