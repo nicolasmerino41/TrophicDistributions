@@ -426,7 +426,6 @@ Formica aserva,ctmax,2,0,0.0,false
 Tapinoma sessile,ctmax,10,0,0.0,false
 Galaxias depressiceps,ctmax,19,0,0.0,false
 Anoplolepis gracilipes,ctmax,37,0,0.0,false
-Lepechinia calycina,ctmax,1,0,0.0,false
 Pogonomyrmex californicus,ctmax,4,0,0.0,false
 Sceloporus grammicus,ctmax,1,0,0.0,false
 Sceloporus magister,ctmax,1,0,0.0,false
@@ -1245,7 +1244,6 @@ Chaetodon madagaskariensis,ctmax,6,0,0.0,false
 Plagiolepis pygmaea,ctmax,1,0,0.0,false
 Argia vivida,ctmax,4,0,0.0,false
 Nemurella pictetii,ctmax,2,0,0.0,false
-Pinus sylvestris,ctmax,4,0,0.0,false
 Galaxias brevipinnis,ctmax,15,3,0.2,true
 Tridentiger bifasciatus,ctmax,1,0,0.0,false
 Pseudobarbus burgi,ctmax,5,0,0.0,false
@@ -1767,7 +1765,6 @@ Corophium volutator,ctmax,2,0,0.0,false
 Echinogammarus berilloni,ctmax,1,0,0.0,false
 Pogonichthys macrolepidotus,ctmax,1,0,0.0,false
 Cyphomyrus discorhynchus,ctmax,4,0,0.0,false
-Baccharis pilularis,ctmax,1,1,1.0,true
 Uta stansburiana,ctmax,1,0,0.0,false
 Camponotus chromaiodes,ctmax,2,0,0.0,false
 Parazacco spilurus,ctmax,1,0,0.0,false

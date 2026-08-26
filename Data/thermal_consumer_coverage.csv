@@ -426,7 +426,6 @@ Formica aserva,ctmax,2,0,0,FALSE
 Tapinoma sessile,ctmax,10,0,0,FALSE
 Galaxias depressiceps,ctmax,19,0,0,FALSE
 Anoplolepis gracilipes,ctmax,37,0,0,FALSE
-Lepechinia calycina,ctmax,1,0,0,FALSE
 Pogonomyrmex californicus,ctmax,4,0,0,FALSE
 Sceloporus grammicus,ctmax,1,0,0,FALSE
 Sceloporus magister,ctmax,1,0,0,FALSE
@@ -1245,7 +1244,6 @@ Chaetodon madagaskariensis,ctmax,6,0,0,FALSE
 Plagiolepis pygmaea,ctmax,1,0,0,FALSE
 Argia vivida,ctmax,4,0,0,FALSE
 Nemurella pictetii,ctmax,2,0,0,FALSE
-Pinus sylvestris,ctmax,4,0,0,FALSE
 Galaxias brevipinnis,ctmax,15,3,0.2,TRUE
 Tridentiger bifasciatus,ctmax,1,0,0,FALSE
 Pseudobarbus burgi,ctmax,5,0,0,FALSE
@@ -1767,7 +1765,6 @@ Corophium volutator,ctmax,2,0,0,FALSE
 Echinogammarus berilloni,ctmax,1,0,0,FALSE
 Pogonichthys macrolepidotus,ctmax,1,0,0,FALSE
 Cyphomyrus discorhynchus,ctmax,4,0,0,FALSE
-Baccharis pilularis,ctmax,1,1,1,TRUE
 Uta stansburiana,ctmax,1,0,0,FALSE
 Camponotus chromaiodes,ctmax,2,0,0,FALSE
 Parazacco spilurus,ctmax,1,0,0,FALSE
@@ -1937,7 +1934,6 @@ Terapon jarbua,lt50,22,0,0,FALSE
 Kuhlia sandvicensis,lt50,7,1,0.142857142857143,TRUE
 Planiliza subviridis,lt50,7,0,0,FALSE
 Macropelopia nebulosa,lt50,17,1,0.0588235294117647,TRUE
-Dodonaea viscosa,lt50,13,0,0,FALSE
 Cerastoderma edule,lt50,17,0,0,FALSE
 Spea hammondii,lt50,1,0,0,FALSE
 Atherinops affinis,lt50,21,0,0,FALSE
@@ -1945,7 +1941,6 @@ Argopecten purpuratus,lt50,3,0,0,FALSE
 Tegillarca granosa,lt50,7,0,0,FALSE
 Penaeus vannamei,lt50,2,0,0,FALSE
 Ephemerella subvaria,lt50,2,0,0,FALSE
-Vitis vinifera,lt50,1,0,0,FALSE
 Argia vivida,lt50,4,0,0,FALSE
 Drosophila suzukii,lt50,4,0,0,FALSE
 Balanus crenatus,lt50,18,0,0,FALSE
@@ -1957,7 +1952,6 @@ Ecdyonurus venosus,lt50,6,0,0,FALSE
 Gammarus fasciatus,lt50,2,0,0,FALSE
 Boyeria vinosa,lt50,2,0,0,FALSE
 Etheostoma fonticola,lt50,3,0,0,FALSE
-Metrosideros robusta,lt50,1,0,0,FALSE
 Galaxias fasciatus,lt50,2,0,0,FALSE
 Philodromus aureolus,lt50,1,0,0,FALSE
 Lampsilis fasciola,lt50,1,0,0,FALSE
@@ -1974,15 +1968,9 @@ Tanichthys albonubes,lt50,1,0,0,FALSE
 Siganus javus,lt50,3,0,0,FALSE
 Spinibarbus sinensis,lt50,4,0,0,FALSE
 Silurus meridionalis,lt50,1,0,0,FALSE
-Pittosporum tenuifolium,lt50,1,0,0,FALSE
-Hedera maderensis,lt50,1,0,0,FALSE
-Aegopodium podagraria,lt50,1,0,0,FALSE
-Teucrium chamaedrys,lt50,1,0,0,FALSE
-Impatiens parviflora,lt50,1,0,0,FALSE
 Donax serra,lt50,2,0,0,FALSE
 Tellina tenuis,lt50,1,0,0,FALSE
 Ensis macha,lt50,1,0,0,FALSE
-Vinca minor,lt50,1,0,0,FALSE
 Lepomis gibbosus,ctmin,1131,2,0.0017683465959328,TRUE
 Notolabrus celidotus,ctmin,32,0,0,FALSE
 Lacerta agilis,ctmin,2520,5,0.00198412698412698,TRUE
@@ -2114,7 +2102,6 @@ Poecilia caucana,ctmin,3,0,0,FALSE
 Schizothorax richardsonii,ctmin,4,0,0,FALSE
 Spinibarbus sinensis,ctmin,4,0,0,FALSE
 Stegastes acapulcoensis,ctmin,2,0,0,FALSE
-Letharia vulpina,ctmin,1,0,0,FALSE
 Alcolapia grahami,ctmin,2,0,0,FALSE
 Cirrhinus cirrhosus,ctmin,1,0,0,FALSE
 Kuhlia mugil,ctmin,1,0,0,FALSE

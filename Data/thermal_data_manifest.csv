@@ -1,12 +1,15 @@
 item,value
-Build time UTC,2026-08-19 10:07:08 UTC
+Build time UTC,2026-08-26 13:51:03 UTC
 GloBI endpoint,https://api.globalbioticinteractions.org/interaction.csv
 GloBI interaction umbrella,eats
-GloBI queried species,4541
+GloBI queried species,4251
 TetraEU source,Data/TetraEU_pairwise_interactions.csv
 Trait sources,ThermoFresh;GlobTherm;ComteOlden
 Trait selection priority,ThermoFresh > ComteOlden > GlobTherm
-Species in master,19912
-Species with usable traits,4518
-Recorded consumer-resource pairs,164379
-Analysis-ready pairs,5227
+Species in master,19892
+Species with usable traits,4519
+Recorded consumer-resource pairs,164346
+Analysis-ready pairs,5226
+Consumer eligibility rule,Only taxonomically verified animals; all taxa remain eligible as resources
+Excluded non-animal consumer candidates,272
+Excluded unresolved consumer candidates,18

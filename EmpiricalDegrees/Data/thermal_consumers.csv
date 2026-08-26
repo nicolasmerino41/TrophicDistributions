@@ -1,484 +1,483 @@
-consumer,metrics,n_metrics
-Abramis brama,ctmax,1
-Abudefduf saxatilis,ctmax,1
-Acanthocybium solandri,ctmax,1
-Acanthogobius flavimanus,ctmax,1
-Acanthopagrus schlegelii,ctmax,1
-Acipenser brevirostrum,ltmax,1
-Acipenser fulvescens,ctmax,1
-Acipenser gueldenstaedtii,ctmax,1
-Acipenser nudiventris,ctmax,1
-Acipenser persicus,ctmax,1
-Acipenser stellatus,ctmax,1
-Acipenser sturio,ctmax,1
-Acipenser transmontanus,ctmax,1
-Agabus bipustulatus,ctmax,1
-Agkistrodon contortrix,ctmax;ctmin,2
-Agnetina capitata,ctmax,1
-Alburnus alburnus,ctmax,1
-Alburnus arborella,ctmax,1
-Alosa aestivalis,ctmax,1
-Alosa alosa,ctmax,1
-Alosa fallax,ctmax,1
-Alosa macedonica,ctmax,1
-Alosa mediocris,ctmax,1
-Alosa pseudoharengus,ctmax;lt50,2
-Alosa sapidissima,ctmax;ltmax,2
-Ambloplites rupestris,ctmax,1
-Ameiurus catus,ctmax,1
-Ameiurus nebulosus,ctmax;lt50,2
-Amia calva,ctmax,1
-Anax imperator,ctmax,1
-Anax junius,ctmax,1
-Anax longipes,ctmax,1
-Anaxyrus boreas,ctmax,1
-Anchoa mitchilli,ctmax,1
-Anguilla anguilla,ctmax;ctmin;ltmax,3
-Anguilla australis,ctmax;lt50,2
-Anguilla dieffenbachii,ctmax;lt50,2
-Anguilla marmorata,ctmax,1
-Anguilla rostrata,ctmax,1
-Anolis carolinensis,ctmax,1
-Anolis cristatellus,ctmax;ctmin,2
-Anolis sagrei,ctmax,1
-Apalone ferox,ctmax,1
-Apeltes quadracus,ctmax,1
-Aplodinotus grunniens,ctmax;lt50,2
-Archosargus probatocephalus,ctmax,1
-Arizona elegans,ctmax,1
-Armadillidium vulgare,ctmax,1
-Astacus leptodactylus,ctmax,1
-Astyanax bimaculatus,ctmax,1
-Atherinella brasiliensis,ctmax,1
-Atractosteus spatula,ctmax,1
-Austrelaps superbus,ctmax;ctmin,2
-Auxis rochei,ctmax,1
-Auxis thazard,ctmax,1
-Babka gymnotrachelus,ctmax,1
-Baccharis pilularis,ctmax,1
-Bagrus docmak,ctmax,1
-Barbatula barbatula,ctmax,1
-Barbus barbus,ctmax,1
-Barbus caninus,ctmax,1
-Barbus plebejus,ctmax,1
-Bathygobius soporator,ctmax,1
-Belonesox belizanus,ctmax,1
-Beryx splendens,ctmax,1
-Blicca bjoerkna,ctmax,1
-Bodianus rufus,ctmax,1
-Brachyponera chinensis,ctmax,1
-Butis butis,ctmax,1
-Calamus brachysomus,ctmax,1
-Calathus melanocephalus,ctmin,1
-Canthigaster rostrata,ctmax,1
-Carasobarbus canis,ctmax,1
-Carassius carassius,ctmax;ctmin,2
-Carassius gibelio,ctmax,1
-Carcinus maenas,ctmax,1
-Catostomus catostomus,ctmax,1
-Catostomus commersonii,ctmax,1
-Catostomus macrocheilus,ctmax,1
-Centrolabrus exoletus,ctmax,1
-Centropristis striata,ctmax,1
-Chaenocephalus aceratus,ctmax,1
-Channa marulius,ctmax,1
-Channa micropeltes,ctmax,1
-Channa punctata,ctmax,1
-Channa striata,ctmax,1
-Chanodichthys erythropterus,ctmax,1
-Chanos chanos,ctmax,1
-Charina bottae,ctmax,1
-Cheimarrichthys fosteri,lt50,1
-Chelon ramada,ctmax,1
-Chelonodon patoca,ctmax,1
-Chionodraco rastrospinosus,ctmax,1
-Chitala chitala,ctmax,1
-Chondrostoma nasus,ctmax,1
-Chondrostoma soetta,ctmax,1
-Chrosomus neogaeus,ctmax,1
-Chrysemys picta,ctmax,1
-Clarias anguillaris,ctmax,1
-Clarias batrachus,ctmax,1
-Clarias gariepinus,ctmax,1
-Clarias stappersii,ctmax,1
-Clupea harengus,ctmax,1
-Clupea pallasii,ctmax,1
-Cobitis bilineata,ctmax,1
-Cobitis taenia,ctmax,1
-Coenagrion puella,ctmax,1
-Coluber constrictor,ctmax,1
-Cordulegaster boltonii,ctmax,1
-Coregonus albula,ctmax,1
-Coregonus artedi,ctmax,1
-Coregonus autumnalis,ctmax,1
-Coregonus clupeaformis,ctmax;lt50,2
-Coregonus lavaretus,ctmax,1
-Coregonus peled,ctmax,1
-Coryphoblennius galerita,ctmax,1
-Cottus aleuticus,ctmax,1
-Cottus asper,ctmax,1
-Cottus cognatus,ctmax,1
-Cottus gobio,ctmax,1
-Crangon crangon,ctmax,1
-Crangonyx pseudogracilis,ctmax;ltmax,2
-Crematogaster lineolata,ctmax,1
-Crotalus atrox,ctmax,1
-Crotalus cerastes,ctmax,1
-Crotalus scutulatus,ctmax,1
-Crotalus viridis,ctmax,1
-Ctenolabrus rupestris,ctmax,1
-Ctenotus pantherinus,ctmax,1
-Culaea inconstans,ctmax,1
-Cynoscion nebulosus,ctmax,1
-Cyprinella lutrensis,ctmax,1
-Cyprinella spiloptera,ctmax,1
-Cyprinus carpio,ctmax;ctmin;ltmax,3
-Danio rerio,ctmax,1
-Dasyatis sabina,ctmax,1
-Dicentrarchus labrax,ctmax;ctmin,2
-Dikerogammarus villosus,ctmax;lt50;ltmax,3
-Dinocras cephalotes,ctmax,1
-Diplectrum formosum,ctmax,1
-Diplodus sargus,ctmax,1
-Diplodus vulgaris,ctmax,1
-Dorosoma cepedianum,ctmax;lt50,2
-Eleotris acanthopomus,ctmax,1
-Eleotris fusca,ctmax,1
-Eleutherodactylus coqui,ctmax,1
-Elgaria multicarinata,ctmax;ctmin,2
-Elopichthys bambusa,ctmax,1
-Elops hawaiensis,ctmax,1
-Elops machnata,ctmax,1
-Elops saurus,ctmax,1
-Enneacanthus gloriosus,ctmax,1
-Epinephelus tauvina,ctmax,1
-Erimyzon oblongus,ctmax,1
-Erythemis simplicicollis,ctmax,1
-Esox lucius,ctmax;lt50,2
-Esox masquinongy,ctmax,1
-Esox niger,ctmax,1
-Etheostoma olmstedi,ctmax,1
-Etroplus maculatus,ctmax,1
-Euophrys frontalis,ctmax,1
-Euthynnus affinis,ctmax,1
-Euthynnus alletteratus,ctmax,1
-Faxonius rusticus,ctmax,1
-Formica sanguinea,ctmax,1
-Formica subsericea,ctmax,1
-Fundulus diaphanus,ctmax,1
-Fundulus grandis,ctmax,1
-Gadus morhua,ctmax,1
-Galaxias brevipinnis,ctmax,1
-Galaxias fasciatus,ctmax,1
-Galaxias vulgaris,ctmax,1
-Gambelia wislizenii,ctmin,1
-Gambusia affinis,ctmax;ctmin,2
-Gammarus pulex,ctmax;lt50;ltmax,3
-Gasterosteus aculeatus,ctmax,1
-Gillichthys mirabilis,ctmax,1
-Girella nigricans,lt50,1
-Glossiphonia complanata,ltmax,1
-Gobio gobio,ctmax,1
-Gobiocichla ethelwynnae,ctmax,1
-Gobiomorphus breviceps,ctmax,1
-Gobiomorphus cotidianus,ctmax;lt50,2
-Gobius cobitis,ctmax,1
-Gobius niger,ctmax,1
-Gobius paganellus,ctmax;lt50,2
-Gymnarchus niloticus,ctmax,1
-Gymnocephalus cernua,ctmax,1
-Haemulon flavolineatum,ctmax,1
-Hagenius brevistylus,ctmax,1
-Halichoeres bivittatus,ctmax,1
-Halichoeres garnoti,ctmax,1
-Halichoeres maculipinna,ctmax,1
-Halichoeres poeyi,ctmax,1
-Halichoeres radiatus,ctmax,1
-Halichoeres semicinctus,ctmax,1
-Helobdella stagnalis,ctmax;ltmax,2
-Heloderma suspectum,ctmax,1
-Hemachatus haemachatus,ctmax,1
-Hemidactylus frenatus,ctmax;ctmin,2
-Hemidactylus turcicus,ctmax,1
-Hepsetus odoe,ctmax,1
-Hiodon alosoides,ctmax,1
-Holacanthus passer,ctmax,1
-Hucho hucho,ctmax,1
-Huso huso,ctmax,1
-Hydrocynus brevis,ctmax,1
-Hydrocynus forskahlii,ctmax,1
-Hydrocynus vittatus,ctmax,1
-Hydropsyche pellucidula,ctmax;ltmax,2
-Hypomesus olidus,ctmax,1
-Hypoplectrus aberrans,ctmax,1
-Hypoplectrus nigricans,ctmax,1
-Hypsoblennius hentz,ctmax,1
-Ictalurus furcatus,ctmax,1
-Ictalurus punctatus,ctmax;ctmin;ltmax,3
-Ischnura elegans,ctmax,1
-Istiompax indica,ctmax,1
-Istiophorus platypterus,ctmax,1
-Kajikia albida,ctmax,1
-Kajikia audax,ctmax,1
-Katsuwonus pelamis,ctmax,1
-Konia eisentrauti,ctmax,1
-Kuhlia sandvicensis,ctmax;lt50,2
-Labroides dimidiatus,ctmax,1
-Labrus bergylta,ctmax,1
-Labrus mixtus,ctmax,1
-Lacerta agilis,ctmax;ctmin,2
-Lachnolaimus maximus,ctmax,1
-Lagodon rhomboides,ctmax,1
-Lampropeltis zonata,ctmax,1
-Lateolabrax japonicus,ctmax,1
-Lates calcarifer,ctmax;ltmax,2
-Lates niloticus,ctmax,1
-Leiostomus xanthurus,ctmax,1
-Lepidiolamprologus elongatus,ctmax,1
-Lepidiolamprologus profundicola,ctmax,1
-Lepidonotothen squamifrons,ctmax,1
-Lepidopsetta bilineata,ctmax,1
-Lepisosteus osseus,ctmax,1
-Lepomis auritus,ctmax,1
-Lepomis cyanellus,ctmax;ctmin,2
-Lepomis gibbosus,ctmax;ctmin,2
-Lepomis gulosus,ctmax,1
-Lepomis macrochirus,ctmax;lt50;ltmax,3
-Leptocottus armatus,ctmax,1
-Lethocerus americanus,ctmax,1
-Leucaspius delineatus,ctmax,1
-Leuciscus aspius,ctmax,1
-Leuciscus idus,ctmax,1
-Leuciscus leuciscus,ctmax,1
-Limnothrissa miodon,ctmax,1
-Linepithema humile,ctmax;ctmin,2
-Liopsetta glacialis,ctmax,1
-Lipophrys pholis,ctmax,1
-Lipophrys trigloides,ctmax,1
-Littorina littorea,lt50,1
-Littorina saxatilis,lt50,1
-Lota lota,ctmax;ctmin,2
-Lucania parva,ctmax;lt50,2
-Luciobarbus guiraonis,ctmax,1
-Lutjanus apodus,ctmax,1
-Lutjanus guttatus,ctmax;ctmin,2
-Luxilus cornutus,ctmax,1
-Maccullochella peelii,ctmax,1
-Macropelopia nebulosa,lt50,1
-Makaira nigricans,ctmax,1
-Masticophis lateralis,ctmax,1
-Megalops cyprinoides,ctmax,1
-Melanotaenia splendida,ctmax,1
-Menidia beryllina,ctmax,1
-Menidia menidia,lt50,1
-Menippe nodifrons,ctmax,1
-Metacarcinus magister,lt50,1
-Micropterus coosae,ctmax,1
-Micropterus dolomieu,ctmax,1
-Micropterus floridanus,ctmax,1
-Micropterus punctulatus,ctmax,1
-Micropterus salmoides,ctmax;lt50;ctmin,3
-Microthrissa congica,ctmax,1
-Monopterus albus,ctmax,1
-Morone americana,ctmax,1
-Morone chrysops,ctmax;lt50,2
-Morone mississippiensis,ctmax,1
-Morone saxatilis,ctmax;lt50,2
-Mullus surmuletus,ctmax;lt50,2
-Myoxocephalus quadricornis,ctmax,1
-Mytilus edulis,lt50,1
-Nandus nandus,ctmax,1
-Neogobius melanostomus,ctmax,1
-Neolamprologus meeli,ctmax,1
-Neolamprologus pulcher,ctmax,1
-Neolamprologus savoryi,ctmax,1
-Notechis scutatus,ctmax,1
-Notemigonus crysoleucas,ctmax,1
-Notothenia coriiceps,ctmax,1
-Notothenia rossii,ctmax,1
-Noturus flavus,ctmax,1
-Noturus stigmosus,ctmax,1
-Nucella lapillus,lt50,1
-Ocyurus chrysurus,ctmax,1
-Odontaster validus,ctmax,1
-Oedothorax apicatus,ctmax,1
-Oncorhynchus clarkii,ctmax;lt50,2
-Oncorhynchus gorbuscha,ctmax,1
-Oncorhynchus keta,ctmax;ltmax,2
-Oncorhynchus kisutch,ctmax;lt50,2
-Oncorhynchus mykiss,ctmax;ctmin,2
-Oncorhynchus nerka,ctmax,1
-Oncorhynchus tshawytscha,ctmax;lt50,2
-Oreochromis andersonii,ctmax,1
-Oreochromis esculentus,ctmax,1
-Oreochromis mossambicus,ctmax,1
-Oreochromis niloticus,ctmax,1
-Osmerus dentex,ctmax,1
-Osmerus eperlanus,ctmax,1
-Osmerus mordax,ctmax,1
-Pachycara brachycephalum,ctmax,1
-Pachygrapsus marmoratus,ctmax,1
-Padogobius bonelli,ctmax,1
-Pagellus bogaraveo,ctmax,1
-Pagrus auratus,ctmax,1
-Pagrus major,ctmax,1
-Pagurus bernhardus,ctmax,1
-Palaemon elegans,ctmax,1
-Palaemon longirostris,ctmax,1
-Palaemon macrodactylus,ctmax,1
-Pangasius pangasius,ctmax,1
-Parachondrostoma toxostoma,ctmax,1
-Paragnetina media,ctmax;lt50,2
-Paralabrax clathratus,ctmax,1
-Paralichthys californicus,ctmax,1
-Paralichthys lethostigma,ctmax,1
-Paralichthys olivaceus,ctmax,1
-Parasuta flagellum,ctmax;ctmin,2
-Parophrys vetulus,ctmax,1
-Pegusa lascaris,ctmax,1
-Pelecus cultratus,ctmax,1
-Perca flavescens,ctmax,1
-Perca fluviatilis,ctmax,1
-Perccottus glenii,ctmax,1
-Perissodus microlepis,ctmax,1
-Petromyzon marinus,ctmax,1
-Petrus rupestris,ctmax,1
-Phoxinus phoxinus,ctmax,1
-Phyllorhynchus decurtatus,ctmax,1
-Pimephales notatus,ctmax,1
-Pimephales promelas,ctmax,1
-Pituophis catenifer,ctmax,1
-Platichthys flesus,ctmax;lt50;ltmax,3
-Plecodus straeleni,ctmax,1
-Pleuronectes platessa,ctmax;lt50;ltmax,3
-Pogonomyrmex rugosus,ctmax,1
-Pomacea canaliculata,ltmax,1
-Pomatoschistus microps,ctmax,1
-Pomatoschistus minutus,ctmax,1
-Pomoxis annularis,ctmax,1
-Pomoxis nigromaculatus,ctmax,1
-Ponticola kessleri,ctmax,1
-Potamopyrgus antipodarum,ctmax,1
-Prenolepis imparis,ctmax,1
-Pristolepis fasciata,ctmax,1
-Probarbus jullieni,ctmax,1
-Prognathodes aculeatus,ctmax,1
-Prosopium williamsoni,ctmax;lt50,2
-Pseudacris regilla,ctmax,1
-Pseudechis porphyriacus,ctmin,1
-Pseudonaja nuchalis,ctmin,1
-Pseudonaja textilis,ctmax;ctmin,2
-Pseudopleuronectes americanus,ctmax;lt50,2
-Pseudorasbora parva,ctmax,1
-Pterogymnus laniarius,ctmax,1
-Pterois volitans,ctmax,1
-Ptychocheilus grandis,ctmax,1
-Ptychocheilus oregonensis,ctmax,1
-Pygocentrus nattereri,ctmax,1
-Pylodictis olivaris,ctmax,1
-Regina alleni,ctmax,1
-Rhinichthys atratulus,ctmax;lt50,2
-Rhinocheilus lecontei,ctmax,1
-Rhodeus amarus,ctmax,1
-Rhyacophila dorsalis,ctmax;ltmax,2
-Richardsonius balteatus,ctmax,1
-Rutilus aula,ctmax,1
-Rutilus pigus,ctmax,1
-Rutilus rutilus,ctmax;lt50,2
-Sabanejewia larvata,ctmax,1
-Salariopsis fluviatilis,ctmax,1
-Salmo labrax,ctmax,1
-Salmo marmoratus,ctmax,1
-Salmo salar,ctmax;ctmin,2
-Salmo trutta,ctmax,1
-Salvelinus alpinus,ctmax;lt50,2
-Salvelinus fontinalis,ctmax,1
-Salvelinus leucomaenis,ctmax,1
-Salvelinus namaycush,ctmax,1
-Sander canadensis,ctmax,1
-Sander lucioperca,ctmax,1
-Sander vitreus,ctmax,1
-Sander volgensis,ctmax,1
-Sarda australis,ctmax,1
-Sarda chiliensis,ctmax,1
-Sarda orientalis,ctmax,1
-Sarda sarda,ctmax,1
-Sardinops sagax,ctmax,1
-Sarmarutilus rubilio,ctmax,1
-Scardinius erythrophthalmus,ctmax,1
-Schilbe intermedius,ctmax,1
-Schilbe mystus,ctmax,1
-Sciaenops ocellatus,ctmax;ctmin,2
-Scomber australasicus,ctmax,1
-Scomber scombrus,ctmax,1
-Scomberomorus commerson,ctmax,1
-Scomberomorus munroi,ctmax,1
-Scomberomorus niphonius,ctmax,1
-Scomberomorus queenslandicus,ctmax,1
-Scomberomorus regalis,ctmax,1
-Scomberomorus tritor,ctmax,1
-Scorpaena porcus,ctmax;lt50,2
-Semotilus atromaculatus,ctmax,1
-Seriola lalandi,ctmax,1
-Serranochromis angusticeps,ctmax,1
-Serranus atricauda,ctmax,1
-Sialis lutaria,ctmax;ltmax,2
-Silurus asotus,ctmax,1
-Silurus glanis,ctmax,1
-Silurus meridionalis,ctmax,1
-Solea solea,ctmax,1
-Solenopsis invicta,ctmax,1
-Sparus aurata,ctmax,1
-Sperata seenghala,ctmax,1
-Sphoeroides maculatus,ctmax;lt50,2
-Sphoeroides spengleri,ctmax,1
-Spondyliosoma cantharus,ctmax,1
-Squalius cephalus,ctmax,1
-Stenodus leucichthys,ctmax,1
-Stenotomus chrysops,ctmax,1
-Sterechinus neumayeri,ctmax,1
-Steromphala cineraria,lt50,1
-Strongylura marina,ctmax,1
-Symphodus melops,ctmax,1
-Syngnathus acus,ctmax,1
-Synodontis multipunctatus,ctmax,1
-Synodontis njassae,ctmax,1
-Synodontis petricola,ctmax,1
-Synodontis zambezensis,ctmax,1
-Tautoga onitis,ctmax,1
-Tautogolabrus adspersus,ctmax,1
-Telestes muticellus,ctmax,1
-Telestes souffia,ctmax,1
-Terapon jarbua,ctmax,1
-Tetrapturus angustirostris,ctmax,1
-Thalassoma bifasciatum,ctmax,1
-Thamnophis elegans,ctmax;ctmin,2
-Thamnophis marcianus,ctmin,1
-Thamnophis sirtalis,ctmax;ctmin,2
-Thunnus alalunga,ctmax,1
-Thunnus albacares,ctmax,1
-Thunnus maccoyii,ctmax,1
-Thunnus obesus,ctmax,1
-Thunnus thynnus,ctmax,1
-Thymallus arcticus,ctmax,1
-Thymallus thymallus,ctmax,1
-Tibellus maritimus,ctmax;lt50,2
-Tinca tinca,ctmax,1
-Tor tor,ctmax,1
-Trachurus japonicus,ctmax,1
-Trematomus bernacchii,ctmax,1
-Trematomus hansoni,ctmax;lt50,2
-Trematomus pennellii,ctmax,1
-Trimeresurus gracilis,ctmax;ctmin,2
-Trinectes maculatus,ctmax,1
-Tylochromis polylepis,ctmax,1
-Tylochromis pulcher,ctmax,1
-Umbra limi,ctmax,1
-Umbra pygmaea,ctmax,1
-Varanus gouldii,ctmax,1
-Wallago attu,ctmax,1
-Xiphias gladius,ctmax,1
-Xyrauchen texanus,ctmax,1
-Xyrichtys novacula,ctmax,1
-Zoarces viviparus,ctmax,1
-Zora spinimana,ctmax,1
+consumer,consumer_taxon_status,consumer_taxon_evidence,metrics,n_metrics
+Abramis brama,animal,verified thermal-source taxonomy,ctmax,1
+Abudefduf saxatilis,animal,verified thermal-source taxonomy,ctmax,1
+Acanthocybium solandri,animal,verified thermal-source taxonomy,ctmax,1
+Acanthogobius flavimanus,animal,verified thermal-source taxonomy,ctmax,1
+Acanthopagrus schlegelii,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser brevirostrum,animal,verified thermal-source taxonomy,ltmax,1
+Acipenser fulvescens,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser gueldenstaedtii,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser nudiventris,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser persicus,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser stellatus,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser sturio,animal,verified thermal-source taxonomy,ctmax,1
+Acipenser transmontanus,animal,verified thermal-source taxonomy,ctmax,1
+Agabus bipustulatus,animal,verified thermal-source taxonomy,ctmax,1
+Agkistrodon contortrix,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Agnetina capitata,animal,verified thermal-source taxonomy,ctmax,1
+Alburnus alburnus,animal,verified thermal-source taxonomy,ctmax,1
+Alburnus arborella,animal,verified thermal-source taxonomy,ctmax,1
+Alosa aestivalis,animal,verified thermal-source taxonomy,ctmax,1
+Alosa alosa,animal,verified thermal-source taxonomy,ctmax,1
+Alosa fallax,animal,verified thermal-source taxonomy,ctmax,1
+Alosa macedonica,animal,verified thermal-source taxonomy,ctmax,1
+Alosa mediocris,animal,verified thermal-source taxonomy,ctmax,1
+Alosa pseudoharengus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Alosa sapidissima,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Ambloplites rupestris,animal,verified thermal-source taxonomy,ctmax,1
+Ameiurus catus,animal,verified thermal-source taxonomy,ctmax,1
+Ameiurus nebulosus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Amia calva,animal,verified thermal-source taxonomy,ctmax,1
+Anax imperator,animal,verified thermal-source taxonomy,ctmax,1
+Anax junius,animal,verified thermal-source taxonomy,ctmax,1
+Anax longipes,animal,verified thermal-source taxonomy,ctmax,1
+Anaxyrus boreas,animal,verified thermal-source taxonomy,ctmax,1
+Anchoa mitchilli,animal,verified thermal-source taxonomy,ctmax,1
+Anguilla anguilla,animal,verified thermal-source taxonomy,ctmax;ctmin;ltmax,3
+Anguilla australis,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Anguilla dieffenbachii,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Anguilla marmorata,animal,verified thermal-source taxonomy,ctmax,1
+Anguilla rostrata,animal,verified thermal-source taxonomy,ctmax,1
+Anolis carolinensis,animal,verified thermal-source taxonomy,ctmax,1
+Anolis cristatellus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Anolis sagrei,animal,verified thermal-source taxonomy,ctmax,1
+Apalone ferox,animal,verified thermal-source taxonomy,ctmax,1
+Apeltes quadracus,animal,verified thermal-source taxonomy,ctmax,1
+Aplodinotus grunniens,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Archosargus probatocephalus,animal,verified thermal-source taxonomy,ctmax,1
+Arizona elegans,animal,verified thermal-source taxonomy,ctmax,1
+Armadillidium vulgare,animal,verified thermal-source taxonomy,ctmax,1
+Astacus leptodactylus,animal,verified thermal-source taxonomy,ctmax,1
+Astyanax bimaculatus,animal,verified thermal-source taxonomy,ctmax,1
+Atherinella brasiliensis,animal,verified thermal-source taxonomy,ctmax,1
+Atractosteus spatula,animal,verified thermal-source taxonomy,ctmax,1
+Austrelaps superbus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Auxis rochei,animal,verified thermal-source taxonomy,ctmax,1
+Auxis thazard,animal,verified thermal-source taxonomy,ctmax,1
+Babka gymnotrachelus,animal,verified thermal-source taxonomy,ctmax,1
+Bagrus docmak,animal,verified thermal-source taxonomy,ctmax,1
+Barbatula barbatula,animal,verified thermal-source taxonomy,ctmax,1
+Barbus barbus,animal,verified thermal-source taxonomy,ctmax,1
+Barbus caninus,animal,verified thermal-source taxonomy,ctmax,1
+Barbus plebejus,animal,verified thermal-source taxonomy,ctmax,1
+Bathygobius soporator,animal,verified thermal-source taxonomy,ctmax,1
+Belonesox belizanus,animal,verified thermal-source taxonomy,ctmax,1
+Beryx splendens,animal,verified thermal-source taxonomy,ctmax,1
+Blicca bjoerkna,animal,verified thermal-source taxonomy,ctmax,1
+Bodianus rufus,animal,verified thermal-source taxonomy,ctmax,1
+Brachyponera chinensis,animal,verified thermal-source taxonomy,ctmax,1
+Butis butis,animal,verified thermal-source taxonomy,ctmax,1
+Calamus brachysomus,animal,verified thermal-source taxonomy,ctmax,1
+Calathus melanocephalus,animal,verified thermal-source taxonomy,ctmin,1
+Canthigaster rostrata,animal,verified thermal-source taxonomy,ctmax,1
+Carasobarbus canis,animal,verified thermal-source taxonomy,ctmax,1
+Carassius carassius,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Carassius gibelio,animal,verified thermal-source taxonomy,ctmax,1
+Carcinus maenas,animal,verified thermal-source taxonomy,ctmax,1
+Catostomus catostomus,animal,verified thermal-source taxonomy,ctmax,1
+Catostomus commersonii,animal,verified thermal-source taxonomy,ctmax,1
+Catostomus macrocheilus,animal,verified thermal-source taxonomy,ctmax,1
+Centrolabrus exoletus,animal,verified thermal-source taxonomy,ctmax,1
+Centropristis striata,animal,verified thermal-source taxonomy,ctmax,1
+Chaenocephalus aceratus,animal,verified thermal-source taxonomy,ctmax,1
+Channa marulius,animal,verified thermal-source taxonomy,ctmax,1
+Channa micropeltes,animal,verified thermal-source taxonomy,ctmax,1
+Channa punctata,animal,verified thermal-source taxonomy,ctmax,1
+Channa striata,animal,verified thermal-source taxonomy,ctmax,1
+Chanodichthys erythropterus,animal,verified thermal-source taxonomy,ctmax,1
+Chanos chanos,animal,verified thermal-source taxonomy,ctmax,1
+Charina bottae,animal,verified thermal-source taxonomy,ctmax,1
+Cheimarrichthys fosteri,animal,verified thermal-source taxonomy,lt50,1
+Chelon ramada,animal,verified thermal-source taxonomy,ctmax,1
+Chelonodon patoca,animal,verified thermal-source taxonomy,ctmax,1
+Chionodraco rastrospinosus,animal,verified thermal-source taxonomy,ctmax,1
+Chitala chitala,animal,verified thermal-source taxonomy,ctmax,1
+Chondrostoma nasus,animal,verified thermal-source taxonomy,ctmax,1
+Chondrostoma soetta,animal,verified thermal-source taxonomy,ctmax,1
+Chrosomus neogaeus,animal,verified thermal-source taxonomy,ctmax,1
+Chrysemys picta,animal,verified thermal-source taxonomy,ctmax,1
+Clarias anguillaris,animal,verified thermal-source taxonomy,ctmax,1
+Clarias batrachus,animal,verified thermal-source taxonomy,ctmax,1
+Clarias gariepinus,animal,verified thermal-source taxonomy,ctmax,1
+Clarias stappersii,animal,verified thermal-source taxonomy,ctmax,1
+Clupea harengus,animal,verified thermal-source taxonomy,ctmax,1
+Clupea pallasii,animal,verified thermal-source taxonomy,ctmax,1
+Cobitis bilineata,animal,verified thermal-source taxonomy,ctmax,1
+Cobitis taenia,animal,verified thermal-source taxonomy,ctmax,1
+Coenagrion puella,animal,verified thermal-source taxonomy,ctmax,1
+Coluber constrictor,animal,verified thermal-source taxonomy,ctmax,1
+Cordulegaster boltonii,animal,verified thermal-source taxonomy,ctmax,1
+Coregonus albula,animal,verified thermal-source taxonomy,ctmax,1
+Coregonus artedi,animal,verified thermal-source taxonomy,ctmax,1
+Coregonus autumnalis,animal,verified thermal-source taxonomy,ctmax,1
+Coregonus clupeaformis,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Coregonus lavaretus,animal,verified thermal-source taxonomy,ctmax,1
+Coregonus peled,animal,verified thermal-source taxonomy,ctmax,1
+Coryphoblennius galerita,animal,verified thermal-source taxonomy,ctmax,1
+Cottus aleuticus,animal,verified thermal-source taxonomy,ctmax,1
+Cottus asper,animal,verified thermal-source taxonomy,ctmax,1
+Cottus cognatus,animal,verified thermal-source taxonomy,ctmax,1
+Cottus gobio,animal,verified thermal-source taxonomy,ctmax,1
+Crangon crangon,animal,verified thermal-source taxonomy,ctmax,1
+Crangonyx pseudogracilis,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Crematogaster lineolata,animal,verified thermal-source taxonomy,ctmax,1
+Crotalus atrox,animal,verified thermal-source taxonomy,ctmax,1
+Crotalus cerastes,animal,verified thermal-source taxonomy,ctmax,1
+Crotalus scutulatus,animal,verified thermal-source taxonomy,ctmax,1
+Crotalus viridis,animal,verified thermal-source taxonomy,ctmax,1
+Ctenolabrus rupestris,animal,verified thermal-source taxonomy,ctmax,1
+Ctenotus pantherinus,animal,verified thermal-source taxonomy,ctmax,1
+Culaea inconstans,animal,verified thermal-source taxonomy,ctmax,1
+Cynoscion nebulosus,animal,verified thermal-source taxonomy,ctmax,1
+Cyprinella lutrensis,animal,verified thermal-source taxonomy,ctmax,1
+Cyprinella spiloptera,animal,verified thermal-source taxonomy,ctmax,1
+Cyprinus carpio,animal,verified thermal-source taxonomy,ctmax;ctmin;ltmax,3
+Danio rerio,animal,verified thermal-source taxonomy,ctmax,1
+Dasyatis sabina,animal,verified thermal-source taxonomy,ctmax,1
+Dicentrarchus labrax,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Dikerogammarus villosus,animal,verified thermal-source taxonomy,ctmax;lt50;ltmax,3
+Dinocras cephalotes,animal,verified thermal-source taxonomy,ctmax,1
+Diplectrum formosum,animal,verified thermal-source taxonomy,ctmax,1
+Diplodus sargus,animal,verified thermal-source taxonomy,ctmax,1
+Diplodus vulgaris,animal,verified thermal-source taxonomy,ctmax,1
+Dorosoma cepedianum,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Eleotris acanthopomus,animal,verified thermal-source taxonomy,ctmax,1
+Eleotris fusca,animal,verified thermal-source taxonomy,ctmax,1
+Eleutherodactylus coqui,animal,verified thermal-source taxonomy,ctmax,1
+Elgaria multicarinata,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Elopichthys bambusa,animal,verified thermal-source taxonomy,ctmax,1
+Elops hawaiensis,animal,verified thermal-source taxonomy,ctmax,1
+Elops machnata,animal,verified thermal-source taxonomy,ctmax,1
+Elops saurus,animal,verified thermal-source taxonomy,ctmax,1
+Enneacanthus gloriosus,animal,verified thermal-source taxonomy,ctmax,1
+Epinephelus tauvina,animal,verified thermal-source taxonomy,ctmax,1
+Erimyzon oblongus,animal,verified thermal-source taxonomy,ctmax,1
+Erythemis simplicicollis,animal,verified thermal-source taxonomy,ctmax,1
+Esox lucius,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Esox masquinongy,animal,verified thermal-source taxonomy,ctmax,1
+Esox niger,animal,verified thermal-source taxonomy,ctmax,1
+Etheostoma olmstedi,animal,verified thermal-source taxonomy,ctmax,1
+Etroplus maculatus,animal,verified thermal-source taxonomy,ctmax,1
+Euophrys frontalis,animal,verified thermal-source taxonomy,ctmax,1
+Euthynnus affinis,animal,verified thermal-source taxonomy,ctmax,1
+Euthynnus alletteratus,animal,verified thermal-source taxonomy,ctmax,1
+Faxonius rusticus,animal,verified thermal-source taxonomy,ctmax,1
+Formica sanguinea,animal,verified thermal-source taxonomy,ctmax,1
+Formica subsericea,animal,verified thermal-source taxonomy,ctmax,1
+Fundulus diaphanus,animal,verified thermal-source taxonomy,ctmax,1
+Fundulus grandis,animal,verified thermal-source taxonomy,ctmax,1
+Gadus morhua,animal,verified thermal-source taxonomy,ctmax,1
+Galaxias brevipinnis,animal,verified thermal-source taxonomy,ctmax,1
+Galaxias fasciatus,animal,verified thermal-source taxonomy,ctmax,1
+Galaxias vulgaris,animal,verified thermal-source taxonomy,ctmax,1
+Gambelia wislizenii,animal,verified thermal-source taxonomy,ctmin,1
+Gambusia affinis,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Gammarus pulex,animal,verified thermal-source taxonomy,ctmax;lt50;ltmax,3
+Gasterosteus aculeatus,animal,verified thermal-source taxonomy,ctmax,1
+Gillichthys mirabilis,animal,verified thermal-source taxonomy,ctmax,1
+Girella nigricans,animal,verified thermal-source taxonomy,lt50,1
+Glossiphonia complanata,animal,verified thermal-source taxonomy,ltmax,1
+Gobio gobio,animal,verified thermal-source taxonomy,ctmax,1
+Gobiocichla ethelwynnae,animal,verified thermal-source taxonomy,ctmax,1
+Gobiomorphus breviceps,animal,verified thermal-source taxonomy,ctmax,1
+Gobiomorphus cotidianus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Gobius cobitis,animal,verified thermal-source taxonomy,ctmax,1
+Gobius niger,animal,verified thermal-source taxonomy,ctmax,1
+Gobius paganellus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Gymnarchus niloticus,animal,verified thermal-source taxonomy,ctmax,1
+Gymnocephalus cernua,animal,verified thermal-source taxonomy,ctmax,1
+Haemulon flavolineatum,animal,verified thermal-source taxonomy,ctmax,1
+Hagenius brevistylus,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres bivittatus,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres garnoti,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres maculipinna,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres poeyi,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres radiatus,animal,verified thermal-source taxonomy,ctmax,1
+Halichoeres semicinctus,animal,verified thermal-source taxonomy,ctmax,1
+Helobdella stagnalis,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Heloderma suspectum,animal,verified thermal-source taxonomy,ctmax,1
+Hemachatus haemachatus,animal,verified thermal-source taxonomy,ctmax,1
+Hemidactylus frenatus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Hemidactylus turcicus,animal,verified thermal-source taxonomy,ctmax,1
+Hepsetus odoe,animal,verified thermal-source taxonomy,ctmax,1
+Hiodon alosoides,animal,verified thermal-source taxonomy,ctmax,1
+Holacanthus passer,animal,verified thermal-source taxonomy,ctmax,1
+Hucho hucho,animal,verified thermal-source taxonomy,ctmax,1
+Huso huso,animal,verified thermal-source taxonomy,ctmax,1
+Hydrocynus brevis,animal,verified thermal-source taxonomy,ctmax,1
+Hydrocynus forskahlii,animal,verified thermal-source taxonomy,ctmax,1
+Hydrocynus vittatus,animal,verified thermal-source taxonomy,ctmax,1
+Hydropsyche pellucidula,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Hypomesus olidus,animal,verified thermal-source taxonomy,ctmax,1
+Hypoplectrus aberrans,animal,verified thermal-source taxonomy,ctmax,1
+Hypoplectrus nigricans,animal,verified thermal-source taxonomy,ctmax,1
+Hypsoblennius hentz,animal,verified thermal-source taxonomy,ctmax,1
+Ictalurus furcatus,animal,verified thermal-source taxonomy,ctmax,1
+Ictalurus punctatus,animal,verified thermal-source taxonomy,ctmax;ctmin;ltmax,3
+Ischnura elegans,animal,verified thermal-source taxonomy,ctmax,1
+Istiompax indica,animal,verified thermal-source taxonomy,ctmax,1
+Istiophorus platypterus,animal,verified thermal-source taxonomy,ctmax,1
+Kajikia albida,animal,verified thermal-source taxonomy,ctmax,1
+Kajikia audax,animal,verified thermal-source taxonomy,ctmax,1
+Katsuwonus pelamis,animal,verified thermal-source taxonomy,ctmax,1
+Konia eisentrauti,animal,verified thermal-source taxonomy,ctmax,1
+Kuhlia sandvicensis,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Labroides dimidiatus,animal,verified thermal-source taxonomy,ctmax,1
+Labrus bergylta,animal,verified thermal-source taxonomy,ctmax,1
+Labrus mixtus,animal,verified thermal-source taxonomy,ctmax,1
+Lacerta agilis,animal,TetraEU terrestrial-vertebrate scope;TetraEU terrestrial-vertebrate scope;verified thermal-source taxonomy;verified thermal-source taxonomy,ctmax;ctmin,2
+Lachnolaimus maximus,animal,verified thermal-source taxonomy,ctmax,1
+Lagodon rhomboides,animal,verified thermal-source taxonomy,ctmax,1
+Lampropeltis zonata,animal,verified thermal-source taxonomy,ctmax,1
+Lateolabrax japonicus,animal,verified thermal-source taxonomy,ctmax,1
+Lates calcarifer,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Lates niloticus,animal,verified thermal-source taxonomy,ctmax,1
+Leiostomus xanthurus,animal,verified thermal-source taxonomy,ctmax,1
+Lepidiolamprologus elongatus,animal,verified thermal-source taxonomy,ctmax,1
+Lepidiolamprologus profundicola,animal,verified thermal-source taxonomy,ctmax,1
+Lepidonotothen squamifrons,animal,verified thermal-source taxonomy,ctmax,1
+Lepidopsetta bilineata,animal,verified thermal-source taxonomy,ctmax,1
+Lepisosteus osseus,animal,verified thermal-source taxonomy,ctmax,1
+Lepomis auritus,animal,verified thermal-source taxonomy,ctmax,1
+Lepomis cyanellus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Lepomis gibbosus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Lepomis gulosus,animal,verified thermal-source taxonomy,ctmax,1
+Lepomis macrochirus,animal,verified thermal-source taxonomy,ctmax;lt50;ltmax,3
+Leptocottus armatus,animal,verified thermal-source taxonomy,ctmax,1
+Lethocerus americanus,animal,verified thermal-source taxonomy,ctmax,1
+Leucaspius delineatus,animal,verified thermal-source taxonomy,ctmax,1
+Leuciscus aspius,animal,verified thermal-source taxonomy,ctmax,1
+Leuciscus idus,animal,verified thermal-source taxonomy,ctmax,1
+Leuciscus leuciscus,animal,verified thermal-source taxonomy,ctmax,1
+Limnothrissa miodon,animal,verified thermal-source taxonomy,ctmax,1
+Linepithema humile,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Liopsetta glacialis,animal,verified thermal-source taxonomy,ctmax,1
+Lipophrys pholis,animal,verified thermal-source taxonomy,ctmax,1
+Lipophrys trigloides,animal,verified thermal-source taxonomy,ctmax,1
+Littorina littorea,animal,verified thermal-source taxonomy,lt50,1
+Littorina saxatilis,animal,verified thermal-source taxonomy,lt50,1
+Lota lota,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Lucania parva,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Luciobarbus guiraonis,animal,verified thermal-source taxonomy,ctmax,1
+Lutjanus apodus,animal,verified thermal-source taxonomy,ctmax,1
+Lutjanus guttatus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Luxilus cornutus,animal,verified thermal-source taxonomy,ctmax,1
+Maccullochella peelii,animal,verified thermal-source taxonomy,ctmax,1
+Macropelopia nebulosa,animal,verified thermal-source taxonomy,lt50,1
+Makaira nigricans,animal,verified thermal-source taxonomy,ctmax,1
+Masticophis lateralis,animal,verified thermal-source taxonomy,ctmax,1
+Megalops cyprinoides,animal,verified thermal-source taxonomy,ctmax,1
+Melanotaenia splendida,animal,verified thermal-source taxonomy,ctmax,1
+Menidia beryllina,animal,verified thermal-source taxonomy,ctmax,1
+Menidia menidia,animal,verified thermal-source taxonomy,lt50,1
+Menippe nodifrons,animal,verified thermal-source taxonomy,ctmax,1
+Metacarcinus magister,animal,verified thermal-source taxonomy,lt50,1
+Micropterus coosae,animal,verified thermal-source taxonomy,ctmax,1
+Micropterus dolomieu,animal,verified thermal-source taxonomy,ctmax,1
+Micropterus floridanus,animal,verified thermal-source taxonomy,ctmax,1
+Micropterus punctulatus,animal,verified thermal-source taxonomy,ctmax,1
+Micropterus salmoides,animal,verified thermal-source taxonomy,ctmax;lt50;ctmin,3
+Microthrissa congica,animal,verified thermal-source taxonomy,ctmax,1
+Monopterus albus,animal,verified thermal-source taxonomy,ctmax,1
+Morone americana,animal,verified thermal-source taxonomy,ctmax,1
+Morone chrysops,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Morone mississippiensis,animal,verified thermal-source taxonomy,ctmax,1
+Morone saxatilis,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Mullus surmuletus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Myoxocephalus quadricornis,animal,verified thermal-source taxonomy,ctmax,1
+Mytilus edulis,animal,verified thermal-source taxonomy,lt50,1
+Nandus nandus,animal,verified thermal-source taxonomy,ctmax,1
+Neogobius melanostomus,animal,verified thermal-source taxonomy,ctmax,1
+Neolamprologus meeli,animal,verified thermal-source taxonomy,ctmax,1
+Neolamprologus pulcher,animal,verified thermal-source taxonomy,ctmax,1
+Neolamprologus savoryi,animal,verified thermal-source taxonomy,ctmax,1
+Notechis scutatus,animal,verified thermal-source taxonomy,ctmax,1
+Notemigonus crysoleucas,animal,verified thermal-source taxonomy,ctmax,1
+Notothenia coriiceps,animal,verified thermal-source taxonomy,ctmax,1
+Notothenia rossii,animal,verified thermal-source taxonomy,ctmax,1
+Noturus flavus,animal,verified thermal-source taxonomy,ctmax,1
+Noturus stigmosus,animal,verified thermal-source taxonomy,ctmax,1
+Nucella lapillus,animal,verified thermal-source taxonomy,lt50,1
+Ocyurus chrysurus,animal,verified thermal-source taxonomy,ctmax,1
+Odontaster validus,animal,verified thermal-source taxonomy,ctmax,1
+Oedothorax apicatus,animal,verified thermal-source taxonomy,ctmax,1
+Oncorhynchus clarkii,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Oncorhynchus gorbuscha,animal,verified thermal-source taxonomy,ctmax,1
+Oncorhynchus keta,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Oncorhynchus kisutch,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Oncorhynchus mykiss,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Oncorhynchus nerka,animal,verified thermal-source taxonomy,ctmax,1
+Oncorhynchus tshawytscha,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Oreochromis andersonii,animal,verified thermal-source taxonomy,ctmax,1
+Oreochromis esculentus,animal,verified thermal-source taxonomy,ctmax,1
+Oreochromis mossambicus,animal,verified thermal-source taxonomy,ctmax,1
+Oreochromis niloticus,animal,verified thermal-source taxonomy,ctmax,1
+Osmerus dentex,animal,verified thermal-source taxonomy,ctmax,1
+Osmerus eperlanus,animal,verified thermal-source taxonomy,ctmax,1
+Osmerus mordax,animal,verified thermal-source taxonomy,ctmax,1
+Pachycara brachycephalum,animal,verified thermal-source taxonomy,ctmax,1
+Pachygrapsus marmoratus,animal,verified thermal-source taxonomy,ctmax,1
+Padogobius bonelli,animal,verified thermal-source taxonomy,ctmax,1
+Pagellus bogaraveo,animal,verified thermal-source taxonomy,ctmax,1
+Pagrus auratus,animal,verified thermal-source taxonomy,ctmax,1
+Pagrus major,animal,verified thermal-source taxonomy,ctmax,1
+Pagurus bernhardus,animal,verified thermal-source taxonomy,ctmax,1
+Palaemon elegans,animal,verified thermal-source taxonomy,ctmax,1
+Palaemon longirostris,animal,verified thermal-source taxonomy,ctmax,1
+Palaemon macrodactylus,animal,verified thermal-source taxonomy,ctmax,1
+Pangasius pangasius,animal,verified thermal-source taxonomy,ctmax,1
+Parachondrostoma toxostoma,animal,verified thermal-source taxonomy,ctmax,1
+Paragnetina media,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Paralabrax clathratus,animal,verified thermal-source taxonomy,ctmax,1
+Paralichthys californicus,animal,verified thermal-source taxonomy,ctmax,1
+Paralichthys lethostigma,animal,verified thermal-source taxonomy,ctmax,1
+Paralichthys olivaceus,animal,verified thermal-source taxonomy,ctmax,1
+Parasuta flagellum,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Parophrys vetulus,animal,verified thermal-source taxonomy,ctmax,1
+Pegusa lascaris,animal,verified thermal-source taxonomy,ctmax,1
+Pelecus cultratus,animal,verified thermal-source taxonomy,ctmax,1
+Perca flavescens,animal,verified thermal-source taxonomy,ctmax,1
+Perca fluviatilis,animal,verified thermal-source taxonomy,ctmax,1
+Perccottus glenii,animal,verified thermal-source taxonomy,ctmax,1
+Perissodus microlepis,animal,verified thermal-source taxonomy,ctmax,1
+Petromyzon marinus,animal,verified thermal-source taxonomy,ctmax,1
+Petrus rupestris,animal,verified thermal-source taxonomy,ctmax,1
+Phoxinus phoxinus,animal,verified thermal-source taxonomy,ctmax,1
+Phyllorhynchus decurtatus,animal,verified thermal-source taxonomy,ctmax,1
+Pimephales notatus,animal,verified thermal-source taxonomy,ctmax,1
+Pimephales promelas,animal,verified thermal-source taxonomy,ctmax,1
+Pituophis catenifer,animal,verified thermal-source taxonomy,ctmax,1
+Platichthys flesus,animal,verified thermal-source taxonomy,ctmax;lt50;ltmax,3
+Plecodus straeleni,animal,verified thermal-source taxonomy,ctmax,1
+Pleuronectes platessa,animal,verified thermal-source taxonomy,ctmax;lt50;ltmax,3
+Pogonomyrmex rugosus,animal,verified thermal-source taxonomy,ctmax,1
+Pomacea canaliculata,animal,verified thermal-source taxonomy,ltmax,1
+Pomatoschistus microps,animal,verified thermal-source taxonomy,ctmax,1
+Pomatoschistus minutus,animal,verified thermal-source taxonomy,ctmax,1
+Pomoxis annularis,animal,verified thermal-source taxonomy,ctmax,1
+Pomoxis nigromaculatus,animal,verified thermal-source taxonomy,ctmax,1
+Ponticola kessleri,animal,verified thermal-source taxonomy,ctmax,1
+Potamopyrgus antipodarum,animal,verified thermal-source taxonomy,ctmax,1
+Prenolepis imparis,animal,verified thermal-source taxonomy,ctmax,1
+Pristolepis fasciata,animal,verified thermal-source taxonomy,ctmax,1
+Probarbus jullieni,animal,verified thermal-source taxonomy,ctmax,1
+Prognathodes aculeatus,animal,verified thermal-source taxonomy,ctmax,1
+Prosopium williamsoni,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Pseudacris regilla,animal,verified thermal-source taxonomy,ctmax,1
+Pseudechis porphyriacus,animal,verified thermal-source taxonomy,ctmin,1
+Pseudonaja nuchalis,animal,verified thermal-source taxonomy,ctmin,1
+Pseudonaja textilis,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Pseudopleuronectes americanus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Pseudorasbora parva,animal,verified thermal-source taxonomy,ctmax,1
+Pterogymnus laniarius,animal,verified thermal-source taxonomy,ctmax,1
+Pterois volitans,animal,verified thermal-source taxonomy,ctmax,1
+Ptychocheilus grandis,animal,verified thermal-source taxonomy,ctmax,1
+Ptychocheilus oregonensis,animal,verified thermal-source taxonomy,ctmax,1
+Pygocentrus nattereri,animal,verified thermal-source taxonomy,ctmax,1
+Pylodictis olivaris,animal,verified thermal-source taxonomy,ctmax,1
+Regina alleni,animal,verified thermal-source taxonomy,ctmax,1
+Rhinichthys atratulus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Rhinocheilus lecontei,animal,verified thermal-source taxonomy,ctmax,1
+Rhodeus amarus,animal,verified thermal-source taxonomy,ctmax,1
+Rhyacophila dorsalis,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Richardsonius balteatus,animal,verified thermal-source taxonomy,ctmax,1
+Rutilus aula,animal,verified thermal-source taxonomy,ctmax,1
+Rutilus pigus,animal,verified thermal-source taxonomy,ctmax,1
+Rutilus rutilus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Sabanejewia larvata,animal,verified thermal-source taxonomy,ctmax,1
+Salariopsis fluviatilis,animal,verified thermal-source taxonomy,ctmax,1
+Salmo labrax,animal,verified thermal-source taxonomy,ctmax,1
+Salmo marmoratus,animal,verified thermal-source taxonomy,ctmax,1
+Salmo salar,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Salmo trutta,animal,verified thermal-source taxonomy,ctmax,1
+Salvelinus alpinus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Salvelinus fontinalis,animal,verified thermal-source taxonomy,ctmax,1
+Salvelinus leucomaenis,animal,verified thermal-source taxonomy,ctmax,1
+Salvelinus namaycush,animal,verified thermal-source taxonomy,ctmax,1
+Sander canadensis,animal,verified thermal-source taxonomy,ctmax,1
+Sander lucioperca,animal,verified thermal-source taxonomy,ctmax,1
+Sander vitreus,animal,verified thermal-source taxonomy,ctmax,1
+Sander volgensis,animal,verified thermal-source taxonomy,ctmax,1
+Sarda australis,animal,verified thermal-source taxonomy,ctmax,1
+Sarda chiliensis,animal,verified thermal-source taxonomy,ctmax,1
+Sarda orientalis,animal,verified thermal-source taxonomy,ctmax,1
+Sarda sarda,animal,verified thermal-source taxonomy,ctmax,1
+Sardinops sagax,animal,verified thermal-source taxonomy,ctmax,1
+Sarmarutilus rubilio,animal,verified thermal-source taxonomy,ctmax,1
+Scardinius erythrophthalmus,animal,verified thermal-source taxonomy,ctmax,1
+Schilbe intermedius,animal,verified thermal-source taxonomy,ctmax,1
+Schilbe mystus,animal,verified thermal-source taxonomy,ctmax,1
+Sciaenops ocellatus,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Scomber australasicus,animal,verified thermal-source taxonomy,ctmax,1
+Scomber scombrus,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus commerson,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus munroi,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus niphonius,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus queenslandicus,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus regalis,animal,verified thermal-source taxonomy,ctmax,1
+Scomberomorus tritor,animal,verified thermal-source taxonomy,ctmax,1
+Scorpaena porcus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Semotilus atromaculatus,animal,verified thermal-source taxonomy,ctmax,1
+Seriola lalandi,animal,verified thermal-source taxonomy,ctmax,1
+Serranochromis angusticeps,animal,verified thermal-source taxonomy,ctmax,1
+Serranus atricauda,animal,verified thermal-source taxonomy,ctmax,1
+Sialis lutaria,animal,verified thermal-source taxonomy,ctmax;ltmax,2
+Silurus asotus,animal,verified thermal-source taxonomy,ctmax,1
+Silurus glanis,animal,verified thermal-source taxonomy,ctmax,1
+Silurus meridionalis,animal,verified thermal-source taxonomy,ctmax,1
+Solea solea,animal,verified thermal-source taxonomy,ctmax,1
+Solenopsis invicta,animal,verified thermal-source taxonomy,ctmax,1
+Sparus aurata,animal,verified thermal-source taxonomy,ctmax,1
+Sperata seenghala,animal,verified thermal-source taxonomy,ctmax,1
+Sphoeroides maculatus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Sphoeroides spengleri,animal,verified thermal-source taxonomy,ctmax,1
+Spondyliosoma cantharus,animal,verified thermal-source taxonomy,ctmax,1
+Squalius cephalus,animal,verified thermal-source taxonomy,ctmax,1
+Stenodus leucichthys,animal,verified thermal-source taxonomy,ctmax,1
+Stenotomus chrysops,animal,verified thermal-source taxonomy,ctmax,1
+Sterechinus neumayeri,animal,verified thermal-source taxonomy,ctmax,1
+Steromphala cineraria,animal,verified thermal-source taxonomy,lt50,1
+Strongylura marina,animal,verified thermal-source taxonomy,ctmax,1
+Symphodus melops,animal,verified thermal-source taxonomy,ctmax,1
+Syngnathus acus,animal,verified thermal-source taxonomy,ctmax,1
+Synodontis multipunctatus,animal,verified thermal-source taxonomy,ctmax,1
+Synodontis njassae,animal,verified thermal-source taxonomy,ctmax,1
+Synodontis petricola,animal,verified thermal-source taxonomy,ctmax,1
+Synodontis zambezensis,animal,verified thermal-source taxonomy,ctmax,1
+Tautoga onitis,animal,verified thermal-source taxonomy,ctmax,1
+Tautogolabrus adspersus,animal,verified thermal-source taxonomy,ctmax,1
+Telestes muticellus,animal,verified thermal-source taxonomy,ctmax,1
+Telestes souffia,animal,verified thermal-source taxonomy,ctmax,1
+Terapon jarbua,animal,verified thermal-source taxonomy,ctmax,1
+Tetrapturus angustirostris,animal,verified thermal-source taxonomy,ctmax,1
+Thalassoma bifasciatum,animal,verified thermal-source taxonomy,ctmax,1
+Thamnophis elegans,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Thamnophis marcianus,animal,verified thermal-source taxonomy,ctmin,1
+Thamnophis sirtalis,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Thunnus alalunga,animal,verified thermal-source taxonomy,ctmax,1
+Thunnus albacares,animal,verified thermal-source taxonomy,ctmax,1
+Thunnus maccoyii,animal,verified thermal-source taxonomy,ctmax,1
+Thunnus obesus,animal,verified thermal-source taxonomy,ctmax,1
+Thunnus thynnus,animal,verified thermal-source taxonomy,ctmax,1
+Thymallus arcticus,animal,verified thermal-source taxonomy,ctmax,1
+Thymallus thymallus,animal,verified thermal-source taxonomy,ctmax,1
+Tibellus maritimus,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Tinca tinca,animal,verified thermal-source taxonomy,ctmax,1
+Tor tor,animal,verified thermal-source taxonomy,ctmax,1
+Trachurus japonicus,animal,verified thermal-source taxonomy,ctmax,1
+Trematomus bernacchii,animal,verified thermal-source taxonomy,ctmax,1
+Trematomus hansoni,animal,verified thermal-source taxonomy,ctmax;lt50,2
+Trematomus pennellii,animal,verified thermal-source taxonomy,ctmax,1
+Trimeresurus gracilis,animal,verified thermal-source taxonomy,ctmax;ctmin,2
+Trinectes maculatus,animal,verified thermal-source taxonomy,ctmax,1
+Tylochromis polylepis,animal,verified thermal-source taxonomy,ctmax,1
+Tylochromis pulcher,animal,verified thermal-source taxonomy,ctmax,1
+Umbra limi,animal,verified thermal-source taxonomy,ctmax,1
+Umbra pygmaea,animal,verified thermal-source taxonomy,ctmax,1
+Varanus gouldii,animal,verified thermal-source taxonomy,ctmax,1
+Wallago attu,animal,verified thermal-source taxonomy,ctmax,1
+Xiphias gladius,animal,verified thermal-source taxonomy,ctmax,1
+Xyrauchen texanus,animal,verified thermal-source taxonomy,ctmax,1
+Xyrichtys novacula,animal,verified thermal-source taxonomy,ctmax,1
+Zoarces viviparus,animal,verified thermal-source taxonomy,ctmax,1
+Zora spinimana,animal,verified thermal-source taxonomy,ctmax,1

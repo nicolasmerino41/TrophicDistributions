@@ -4425,7 +4425,7 @@ Haplotaxodon microlepis,Haplotaxodon microlepis,Haplotaxodon microlepis,ctmax,37
 Hazardia squarrosa,Hazardia squarrosa,Hazardia squarrosa,ctmax,55.7,GlobTherm,GlobTherm_row_1894_upper_primary,,Streptophyta,Spermatophyta,Asterales,Asteraceae,unknown,,3
 Hebe odora,Hebe odora,Hebe odora,lt50,-7.7,GlobTherm,GlobTherm_row_2043_lower_primary,,Streptophyta,Spermatophyta,Lamiales,Plantaginaceae,unknown,,3
 Hectorella caespitosa,Hectorella caespitosa,Hectorella caespitosa,lt50,-12.6,GlobTherm,GlobTherm_row_2044_lower_primary,,Streptophyta,Spermatophyta,Caryophyllales,Montiaceae,unknown,,3
-Hedera helix,Hedera maderensis,Hedera helix,lt50,46.3,GlobTherm,GlobTherm_row_1856_upper_primary,,Streptophyta,Spermatophyta,Apiales,Araliaceae,unknown,,3
+Hedera helix,Hedera helix,Hedera helix,lt50,46.3,GlobTherm,GlobTherm_row_1856_upper_primary,,Streptophyta,Spermatophyta,Apiales,Araliaceae,unknown,,3
 Heimia myrtifolia,Heimia myrtifolia,Heimia myrtifolia,lt50,-8.4,GlobTherm,GlobTherm_row_1972_lower_primary,,Streptophyta,Spermatophyta,Myrtales,Lythraceae,unknown,,3
 Helichrysum petiolare,Helichrysum petiolare,Helichrysum petiolare,lt50,-4.3,GlobTherm,GlobTherm_row_1973_lower_primary,,Streptophyta,Spermatophyta,Asterales,Asteraceae,unknown,,3
 Helicophagus leptorhynchus,Helicophagus leptorhynchus,Helicophagus leptorhynchus,ctmax,39.85,ComteOlden,ComteOlden_row_2390,Animalia,Chordata,Actinopterygii,,Pangasiidae,freshwater,fish,2
@@ -8078,8 +8078,8 @@ Pimephales vigilax,Pimephales vigilax,Pimephales vigilax,ctmax,39.3,GlobTherm,Gl
 Pinoyscincus abdictus,Pinoyscincus abdictus,Pinoyscincus abdictus,ctmax,36.9,GlobTherm,GlobTherm_row_1225_upper_primary,,Chordata,Lepidosauria,Squamata,Scincidae,unknown,,3
 Pinoyscincus jagori,Pinoyscincus jagori,Pinoyscincus jagori,ctmax,37,GlobTherm,GlobTherm_row_1226_upper_primary,,Chordata,Lepidosauria,Squamata,Scincidae,unknown,,3
 Pinus contorta,Pinus contorta,Pinus contorta,lt50,-18,GlobTherm,GlobTherm_row_2058_lower_primary,,Streptophyta,Spermatophyta,Pinales,Pinaceae,unknown,,3
-Pinus halepensis,Pinus sylvestris,Pinus halepensis,ctmax,47.9,GlobTherm,GlobTherm_row_1868_upper_primary,,Streptophyta,Spermatophyta,Pinales,Pinaceae,unknown,,3
-Pinus nigra,Pinus sylvestris,Pinus nigra,ctmax,47.2,GlobTherm,GlobTherm_row_1869_upper_primary,,Streptophyta,Spermatophyta,Pinales,Pinaceae,unknown,,3
+Pinus halepensis,Pinus halepensis,Pinus halepensis,ctmax,47.9,GlobTherm,GlobTherm_row_1868_upper_primary,,Streptophyta,Spermatophyta,Pinales,Pinaceae,unknown,,3
+Pinus nigra,Pinus nigra,Pinus nigra,ctmax,47.2,GlobTherm,GlobTherm_row_1869_upper_primary,,Streptophyta,Spermatophyta,Pinales,Pinaceae,unknown,,3
 Pittosporum eugenioides,Pittosporum eugenioides,Pittosporum eugenioides,lt50,-7.8,GlobTherm,GlobTherm_row_1998_lower_primary,,Streptophyta,Spermatophyta,Apiales,Pittosporaceae,unknown,,3
 Pittosporum tenuifolium,Pittosporum tenuifolium,Pittosporum tenuifolium,lt50,-11.9,GlobTherm,GlobTherm_row_1999_lower_primary,,Streptophyta,Spermatophyta,Apiales,Pittosporaceae,unknown,,3
 Pituophis catenifer,Pituophis catenifer,Pituophis catenifer,ctmax,40.5,GlobTherm,GlobTherm_row_1057_upper_primary,,Chordata,Lepidosauria,Squamata,Colubridae,unknown,,3
