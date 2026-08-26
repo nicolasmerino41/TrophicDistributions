@@ -11,6 +11,7 @@ script_dir <- if (length(script_arg)) {
   normalizePath(getwd(), mustWork = TRUE)
 }
 root_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
+source(file.path(root_dir, "ConsumerValidation.R"))
 data_dir <- file.path(root_dir, "Data")
 output_dir <- file.path(root_dir, "Outputs", "thermal_metrics")
 cache_dir <- file.path(output_dir, "globi_cache")
@@ -181,6 +182,19 @@ local_species <- trait_records[, .(
   trait_sources = collapse_values(trait_source)
 ), by = species_alias]
 
+# Only animals can occupy the consumer role in this trophic analysis. Plants,
+# algae, fungi, and other taxa remain available as resources.
+consumer_query_audit <- copy(local_species)
+consumer_query_audit[, consumer_taxon_status := consumer_taxon_status(
+  kingdom_local, phylum_local, class_local, group_local, ""
+)]
+consumer_query_audit[, queried_as_consumer := consumer_taxon_status == "animal"]
+consumer_query_audit[, exclusion_reason := fifelse(
+  queried_as_consumer, "",
+  fifelse(consumer_taxon_status == "non_animal",
+          "Taxon is not an animal", "Insufficient taxonomy to verify an animal consumer")
+)]
+
 safe_name <- function(x) gsub("[^A-Za-z0-9]+", "_", x)
 
 read_csv_or_empty <- function(path) {
@@ -254,7 +268,7 @@ download_one_consumer <- function(query_name, cache_dir, page_size = 5000L,
              message = note)
 }
 
-query_names <- sort(unique(trait_records$species_alias))
+query_names <- sort(unique(consumer_query_audit[queried_as_consumer == TRUE, species_alias]))
 pending <- query_names[REFRESH_GLOBI | !file.exists(file.path(cache_dir, paste0(safe_name(query_names), ".csv")))]
 if (length(pending)) {
   cat(sprintf("Querying GloBI for %d thermal-trait species using %d workers.\n",
@@ -314,6 +328,7 @@ if (nrow(globi_raw)) {
   globi_raw[, query_alias := canonical_binomial(query_name)]
   globi_raw[, source_species_globi := canonical_binomial(last_path_name(source_taxon_path, source_taxon_name))]
   globi_raw[, resource_species_globi := canonical_binomial(last_path_name(target_taxon_path, target_taxon_name))]
+  globi_raw <- globi_raw[query_alias %chin% query_names]
 }
 
 alias_map <- data.table(species_alias = query_names, accepted_species = query_names)
@@ -378,12 +393,13 @@ if (nrow(globi_raw)) {
     reported_resource_names = collapse_values(target_taxon_name)
   ), by = .(consumer, resource)]
   globi_links_all[, GloBI := TRUE]
+  globi_links_all[, consumer_taxon_evidence := "verified thermal-source taxonomy"]
 } else {
   globi_links_all <- data.table(consumer = character(), resource = character(),
                                 interaction_types = character(), study_titles = character(),
                                 study_citations = character(), study_ids = character(),
                                 reported_consumer_names = character(), reported_resource_names = character(),
-                                GloBI = logical())
+                                GloBI = logical(), consumer_taxon_evidence = character())
 }
 
 globi_taxonomy <- if (nrow(globi_raw)) {
@@ -413,6 +429,20 @@ tetra_raw[, consumer_raw := canonical_binomial(sourceTaxonName)]
 tetra_raw[, resource_raw := canonical_binomial(targetTaxonName)]
 tetra_raw[, consumer := map_species(consumer_raw)]
 tetra_raw[, resource := map_species(resource_raw)]
+tetra_consumer_check <- species_local[
+  data.table(accepted_species = sort(unique(na.omit(tetra_raw$consumer)))),
+  on = "accepted_species"
+]
+tetra_consumer_check[, taxon_status := consumer_taxon_status(
+  kingdom_local, phylum_local, class_local, group_local, ""
+)]
+known_non_animal_tetra <- tetra_consumer_check[taxon_status == "non_animal", accepted_species]
+if (length(known_non_animal_tetra)) {
+  stop(
+    "TetraEU contains a consumer classified as non-animal: ",
+    paste(head(known_non_animal_tetra, 10L), collapse = ", ")
+  )
+}
 tetra_links_all <- tetra_raw[!is.na(consumer) & !is.na(resource), .(
   interaction_types = collapse_values(interactionTypeName),
   study_titles = "",
@@ -422,6 +452,7 @@ tetra_links_all <- tetra_raw[!is.na(consumer) & !is.na(resource), .(
   reported_resource_names = collapse_values(targetTaxonName)
 ), by = .(consumer, resource)]
 tetra_links_all[, TetraEU := TRUE]
+tetra_links_all[, consumer_taxon_evidence := "TetraEU terrestrial-vertebrate scope"]
 tetra_taxonomy <- rbindlist(list(
   tetra_raw[!is.na(consumer), .(accepted_species = consumer,
                                 tetraeu_taxon_ids = collapse_values(sourceTaxonId)), by = consumer][, consumer := NULL],
@@ -434,6 +465,11 @@ recorded <- merge(globi_links_all, tetra_links_all, by = c("consumer", "resource
 for (flag in c("GloBI", "TetraEU")) recorded[is.na(get(flag)), (flag) := FALSE]
 recorded[, interaction_sources := fifelse(GloBI & TetraEU, "GloBI;TetraEU",
                                            fifelse(GloBI, "GloBI", "TetraEU"))]
+recorded[, consumer_taxon_status := "animal"]
+recorded[, consumer_taxon_evidence := mapply(
+  function(a, b) collapse_values(c(a, b)),
+  consumer_taxon_evidence_globi, consumer_taxon_evidence_tetra
+)]
 for (stem in c("interaction_types", "study_titles", "study_citations", "study_ids",
                "reported_consumer_names", "reported_resource_names")) {
   left <- paste0(stem, "_globi")
@@ -498,6 +534,11 @@ species_master[, habitat_class := fifelse(grepl(";", habitat_sources), "mixed",
                                                   "unknown", habitat_sources))]
 species_master[, recorded_as_consumer := accepted_species %chin% recorded$consumer]
 species_master[, recorded_as_resource := accepted_species %chin% recorded$resource]
+species_master[, taxon_status := consumer_taxon_status(
+  kingdom_local, phylum_local, class_local, group_local, globi_taxon_paths
+)]
+species_master[accepted_species %chin% tetra_raw$consumer & taxon_status == "unresolved",
+               taxon_status := "animal"]
 species_master[, available_metrics := vapply(seq_len(.N), function(i) {
   present <- TRAITS[vapply(TRAITS, function(metric) {
     col <- paste0("trait_value_", metric)
@@ -523,6 +564,10 @@ query_log <- rbindlist(lapply(query_names, function(sp) {
 query_log[, queried_at_utc := format(Sys.time(), tz = "UTC", usetz = TRUE)]
 
 cat("Validating canonical datasets.\n")
+require_verified_animal_consumers(
+  analysis_master$consumer_taxon_status, analysis_master$consumer,
+  "Thermal interaction master"
+)
 stopifnot(
   !anyDuplicated(species_master$accepted_species),
   !anyDuplicated(recorded[, .(consumer, resource)]),
@@ -547,12 +592,17 @@ fwrite(species_master, file.path(data_dir, "thermal_species_master.csv"), na = "
 fwrite(recorded, file.path(data_dir, "thermal_recorded_interactions.csv"), na = "")
 fwrite(analysis_master, file.path(data_dir, "thermal_interactions_master.csv"), na = "")
 fwrite(coverage, file.path(data_dir, "thermal_consumer_coverage.csv"), na = "")
+fwrite(consumer_query_audit, file.path(data_dir, "thermal_consumer_taxon_audit.csv"), na = "")
 fwrite(query_log, file.path(output_dir, "globi_query_log.csv"), na = "")
 
 empirical_degree_dir <- file.path(root_dir, "EmpiricalDegrees", "Data")
 if (dir.exists(dirname(empirical_degree_dir))) {
   dir.create(empirical_degree_dir, recursive = TRUE, showWarnings = FALSE)
   thermal_consumers <- unique(analysis_master[, .(consumer)])
+  thermal_consumers[, consumer_taxon_status := "animal"]
+  thermal_consumers[, consumer_taxon_evidence := vapply(consumer, function(sp) {
+    collapse_values(recorded[consumer == sp, consumer_taxon_evidence])
+  }, character(1L))]
   thermal_consumers[, metrics := vapply(consumer, function(sp) {
     paste(TRAITS[vapply(TRAITS, function(metric) {
       any(analysis_master$consumer == sp & analysis_master[[paste0("eligible_", metric)]])
@@ -569,7 +619,9 @@ manifest <- data.table(
     "Build time UTC", "GloBI endpoint", "GloBI interaction umbrella",
     "GloBI queried species", "TetraEU source", "Trait sources",
     "Trait selection priority", "Species in master", "Species with usable traits",
-    "Recorded consumer-resource pairs", "Analysis-ready pairs"
+    "Recorded consumer-resource pairs", "Analysis-ready pairs",
+    "Consumer eligibility rule", "Excluded non-animal consumer candidates",
+    "Excluded unresolved consumer candidates"
   ),
   value = c(
     format(Sys.time(), tz = "UTC", usetz = TRUE),
@@ -578,7 +630,10 @@ manifest <- data.table(
     "ThermoFresh;GlobTherm;ComteOlden",
     "ThermoFresh > ComteOlden > GlobTherm",
     nrow(species_master), sum(species_master$n_available_metrics > 0),
-    nrow(recorded), nrow(analysis_master)
+    nrow(recorded), nrow(analysis_master),
+    "Only taxonomically verified animals; all taxa remain eligible as resources",
+    sum(consumer_query_audit$consumer_taxon_status == "non_animal"),
+    sum(consumer_query_audit$consumer_taxon_status == "unresolved")
   )
 )
 fwrite(manifest, file.path(data_dir, "thermal_data_manifest.csv"), na = "")

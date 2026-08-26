@@ -1,6 +1,7 @@
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 script_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[[1]]))) else getwd()
 root_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
+source(file.path(root_dir, "ConsumerValidation.R"))
 source(file.path(script_dir, "Functions.R"))
 
 # Set to TRUE only when intentionally replacing the cached GloBI snapshot.
@@ -15,6 +16,18 @@ cache_dir <- file.path(output_dir, "globi_cache")
 dir.create(cache_dir, recursive = TRUE, showWarnings = FALSE)
 
 thermal <- read.csv(input_file, stringsAsFactors = FALSE, check.names = FALSE)
+required_input <- c("consumer", "consumer_taxon_status", "consumer_taxon_evidence")
+missing_input <- setdiff(required_input, names(thermal))
+if (length(missing_input)) {
+  stop(
+    "The consumer list lacks taxonomic validation fields (",
+    paste(missing_input, collapse = ", "),
+    "). Run ThermalAnalysis/BuildThermalDataset.R first."
+  )
+}
+require_verified_animal_consumers(
+  thermal$consumer_taxon_status, thermal$consumer, "Empirical-degree input"
+)
 consumers <- sort(unique(thermal$consumer))
 cat("Thermal consumers:", length(consumers), "\n")
 
@@ -79,7 +92,11 @@ tetra_degree$dataset <- "TetraEU consumers"
 tetra_degree$metrics <- ""
 tetra_degree$n_metrics <- NA_integer_
 
-common <- c("dataset", "consumer", "degree_species", "degree_all_taxa", "self_links", "metrics", "n_metrics")
+tetra_degree$consumer_taxon_status <- "animal"
+tetra_degree$consumer_taxon_evidence <- "TetraEU terrestrial-vertebrate scope"
+
+common <- c("dataset", "consumer", "degree_species", "degree_all_taxa", "self_links",
+            "metrics", "n_metrics", "consumer_taxon_status", "consumer_taxon_evidence")
 combined <- rbind(globi_degree[, common], tetra_degree[, common])
 names(combined)[names(combined) == "degree_species"] <- "degree"
 write_csv(combined, file.path(output_dir, "consumer_degrees_combined.csv"))
@@ -89,14 +106,15 @@ manifest <- data.frame(
            "GloBI consumers retained in thermal analysis",
            "GloBI consumers with positive species-level degree",
            "TetraEU consumers", "TetraEU consumers with positive species-level degree",
-           "TetraEU source file", "Primary degree definition"),
+           "TetraEU source file", "Primary degree definition", "Consumer eligibility rule"),
   value = c("https://api.globalbioticinteractions.org/interaction.csv", "eats",
             format(Sys.time(), tz = "UTC", usetz = TRUE), length(consumers),
             sum(is.finite(globi_degree$degree_species) & globi_degree$degree_species > 0),
             nrow(tetra_degree),
             sum(is.finite(tetra_degree$degree_species) & tetra_degree$degree_species > 0),
             "Data/TetraEU_pairwise_interactions.csv",
-            "Unique species-level non-self resources per consumer"),
+            "Unique species-level non-self resources per consumer",
+            "Only taxonomically verified animals; all taxa remain eligible as resources"),
   stringsAsFactors = FALSE
 )
 write_csv(manifest, file.path(output_dir, "extraction_manifest.csv"))
