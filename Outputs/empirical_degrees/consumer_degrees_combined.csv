@@ -1,858 +1,854 @@
-"dataset","consumer","degree","degree_all_taxa","self_links","metrics","n_metrics","consumer_taxon_status","consumer_taxon_evidence"
-"GloBI consumers","Abramis brama",645,829,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Abudefduf saxatilis",126,219,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acanthocybium solandri",32,106,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acanthogobius flavimanus",11,50,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acanthopagrus schlegelii",20,56,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser brevirostrum",62,78,0,"ltmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser fulvescens",8,64,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser gueldenstaedtii",16,35,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser nudiventris",1,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser persicus",2,11,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser stellatus",13,37,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser sturio",2,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Acipenser transmontanus",8,44,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Agabus bipustulatus",116,146,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Agkistrodon contortrix",32,58,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Agnetina capitata",3,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alburnus alburnus",378,522,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alburnus arborella",361,415,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa aestivalis",144,220,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa alosa",5,40,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa fallax",99,151,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa macedonica",3,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa mediocris",90,107,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa pseudoharengus",87,181,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Alosa sapidissima",108,173,0,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ambloplites rupestris",48,179,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ameiurus catus",108,169,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ameiurus nebulosus",429,538,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Amia calva",17,49,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anax imperator",10,16,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anax junius",34,93,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anax longipes",4,4,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anaxyrus boreas",10,54,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anchoa mitchilli",106,240,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anguilla anguilla",1218,1477,1,"ctmax;ctmin;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anguilla australis",23,90,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anguilla dieffenbachii",17,62,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anguilla marmorata",2,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anguilla rostrata",42,73,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anolis carolinensis",37,73,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anolis cristatellus",6,20,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Anolis sagrei",22,54,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Apalone ferox",1,2,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Apeltes quadracus",33,69,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Aplodinotus grunniens",8,32,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Archosargus probatocephalus",20,89,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Arizona elegans",34,46,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Armadillidium vulgare",4,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Astacus leptodactylus",2,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Astyanax bimaculatus",3,47,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Atherinella brasiliensis",29,101,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Atractosteus spatula",7,24,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Austrelaps superbus",18,25,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Auxis rochei",10,35,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Auxis thazard",6,33,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Babka gymnotrachelus",3,22,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Bagrus docmak",22,69,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Barbatula barbatula",659,783,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Barbus barbus",652,748,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Barbus caninus",754,852,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Barbus plebejus",1079,1187,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Bathygobius soporator",38,120,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Belonesox belizanus",1,2,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Beryx splendens",57,165,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Blicca bjoerkna",573,710,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Bodianus rufus",124,183,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Brachyponera chinensis",7,11,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Butis butis",1,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Calamus brachysomus",1,13,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Calathus melanocephalus",1637,1677,1,"ctmin",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Canthigaster rostrata",256,361,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Carasobarbus canis",5,21,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Carassius carassius",1066,1395,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Carassius gibelio",998,1121,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Carcinus maenas",161,254,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Catostomus catostomus",1,30,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Catostomus commersonii",1,58,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Catostomus macrocheilus",1,18,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Centrolabrus exoletus",20,23,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Centropristis striata",111,182,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chaenocephalus aceratus",19,53,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Channa marulius",1,3,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Channa micropeltes",1,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Channa punctata",13,34,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Channa striata",4,45,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chanodichthys erythropterus",13,38,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chanos chanos",19,163,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Charina bottae",10,20,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cheimarrichthys fosteri",7,28,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chelon ramada",29,197,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chelonodon patoca",1,19,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chionodraco rastrospinosus",7,13,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chitala chitala",2,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chondrostoma nasus",1,13,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chondrostoma soetta",53,67,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chrosomus neogaeus",10,45,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Chrysemys picta",2,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clarias anguillaris",3,28,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clarias batrachus",1,40,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clarias gariepinus",8,133,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clarias stappersii",1,11,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clupea harengus",155,358,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Clupea pallasii",21,93,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cobitis bilineata",565,642,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cobitis taenia",565,645,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coenagrion puella",278,305,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coluber constrictor",91,128,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cordulegaster boltonii",192,227,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus albula",16,71,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus artedi",24,59,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus autumnalis",6,36,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus clupeaformis",29,67,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus lavaretus",9,95,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coregonus peled",6,16,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Coryphoblennius galerita",109,159,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cottus aleuticus",3,24,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cottus asper",7,23,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cottus cognatus",7,21,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cottus gobio",696,847,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crangon crangon",114,186,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crangonyx pseudogracilis",20,25,0,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crematogaster lineolata",2,5,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crotalus atrox",71,97,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crotalus cerastes",55,73,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crotalus scutulatus",24,31,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Crotalus viridis",21,31,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ctenolabrus rupestris",50,118,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ctenotus pantherinus",3,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Culaea inconstans",3,48,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cynoscion nebulosus",120,247,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cyprinella lutrensis",1,8,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cyprinella spiloptera",28,68,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Cyprinus carpio",1014,1203,1,"ctmax;ctmin;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Danio rerio",4,31,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Dasyatis sabina",4,26,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Dicentrarchus labrax",19,78,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Dikerogammarus villosus",396,465,1,"ctmax;lt50;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Dinocras cephalotes",429,504,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Diplectrum formosum",106,184,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Diplodus sargus",67,242,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Diplodus vulgaris",33,147,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Dorosoma cepedianum",105,215,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Eleotris acanthopomus",9,30,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Eleotris fusca",9,21,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Eleutherodactylus coqui",1,8,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Elgaria multicarinata",6,10,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Elopichthys bambusa",1,1,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Elops hawaiensis",2,11,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Elops machnata",12,25,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Elops saurus",72,152,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Enneacanthus gloriosus",48,85,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Epinephelus tauvina",1,22,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Erimyzon oblongus",91,128,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Erythemis simplicicollis",70,103,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Esox lucius",877,1069,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Esox masquinongy",17,36,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Esox niger",4,38,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Etheostoma olmstedi",91,126,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Etroplus maculatus",1,28,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Euophrys frontalis",1013,1082,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Euthynnus affinis",28,61,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Euthynnus alletteratus",66,178,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Faxonius rusticus",4,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Formica sanguinea",25,28,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Formica subsericea",7,14,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Fundulus diaphanus",188,301,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Fundulus grandis",23,124,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gadus morhua",667,1347,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Galaxias brevipinnis",9,42,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Galaxias fasciatus",2,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Galaxias vulgaris",16,85,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gambelia wislizenii",3,15,0,"ctmin",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gambusia affinis",60,157,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gammarus pulex",448,522,0,"ctmax;lt50;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gasterosteus aculeatus",1345,1621,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gillichthys mirabilis",28,76,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Girella nigricans",90,175,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Glossiphonia complanata",35,58,1,"ltmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobio gobio",705,842,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobiocichla ethelwynnae",1,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobiomorphus breviceps",25,117,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobiomorphus cotidianus",8,37,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobius cobitis",1,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobius niger",42,132,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gobius paganellus",73,144,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gymnarchus niloticus",3,9,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Gymnocephalus cernua",632,808,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Haemulon flavolineatum",147,216,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hagenius brevistylus",29,34,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres bivittatus",151,218,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres garnoti",115,167,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres maculipinna",143,205,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres poeyi",111,160,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres radiatus",179,232,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Halichoeres semicinctus",41,102,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Helobdella stagnalis",26,48,0,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Heloderma suspectum",15,15,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hemachatus haemachatus",4,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hemidactylus frenatus",15,33,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hemidactylus turcicus",5,18,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hepsetus odoe",6,26,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hiodon alosoides",9,61,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Holacanthus passer",49,72,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hucho hucho",39,61,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Huso huso",36,65,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hydrocynus brevis",2,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hydrocynus forskahlii",18,68,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hydrocynus vittatus",17,39,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hydropsyche pellucidula",371,433,0,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hypomesus olidus",4,17,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hypoplectrus aberrans",61,86,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hypoplectrus nigricans",97,127,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Hypsoblennius hentz",35,55,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ictalurus furcatus",31,97,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ictalurus punctatus",44,115,0,"ctmax;ctmin;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ischnura elegans",749,816,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Istiompax indica",14,24,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Istiophorus platypterus",37,112,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Kajikia albida",30,78,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Kajikia audax",29,55,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Katsuwonus pelamis",9,58,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Konia eisentrauti",1,3,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Kuhlia sandvicensis",3,10,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Labroides dimidiatus",2,33,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Labrus bergylta",155,270,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Labrus mixtus",45,67,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lacerta agilis",2488,2542,1,"ctmax;ctmin",2,"animal","TetraEU terrestrial-vertebrate scope;TetraEU terrestrial-vertebrate scope;verified thermal-source taxonomy;verified thermal-source taxonomy"
-"GloBI consumers","Lachnolaimus maximus",183,247,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lagodon rhomboides",78,246,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lampropeltis zonata",12,19,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lateolabrax japonicus",25,77,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lates calcarifer",18,55,1,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lates niloticus",28,73,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leiostomus xanthurus",153,417,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepidiolamprologus elongatus",3,16,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepidiolamprologus profundicola",2,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepidonotothen squamifrons",16,98,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepidopsetta bilineata",15,84,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepisosteus osseus",64,92,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepomis auritus",16,56,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepomis cyanellus",4,20,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepomis gibbosus",1057,1301,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepomis gulosus",3,23,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lepomis macrochirus",81,145,0,"ctmax;lt50;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leptocottus armatus",49,133,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lethocerus americanus",11,38,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leucaspius delineatus",362,432,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leuciscus aspius",87,96,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leuciscus idus",3,12,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Leuciscus leuciscus",615,754,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Limnothrissa miodon",14,50,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Linepithema humile",32,49,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Liopsetta glacialis",13,34,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lipophrys pholis",83,139,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lipophrys trigloides",38,73,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Littorina littorea",61,88,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Littorina saxatilis",38,51,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lota lota",695,832,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lucania parva",142,231,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Luciobarbus guiraonis",2,12,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lutjanus apodus",145,219,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Lutjanus guttatus",19,50,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Luxilus cornutus",129,234,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Maccullochella peelii",13,47,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Macropelopia nebulosa",15,25,1,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Makaira nigricans",72,143,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Masticophis lateralis",24,32,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Megalops cyprinoides",4,34,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Melanotaenia splendida",1,54,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Menidia beryllina",100,255,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Menidia menidia",35,59,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Menippe nodifrons",28,65,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Metacarcinus magister",18,50,1,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Micropterus coosae",1,1,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Micropterus dolomieu",37,98,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Micropterus floridanus",2,2,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Micropterus punctulatus",1,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Micropterus salmoides",439,640,1,"ctmax;lt50;ctmin",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Microthrissa congica",1,16,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Monopterus albus",1,12,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Morone americana",128,206,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Morone chrysops",8,22,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Morone mississippiensis",7,27,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Morone saxatilis",194,301,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Mullus surmuletus",152,267,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Myoxocephalus quadricornis",14,30,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Mytilus edulis",38,67,1,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Nandus nandus",1,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Neogobius melanostomus",1160,1308,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Neolamprologus meeli",1,1,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Neolamprologus pulcher",4,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Neolamprologus savoryi",1,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Notechis scutatus",14,20,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Notemigonus crysoleucas",58,162,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Notothenia coriiceps",164,248,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Notothenia rossii",29,70,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Noturus flavus",1,24,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Noturus stigmosus",1,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Nucella lapillus",29,39,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ocyurus chrysurus",230,316,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Odontaster validus",211,251,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oedothorax apicatus",38,40,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus clarkii",22,74,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus gorbuscha",23,144,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus keta",33,147,0,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus kisutch",75,176,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus mykiss",769,1004,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus nerka",41,142,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oncorhynchus tshawytscha",100,217,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oreochromis andersonii",1,25,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oreochromis esculentus",3,23,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oreochromis mossambicus",26,248,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Oreochromis niloticus",27,170,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Osmerus dentex",5,22,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Osmerus eperlanus",23,87,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Osmerus mordax",42,114,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pachycara brachycephalum",43,47,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pachygrapsus marmoratus",64,109,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Padogobius bonelli",650,734,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pagellus bogaraveo",73,155,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pagrus auratus",12,68,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pagrus major",52,121,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pagurus bernhardus",49,71,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Palaemon elegans",53,114,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Palaemon longirostris",25,48,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Palaemon macrodactylus",3,7,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pangasius pangasius",2,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Parachondrostoma toxostoma",565,650,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Paragnetina media",2,9,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Paralabrax clathratus",41,85,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Paralichthys californicus",80,110,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Paralichthys lethostigma",25,103,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Paralichthys olivaceus",25,55,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Parasuta flagellum",8,11,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Parophrys vetulus",5,53,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pegusa lascaris",12,50,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pelecus cultratus",4,23,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Perca flavescens",84,245,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Perca fluviatilis",830,1055,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Perccottus glenii",1,13,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Perissodus microlepis",21,45,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Petromyzon marinus",41,64,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Petrus rupestris",1,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Phoxinus phoxinus",857,1060,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Phyllorhynchus decurtatus",2,3,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pimephales notatus",5,47,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pimephales promelas",26,83,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pituophis catenifer",90,111,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Platichthys flesus",193,350,1,"ctmax;lt50;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Plecodus straeleni",44,47,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pleuronectes platessa",313,547,1,"ctmax;lt50;ltmax",3,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pogonomyrmex rugosus",3,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pomacea canaliculata",14,15,0,"ltmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pomatoschistus microps",30,80,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pomatoschistus minutus",60,153,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pomoxis annularis",4,22,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pomoxis nigromaculatus",49,131,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ponticola kessleri",656,757,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Potamopyrgus antipodarum",105,194,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Prenolepis imparis",49,74,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pristolepis fasciata",1,20,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Probarbus jullieni",2,8,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Prognathodes aculeatus",106,152,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Prosopium williamsoni",3,33,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudacris regilla",6,38,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudechis porphyriacus",30,41,1,"ctmin",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudonaja nuchalis",30,48,1,"ctmin",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudonaja textilis",51,71,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudopleuronectes americanus",163,298,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pseudorasbora parva",566,683,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pterogymnus laniarius",7,28,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pterois volitans",22,72,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ptychocheilus grandis",3,3,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Ptychocheilus oregonensis",16,50,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pygocentrus nattereri",8,29,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Pylodictis olivaris",19,83,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Regina alleni",8,16,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rhinichthys atratulus",13,56,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rhinocheilus lecontei",31,42,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rhodeus amarus",1,14,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rhyacophila dorsalis",228,280,1,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Richardsonius balteatus",2,16,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rutilus aula",565,649,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rutilus pigus",565,652,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Rutilus rutilus",627,864,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sabanejewia larvata",565,644,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salariopsis fluviatilis",400,483,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salmo labrax",650,731,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salmo marmoratus",85,93,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salmo salar",748,984,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salmo trutta",1368,1820,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salvelinus alpinus",92,316,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salvelinus fontinalis",759,962,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salvelinus leucomaenis",5,35,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Salvelinus namaycush",692,812,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sander canadensis",18,30,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sander lucioperca",107,157,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sander vitreus",44,69,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sander volgensis",4,11,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sarda australis",4,8,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sarda chiliensis",17,30,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sarda orientalis",4,13,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sarda sarda",14,48,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sardinops sagax",13,118,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sarmarutilus rubilio",14,64,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scardinius erythrophthalmus",1000,1146,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Schilbe intermedius",12,56,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Schilbe mystus",27,68,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sciaenops ocellatus",97,260,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomber australasicus",2,36,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomber scombrus",237,564,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus commerson",12,42,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus munroi",2,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus niphonius",13,26,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus queenslandicus",1,18,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus regalis",69,101,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scomberomorus tritor",1,4,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Scorpaena porcus",35,121,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Semotilus atromaculatus",70,206,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Seriola lalandi",10,38,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Serranochromis angusticeps",1,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Serranus atricauda",20,32,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sialis lutaria",304,379,1,"ctmax;ltmax",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Silurus asotus",5,10,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Silurus glanis",104,180,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Silurus meridionalis",1,2,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Solea solea",208,448,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Solenopsis invicta",36,55,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sparus aurata",23,165,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sperata seenghala",1,1,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sphoeroides maculatus",140,175,0,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sphoeroides spengleri",263,358,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Spondyliosoma cantharus",1,63,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Squalius cephalus",826,970,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Stenodus leucichthys",11,21,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Stenotomus chrysops",129,204,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Sterechinus neumayeri",115,145,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Steromphala cineraria",21,22,0,"lt50",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Strongylura marina",99,160,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Symphodus melops",76,152,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Syngnathus acus",18,79,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Synodontis multipunctatus",1,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Synodontis njassae",2,8,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Synodontis petricola",8,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Synodontis zambezensis",1,9,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tautoga onitis",52,66,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tautogolabrus adspersus",11,48,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Telestes muticellus",565,643,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Telestes souffia",565,650,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Terapon jarbua",5,72,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tetrapturus angustirostris",2,7,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thalassoma bifasciatum",128,194,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thamnophis elegans",57,100,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thamnophis marcianus",21,31,0,"ctmin",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thamnophis sirtalis",128,204,1,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thunnus alalunga",66,125,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thunnus albacares",126,277,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thunnus maccoyii",3,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thunnus obesus",54,145,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thunnus thynnus",89,198,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thymallus arcticus",2,23,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Thymallus thymallus",473,668,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tibellus maritimus",764,814,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tinca tinca",625,769,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tor tor",1,52,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trachurus japonicus",3,18,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trematomus bernacchii",125,252,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trematomus hansoni",98,180,1,"ctmax;lt50",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trematomus pennellii",170,228,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trimeresurus gracilis",8,10,0,"ctmax;ctmin",2,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Trinectes maculatus",29,67,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tylochromis polylepis",1,6,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Tylochromis pulcher",1,2,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Umbra limi",11,77,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Umbra pygmaea",4,34,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Varanus gouldii",51,55,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Wallago attu",2,10,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Xiphias gladius",117,223,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Xyrauchen texanus",1,14,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Xyrichtys novacula",13,71,0,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Zoarces viviparus",28,57,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"GloBI consumers","Zora spinimana",3286,3364,1,"ctmax",1,"animal","verified thermal-source taxonomy"
-"TetraEU consumers","Acanthodactylus boskianus",17,17,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Acanthodactylus schreiberi",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Accipiter brevipes",48,48,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Accipiter gentilis",201,201,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Accipiter nisus",226,226,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Acrocephalus agricola",5,5,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Acrocephalus arundinaceus",35,35,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Actitis hypoleucos",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aegolius funereus",147,147,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aegypius monachus",32,32,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Alcedo atthis",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Alopex lagopus",188,188,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas acuta",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas clypeata",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas penelope",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas platyrhynchos",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas querquedula",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anas strepera",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anguis cephallonica",155,155,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anguis fragilis",163,163,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Anthus campestris",1,1,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila adalberti",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila chrysaetos",313,313,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila clanga",188,188,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila fasciata",167,167,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila heliaca",183,183,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila nipalensis",283,283,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aquila pomarina",486,486,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ardea alba",236,236,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ardea cinerea",221,221,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ardea purpurea",221,221,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ardeola ralloides",72,72,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Asio flammeus",187,187,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Asio otus",357,357,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Atelerix algirus",362,362,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Athene noctua",222,222,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aythya ferina",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Aythya nyroca",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Botaurus stellaris",143,143,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Bubo bubo",445,445,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Bubo scandiacus",344,344,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Bubulcus ibis",403,403,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Bucephala clangula",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Burhinus oedicnemus",338,338,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Buteo buteo",412,412,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Buteo lagopus",294,294,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Buteo rufinus",374,374,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Calotriton asper",75,75,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Canis aureus",549,549,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Canis lupus",703,703,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ceryle rudis",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chamaeleo chamaeleon",133,133,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chlamydotis undulata",203,203,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chlidonias hybrida",66,66,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chlidonias leucopterus",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chlidonias niger",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Chtoicocephalus ridibundus",79,79,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ciconia ciconia",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ciconia nigra",522,522,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Circaetus gallicus",132,132,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Circus aeruginosus",198,198,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Circus cyaneus",328,328,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Circus macrourus",276,276,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Circus pygargus",324,324,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Coloeus monedula",628,628,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Coracias garrulus",238,238,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Coronella austriaca",365,365,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Coronella girondica",382,382,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Corvus corax",898,898,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Corvus corone",899,899,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Corvus frugilegus",680,680,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Crex crex",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Cuculus canorus",88,88,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Cursorius cursor",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Cyanistes caeruleus",2,2,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Cyanopica cyanus",68,68,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Cygnus olor",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dendrocopos major",34,34,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dendrocopos medius",32,32,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dendrocopos syriacus",33,33,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Desmana moschata",65,65,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Discoglossus montalentii",2,2,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Discoglossus pictus",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Discoglossus sardus",2,2,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dolichophis caspius",584,584,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dolichophis cypriensis",134,134,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dolichophis jugularis",584,584,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dolichophis schmidti",584,584,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dryomys laniger",124,124,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Dryomys nitedula",124,124,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Egretta garzetta",172,172,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eirenis aurolineatus",132,132,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eirenis barani",132,132,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eirenis coronelloides",132,132,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eirenis modestus",132,132,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Elanus caeruleus",209,209,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Elaphe dione",912,912,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Elaphe quatuorlineata",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Elaphe sauromates",791,791,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eliomys melanurus",124,124,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eliomys quercinus",125,125,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Emys orbicularis",71,71,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Emys trinacris",71,71,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Erinaceus concolor",362,362,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Erinaceus europaeus",362,362,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Erinaceus roumanicus",362,362,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Erithacus rubecula",90,90,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eryx jaculus",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Eumeces schneideri",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Euproctus montanus",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco biarmicus",336,336,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco cherrug",340,340,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco columbarius",353,353,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco eleonorae",149,149,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco naumanni",42,42,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco peregrinus",337,337,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco rusticolus",162,162,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco subbuteo",182,182,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco tinnunculus",494,494,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Falco vespertinus",354,354,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Felis chaus",369,369,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Felis manul",120,120,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Felis margarita",38,38,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Felis silvestris",615,615,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Francolinus francolinus",145,145,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Fulica atra",55,55,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Fulica cristata",55,55,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Fulmarus glacialis",3,3,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gallinago gallinago",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gallinula chloropus",51,51,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gallotia stehlini",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Garrulus glandarius",356,356,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gavia immer",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gavia stellata",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gelochelidon nilotica",40,40,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Genetta genetta",471,471,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Glaucidium passerinum",142,142,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Glis glis",124,124,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gloydius intermedius",160,160,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Grus grus",510,510,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gulo gulo",211,211,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Gypaetus barbatus",3,3,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Haematopus ostralegus",26,26,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Halcyon smyrnensis",426,426,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Haliaeetus albicilla",255,255,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hemiechinus auritus",362,362,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hemorrhois algirus",635,635,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hemorrhois hippocrepis",544,544,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hemorrhois nummifer",545,545,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hemorrhois ravergieri",513,513,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Herpestes ichneumon",834,834,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hieraaetus pennatus",99,99,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hierophis gemonensis",579,579,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hierophis viridiflavus",914,914,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Himantopus himantopus",85,85,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hyaena hyaena",307,307,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Hydroprogne caspia",1,1,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ichthyaetus audouinii",162,162,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ichthyaetus ichthyaetus",114,114,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ichthyaetus melanocephalus",128,128,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ichthyosaura alpestris",72,72,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ixobrychus minutus",134,134,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Jynx torquilla",29,29,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta agilis",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta bilineata",574,574,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta media",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta strigata",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta trilineata",357,357,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lacerta viridis",575,575,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lagopus muta",4,4,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius collurio",411,411,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius excubitor",518,518,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius meridionalis",518,518,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius minor",45,45,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius nubicus",127,127,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lanius senator",379,379,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus argentatus",540,540,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus armenicus",540,540,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus cachinnans",540,540,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus canus",123,123,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus fuscus",120,120,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus hyperboreus",8,8,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Larus marinus",127,127,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Limosa lapponica",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lissotriton helveticus",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lissotriton italicus",72,72,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lutra lutra",70,70,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lynx lynx",119,119,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Lynx pardinus",29,29,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Macroprotodon brevis",287,287,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Macroprotodon cucullatus",304,304,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Macroprotodon mauritanicus",287,287,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Macrovipera lebetina",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Macrovipera schweizeri",524,524,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Malpolon monspessulanus",697,697,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Martes foina",483,483,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Martes martes",325,325,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Martes zibellina",230,230,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mauremys caspica",82,82,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mauremys leprosa",71,71,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mauremys rivulata",71,71,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Meles leucurus",67,67,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Meles meles",427,427,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mergellus albellus",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mergus merganser",11,11,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mergus serrator",11,11,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Milvus migrans",316,316,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Milvus milvus",350,350,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Monticola saxatilis",94,94,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Monticola solitarius",227,227,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Montivipera albizona",579,579,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Montivipera bulgardaghica",579,579,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Montivipera raddei",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Montivipera wagneri",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Montivipera xanthina",579,579,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Motacilla cinerea",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Muscardinus avellanarius",124,124,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela erminea",231,231,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela eversmanii",389,389,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela lutreola",182,182,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela nivalis",520,520,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela putorius",239,239,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Mustela sibirica",236,236,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Natrix maura",80,80,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Natrix natrix",226,226,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Natrix tessellata",72,72,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Neophron percnopterus",4,4,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Netta rufina",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Nucifraga caryocatactes",200,200,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Numenius arquata",298,298,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Numenius phaeopus",1,1,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Nyctalus lasiopterus",20,20,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Nycticorax nycticorax",160,160,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe chrysopygia",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe cypriaca",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe deserti",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe finschii",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe isabellina",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe leucura",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe oenanthe",32,32,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Oenanthe pleschanka",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ommatotriton ophryticus",81,81,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ommatotriton vittatus",81,81,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Otis tarda",393,393,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Otus brucei",207,207,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Otus scops",313,313,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pandion haliaetus",49,49,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Panthera pardus",20,20,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Paralaudakia caucasia",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Parus major",4,4,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Passer domesticus",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pastor roseus",97,97,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelobates cultripes",29,29,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax bedriagae",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax bergeri",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax caralitanus",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax cerigensis",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax cretensis",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax epeiroticus",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax esculentus",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax kl",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax kurtmuelleri",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax lessonae",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pelophylax ridibundus",80,80,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Perisoreus infaustus",121,121,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pernis apivorus",128,128,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Phalacrocorax carbo",7,7,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Phalacrocorax pygmaeus",3,3,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Phalaropus lobatus",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Phasianus colchicus",393,393,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Philomachus pugnax",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pica pica",588,588,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Platalea leucorodia",62,62,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Platyceps collaris",518,518,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Platyceps najadum",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Platyceps ventromaculatus",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Plegadis falcinellus",83,83,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pleurodeles waltl",82,82,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis gaigeae",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis hispanicus",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis lilfordi",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis liolepis",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis melisellensis",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis raffoneae",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podarcis vaucheri",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podiceps cristatus",44,44,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podiceps grisegena",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Podiceps nigricollis",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Porphyrio porphyrio",100,100,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Psammodromus jeanneae",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Psammodromus manuelae",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pseudocerastes persicus",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pseudopus apodus",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pteromys volans",128,128,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pyrrhocorax graculus",260,260,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Pyrrhocorax pyrrhocorax",291,291,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Rallus aquaticus",112,112,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Rana temporaria",1,1,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Rissa tridactyla",1,1,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Salamandra corsica",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Salamandra infraimmaculata",82,82,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Salamandra salamandra",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Saxicola torquatus",105,105,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sciurus anomalus",128,128,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sciurus vulgaris",128,128,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sitta neumayer",92,92,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sitta tephronota",92,92,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spalerosophis diadema",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus citellus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus fulvus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus major",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus musicus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus pygmaeus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus suslicus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus taurensis",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Spermophilus xanthoprymnus",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Stellagama stellio",131,131,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Stercorarius longicaudus",241,241,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Stercorarius parasiticus",261,261,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Stercorarius pomarinus",260,260,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Stercorarius skua",274,274,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Strix aluco",714,714,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Strix nebulosa",287,287,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Strix uralensis",239,239,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sturnus unicolor",227,227,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sturnus vulgaris",253,253,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Surnia ulula",157,157,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Sus scrofa",566,566,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tachybaptus ruficollis",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tadorna ferruginea",102,102,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tamias sibiricus",128,128,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tatera indica",43,43,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Telescopus fallax",597,597,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Telescopus nigriceps",887,887,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Testudo graeca",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Testudo hermanni",1,1,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tetrax tetrax",49,49,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Timon lepidus",622,622,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Trachylepis vittata",0,0,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tringa nebularia",4,4,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Triturus carnifex",72,72,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Triturus marmoratus",28,28,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Triturus pygmaeus",82,82,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Turdus merula",142,142,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Turdus philomelos",96,96,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Turdus pilaris",40,40,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Turdus torquatus",98,98,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Turdus viscivorus",3,3,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Tyto alba",365,365,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Upupa epops",162,162,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ursus arctos",213,213,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Ursus maritimus",53,53,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vanellus spinosus",54,54,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vanellus vanellus",23,23,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Varanus griseus",878,878,1,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera ammodytes",507,507,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera aspis",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera berus",589,589,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera darevskii",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera dinniki",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera eriwanensis",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera kaznakovi",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera latastei",630,630,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera renardi",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera seoanei",611,611,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vipera ursinii",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vormela peregusna",357,357,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vulpes corsac",278,278,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Vulpes vulpes",838,838,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis hohenackeri",282,282,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis lineatus",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis longissimus",499,499,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis persicus",375,375,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis scalaris",385,385,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
-"TetraEU consumers","Zamenis situla",836,836,0,"",,"animal","TetraEU terrestrial-vertebrate scope"
+"dataset","consumer","degree","degree_all_taxa","self_links","metrics","n_metrics"
+"GloBI consumers","Abramis brama",643,824,0,"ctmax",1
+"GloBI consumers","Abudefduf saxatilis",98,172,0,"ctmax",1
+"GloBI consumers","Acanthocybium solandri",32,103,0,"ctmax",1
+"GloBI consumers","Acanthogobius flavimanus",11,49,0,"ctmax",1
+"GloBI consumers","Acanthopagrus schlegelii",16,51,0,"ctmax",1
+"GloBI consumers","Acipenser brevirostrum",62,78,0,"ltmax",1
+"GloBI consumers","Acipenser fulvescens",8,64,0,"ctmax",1
+"GloBI consumers","Acipenser gueldenstaedtii",16,35,0,"ctmax",1
+"GloBI consumers","Acipenser nudiventris",1,7,0,"ctmax",1
+"GloBI consumers","Acipenser persicus",2,11,0,"ctmax",1
+"GloBI consumers","Acipenser stellatus",13,37,0,"ctmax",1
+"GloBI consumers","Acipenser sturio",2,10,0,"ctmax",1
+"GloBI consumers","Acipenser transmontanus",8,44,0,"ctmax",1
+"GloBI consumers","Agabus bipustulatus",116,146,1,"ctmax",1
+"GloBI consumers","Agkistrodon contortrix",32,58,0,"ctmax;ctmin",2
+"GloBI consumers","Agnetina capitata",3,9,0,"ctmax",1
+"GloBI consumers","Alburnus alburnus",378,508,0,"ctmax",1
+"GloBI consumers","Alburnus arborella",361,415,0,"ctmax",1
+"GloBI consumers","Alosa aestivalis",144,218,0,"ctmax",1
+"GloBI consumers","Alosa alosa",5,39,0,"ctmax",1
+"GloBI consumers","Alosa fallax",99,150,0,"ctmax",1
+"GloBI consumers","Alosa macedonica",3,6,0,"ctmax",1
+"GloBI consumers","Alosa mediocris",90,107,0,"ctmax",1
+"GloBI consumers","Alosa pseudoharengus",87,180,0,"ctmax;lt50",2
+"GloBI consumers","Alosa sapidissima",108,173,0,"ctmax;ltmax",2
+"GloBI consumers","Ambloplites rupestris",48,177,1,"ctmax",1
+"GloBI consumers","Ameiurus catus",108,168,0,"ctmax",1
+"GloBI consumers","Ameiurus nebulosus",429,537,0,"ctmax;lt50",2
+"GloBI consumers","Amia calva",17,48,0,"ctmax",1
+"GloBI consumers","Anax imperator",10,16,0,"ctmax",1
+"GloBI consumers","Anax junius",33,91,1,"ctmax",1
+"GloBI consumers","Anax longipes",4,4,1,"ctmax",1
+"GloBI consumers","Anaxyrus boreas",9,52,1,"ctmax",1
+"GloBI consumers","Anchoa mitchilli",105,231,1,"ctmax",1
+"GloBI consumers","Anguilla anguilla",1218,1471,1,"ctmax;ctmin;ltmax",3
+"GloBI consumers","Anguilla australis",23,89,0,"ctmax;lt50",2
+"GloBI consumers","Anguilla dieffenbachii",16,60,0,"ctmax;lt50",2
+"GloBI consumers","Anguilla marmorata",2,10,0,"ctmax",1
+"GloBI consumers","Anguilla rostrata",42,72,0,"ctmax",1
+"GloBI consumers","Anolis carolinensis",31,67,1,"ctmax",1
+"GloBI consumers","Anolis cristatellus",6,20,0,"ctmax;ctmin",2
+"GloBI consumers","Anolis sagrei",22,54,1,"ctmax",1
+"GloBI consumers","Apalone ferox",1,2,1,"ctmax",1
+"GloBI consumers","Apeltes quadracus",33,68,0,"ctmax",1
+"GloBI consumers","Aplodinotus grunniens",8,31,0,"ctmax;lt50",2
+"GloBI consumers","Archosargus probatocephalus",19,82,1,"ctmax",1
+"GloBI consumers","Arizona elegans",34,46,0,"ctmax",1
+"GloBI consumers","Armadillidium vulgare",3,4,0,"ctmax",1
+"GloBI consumers","Astacus leptodactylus",2,4,0,"ctmax",1
+"GloBI consumers","Astyanax bimaculatus",2,45,0,"ctmax",1
+"GloBI consumers","Atherinella brasiliensis",28,98,0,"ctmax",1
+"GloBI consumers","Atractosteus spatula",6,22,1,"ctmax",1
+"GloBI consumers","Austrelaps superbus",18,25,1,"ctmax;ctmin",2
+"GloBI consumers","Auxis rochei",10,35,1,"ctmax",1
+"GloBI consumers","Auxis thazard",6,33,1,"ctmax",1
+"GloBI consumers","Babka gymnotrachelus",3,22,0,"ctmax",1
+"GloBI consumers","Bagrus docmak",22,69,0,"ctmax",1
+"GloBI consumers","Barbatula barbatula",659,783,0,"ctmax",1
+"GloBI consumers","Barbus barbus",652,747,0,"ctmax",1
+"GloBI consumers","Barbus caninus",754,852,0,"ctmax",1
+"GloBI consumers","Barbus plebejus",1079,1186,0,"ctmax",1
+"GloBI consumers","Bathygobius soporator",13,76,1,"ctmax",1
+"GloBI consumers","Belonesox belizanus",1,2,0,"ctmax",1
+"GloBI consumers","Beryx splendens",57,164,0,"ctmax",1
+"GloBI consumers","Blicca bjoerkna",573,708,0,"ctmax",1
+"GloBI consumers","Bodianus rufus",124,183,0,"ctmax",1
+"GloBI consumers","Brachyponera chinensis",7,11,0,"ctmax",1
+"GloBI consumers","Butis butis",1,7,0,"ctmax",1
+"GloBI consumers","Calamus brachysomus",1,13,0,"ctmax",1
+"GloBI consumers","Calathus melanocephalus",1635,1675,1,"ctmin",1
+"GloBI consumers","Canthigaster rostrata",238,331,0,"ctmax",1
+"GloBI consumers","Carasobarbus canis",5,21,0,"ctmax",1
+"GloBI consumers","Carassius carassius",1066,1373,0,"ctmax;ctmin",2
+"GloBI consumers","Carassius gibelio",998,1120,0,"ctmax",1
+"GloBI consumers","Carcinus maenas",125,211,1,"ctmax",1
+"GloBI consumers","Catostomus catostomus",1,29,0,"ctmax",1
+"GloBI consumers","Catostomus commersonii",1,51,0,"ctmax",1
+"GloBI consumers","Catostomus macrocheilus",1,17,0,"ctmax",1
+"GloBI consumers","Centrolabrus exoletus",20,23,0,"ctmax",1
+"GloBI consumers","Centropristis striata",111,182,0,"ctmax",1
+"GloBI consumers","Chaenocephalus aceratus",19,53,1,"ctmax",1
+"GloBI consumers","Channa marulius",1,3,0,"ctmax",1
+"GloBI consumers","Channa micropeltes",1,7,0,"ctmax",1
+"GloBI consumers","Channa punctata",13,33,1,"ctmax",1
+"GloBI consumers","Channa striata",4,45,0,"ctmax",1
+"GloBI consumers","Chanodichthys erythropterus",13,38,0,"ctmax",1
+"GloBI consumers","Chanos chanos",4,53,0,"ctmax",1
+"GloBI consumers","Charina bottae",10,20,0,"ctmax",1
+"GloBI consumers","Cheimarrichthys fosteri",7,27,0,"lt50",1
+"GloBI consumers","Chelon ramada",8,74,0,"ctmax",1
+"GloBI consumers","Chelonodon patoca",1,18,0,"ctmax",1
+"GloBI consumers","Chionodraco rastrospinosus",7,13,0,"ctmax",1
+"GloBI consumers","Chitala chitala",2,10,0,"ctmax",1
+"GloBI consumers","Chondrostoma nasus",1,11,0,"ctmax",1
+"GloBI consumers","Chondrostoma soetta",53,66,0,"ctmax",1
+"GloBI consumers","Chrosomus neogaeus",10,43,0,"ctmax",1
+"GloBI consumers","Chrysemys picta",2,6,0,"ctmax",1
+"GloBI consumers","Clarias anguillaris",2,26,1,"ctmax",1
+"GloBI consumers","Clarias batrachus",1,39,1,"ctmax",1
+"GloBI consumers","Clarias gariepinus",8,124,1,"ctmax",1
+"GloBI consumers","Clarias stappersii",1,11,0,"ctmax",1
+"GloBI consumers","Clupea harengus",148,341,1,"ctmax",1
+"GloBI consumers","Clupea pallasii",21,92,1,"ctmax",1
+"GloBI consumers","Cobitis bilineata",565,642,0,"ctmax",1
+"GloBI consumers","Cobitis taenia",565,645,0,"ctmax",1
+"GloBI consumers","Coenagrion puella",278,305,0,"ctmax",1
+"GloBI consumers","Coluber constrictor",91,128,1,"ctmax",1
+"GloBI consumers","Cordulegaster boltonii",192,226,1,"ctmax",1
+"GloBI consumers","Coregonus albula",16,71,1,"ctmax",1
+"GloBI consumers","Coregonus artedi",24,58,1,"ctmax",1
+"GloBI consumers","Coregonus autumnalis",6,36,0,"ctmax",1
+"GloBI consumers","Coregonus clupeaformis",29,66,0,"ctmax;lt50",2
+"GloBI consumers","Coregonus lavaretus",9,94,1,"ctmax",1
+"GloBI consumers","Coregonus peled",6,16,0,"ctmax",1
+"GloBI consumers","Coryphoblennius galerita",80,118,1,"ctmax",1
+"GloBI consumers","Cottus aleuticus",3,24,0,"ctmax",1
+"GloBI consumers","Cottus asper",7,23,1,"ctmax",1
+"GloBI consumers","Cottus cognatus",7,20,0,"ctmax",1
+"GloBI consumers","Cottus gobio",696,846,1,"ctmax",1
+"GloBI consumers","Crangon crangon",84,152,1,"ctmax",1
+"GloBI consumers","Crangonyx pseudogracilis",20,25,0,"ctmax;ltmax",2
+"GloBI consumers","Crematogaster lineolata",2,5,0,"ctmax",1
+"GloBI consumers","Crotalus atrox",71,97,1,"ctmax",1
+"GloBI consumers","Crotalus cerastes",55,73,1,"ctmax",1
+"GloBI consumers","Crotalus scutulatus",24,31,0,"ctmax",1
+"GloBI consumers","Crotalus viridis",21,31,1,"ctmax",1
+"GloBI consumers","Ctenolabrus rupestris",50,117,0,"ctmax",1
+"GloBI consumers","Ctenotus pantherinus",3,4,0,"ctmax",1
+"GloBI consumers","Culaea inconstans",3,47,0,"ctmax",1
+"GloBI consumers","Cynoscion nebulosus",119,242,1,"ctmax",1
+"GloBI consumers","Cyprinella lutrensis",1,7,0,"ctmax",1
+"GloBI consumers","Cyprinella spiloptera",28,67,0,"ctmax",1
+"GloBI consumers","Cyprinus carpio",1010,1194,1,"ctmax;ctmin;ltmax",3
+"GloBI consumers","Danio rerio",4,30,0,"ctmax",1
+"GloBI consumers","Dasyatis sabina",3,24,0,"ctmax",1
+"GloBI consumers","Dicentrarchus labrax",19,75,1,"ctmax;ctmin",2
+"GloBI consumers","Dikerogammarus villosus",395,461,1,"ctmax;lt50;ltmax",3
+"GloBI consumers","Dinocras cephalotes",429,503,1,"ctmax",1
+"GloBI consumers","Diplectrum formosum",106,184,0,"ctmax",1
+"GloBI consumers","Diplodus sargus",48,211,0,"ctmax",1
+"GloBI consumers","Diplodus vulgaris",31,141,0,"ctmax",1
+"GloBI consumers","Dorosoma cepedianum",94,193,1,"ctmax;lt50",2
+"GloBI consumers","Eleotris acanthopomus",9,30,1,"ctmax",1
+"GloBI consumers","Eleotris fusca",9,21,0,"ctmax",1
+"GloBI consumers","Eleutherodactylus coqui",1,8,0,"ctmax",1
+"GloBI consumers","Elgaria multicarinata",6,10,1,"ctmax;ctmin",2
+"GloBI consumers","Elopichthys bambusa",1,1,0,"ctmax",1
+"GloBI consumers","Elops hawaiensis",2,11,0,"ctmax",1
+"GloBI consumers","Elops machnata",12,25,0,"ctmax",1
+"GloBI consumers","Elops saurus",72,151,0,"ctmax",1
+"GloBI consumers","Enneacanthus gloriosus",48,85,0,"ctmax",1
+"GloBI consumers","Epinephelus tauvina",1,22,0,"ctmax",1
+"GloBI consumers","Erimyzon oblongus",91,128,0,"ctmax",1
+"GloBI consumers","Erythemis simplicicollis",69,102,1,"ctmax",1
+"GloBI consumers","Esox lucius",759,940,1,"ctmax;lt50",2
+"GloBI consumers","Esox masquinongy",17,36,0,"ctmax",1
+"GloBI consumers","Esox niger",4,38,0,"ctmax",1
+"GloBI consumers","Etheostoma olmstedi",91,125,0,"ctmax",1
+"GloBI consumers","Etroplus maculatus",1,26,0,"ctmax",1
+"GloBI consumers","Euophrys frontalis",1012,1080,1,"ctmax",1
+"GloBI consumers","Euthynnus affinis",28,61,0,"ctmax",1
+"GloBI consumers","Euthynnus alletteratus",63,171,1,"ctmax",1
+"GloBI consumers","Faxonius rusticus",4,10,0,"ctmax",1
+"GloBI consumers","Formica sanguinea",25,28,1,"ctmax",1
+"GloBI consumers","Formica subsericea",6,13,0,"ctmax",1
+"GloBI consumers","Fundulus diaphanus",188,299,0,"ctmax",1
+"GloBI consumers","Fundulus grandis",22,115,1,"ctmax",1
+"GloBI consumers","Gadus morhua",665,1323,1,"ctmax",1
+"GloBI consumers","Galaxias brevipinnis",9,42,1,"ctmax",1
+"GloBI consumers","Galaxias fasciatus",2,7,0,"ctmax",1
+"GloBI consumers","Galaxias vulgaris",16,83,1,"ctmax",1
+"GloBI consumers","Gambelia wislizenii",3,15,0,"ctmin",1
+"GloBI consumers","Gambusia affinis",60,155,1,"ctmax;ctmin",2
+"GloBI consumers","Gammarus pulex",350,415,0,"ctmax;lt50;ltmax",3
+"GloBI consumers","Gasterosteus aculeatus",1262,1529,1,"ctmax",1
+"GloBI consumers","Gillichthys mirabilis",28,73,0,"ctmax",1
+"GloBI consumers","Glossiphonia complanata",35,58,1,"ltmax",1
+"GloBI consumers","Gobio gobio",650,780,1,"ctmax",1
+"GloBI consumers","Gobiocichla ethelwynnae",1,6,0,"ctmax",1
+"GloBI consumers","Gobiomorphus breviceps",22,113,1,"ctmax",1
+"GloBI consumers","Gobiomorphus cotidianus",8,37,0,"ctmax;lt50",2
+"GloBI consumers","Gobius cobitis",1,10,0,"ctmax",1
+"GloBI consumers","Gobius niger",42,130,1,"ctmax",1
+"GloBI consumers","Gobius paganellus",47,112,1,"ctmax;lt50",2
+"GloBI consumers","Gymnarchus niloticus",3,9,0,"ctmax",1
+"GloBI consumers","Gymnocephalus cernua",632,804,0,"ctmax",1
+"GloBI consumers","Haemulon flavolineatum",147,214,0,"ctmax",1
+"GloBI consumers","Hagenius brevistylus",29,34,1,"ctmax",1
+"GloBI consumers","Halichoeres bivittatus",151,216,0,"ctmax",1
+"GloBI consumers","Halichoeres garnoti",115,166,0,"ctmax",1
+"GloBI consumers","Halichoeres maculipinna",143,204,0,"ctmax",1
+"GloBI consumers","Halichoeres poeyi",111,159,0,"ctmax",1
+"GloBI consumers","Halichoeres radiatus",179,231,0,"ctmax",1
+"GloBI consumers","Halichoeres semicinctus",41,100,0,"ctmax",1
+"GloBI consumers","Helobdella stagnalis",26,48,0,"ctmax;ltmax",2
+"GloBI consumers","Heloderma suspectum",15,15,0,"ctmax",1
+"GloBI consumers","Hemachatus haemachatus",4,10,0,"ctmax",1
+"GloBI consumers","Hemidactylus frenatus",15,33,1,"ctmax;ctmin",2
+"GloBI consumers","Hemidactylus turcicus",5,18,0,"ctmax",1
+"GloBI consumers","Hepsetus odoe",5,24,0,"ctmax",1
+"GloBI consumers","Hiodon alosoides",9,60,0,"ctmax",1
+"GloBI consumers","Holacanthus passer",20,42,0,"ctmax",1
+"GloBI consumers","Hucho hucho",39,61,0,"ctmax",1
+"GloBI consumers","Huso huso",36,65,0,"ctmax",1
+"GloBI consumers","Hydrocynus brevis",2,6,0,"ctmax",1
+"GloBI consumers","Hydrocynus forskahlii",17,66,0,"ctmax",1
+"GloBI consumers","Hydrocynus vittatus",17,39,0,"ctmax",1
+"GloBI consumers","Hydropsyche pellucidula",215,269,0,"ctmax;ltmax",2
+"GloBI consumers","Hypomesus olidus",4,17,0,"ctmax",1
+"GloBI consumers","Hypoplectrus aberrans",61,86,0,"ctmax",1
+"GloBI consumers","Hypoplectrus nigricans",97,127,0,"ctmax",1
+"GloBI consumers","Hypsoblennius hentz",35,54,0,"ctmax",1
+"GloBI consumers","Ictalurus furcatus",31,95,0,"ctmax",1
+"GloBI consumers","Ictalurus punctatus",44,112,0,"ctmax;ctmin;ltmax",3
+"GloBI consumers","Ischnura elegans",749,816,1,"ctmax",1
+"GloBI consumers","Istiompax indica",14,24,0,"ctmax",1
+"GloBI consumers","Istiophorus platypterus",37,111,0,"ctmax",1
+"GloBI consumers","Kajikia albida",30,78,0,"ctmax",1
+"GloBI consumers","Kajikia audax",29,54,0,"ctmax",1
+"GloBI consumers","Katsuwonus pelamis",9,58,1,"ctmax",1
+"GloBI consumers","Konia eisentrauti",1,3,0,"ctmax",1
+"GloBI consumers","Kuhlia sandvicensis",3,10,0,"ctmax;lt50",2
+"GloBI consumers","Labroides dimidiatus",2,33,0,"ctmax",1
+"GloBI consumers","Labrus bergylta",120,230,1,"ctmax",1
+"GloBI consumers","Labrus mixtus",45,67,0,"ctmax",1
+"GloBI consumers","Lacerta agilis",2486,2540,1,"ctmax;ctmin",2
+"GloBI consumers","Lachnolaimus maximus",183,245,0,"ctmax",1
+"GloBI consumers","Lagodon rhomboides",77,226,1,"ctmax",1
+"GloBI consumers","Lampropeltis zonata",12,19,0,"ctmax",1
+"GloBI consumers","Lateolabrax japonicus",25,77,0,"ctmax",1
+"GloBI consumers","Lates calcarifer",18,52,1,"ctmax;ltmax",2
+"GloBI consumers","Lates niloticus",28,72,1,"ctmax",1
+"GloBI consumers","Leiostomus xanthurus",152,401,1,"ctmax",1
+"GloBI consumers","Lepidiolamprologus elongatus",3,16,0,"ctmax",1
+"GloBI consumers","Lepidiolamprologus profundicola",2,6,0,"ctmax",1
+"GloBI consumers","Lepidonotothen squamifrons",14,96,1,"ctmax",1
+"GloBI consumers","Lepidopsetta bilineata",15,84,1,"ctmax",1
+"GloBI consumers","Lepisosteus osseus",64,92,0,"ctmax",1
+"GloBI consumers","Lepomis auritus",16,56,0,"ctmax",1
+"GloBI consumers","Lepomis cyanellus",4,20,0,"ctmax;ctmin",2
+"GloBI consumers","Lepomis gibbosus",1057,1295,0,"ctmax;ctmin",2
+"GloBI consumers","Lepomis gulosus",3,23,0,"ctmax",1
+"GloBI consumers","Lepomis macrochirus",81,144,0,"ctmax;lt50;ltmax",3
+"GloBI consumers","Leptocottus armatus",49,131,1,"ctmax",1
+"GloBI consumers","Lethocerus americanus",10,37,1,"ctmax",1
+"GloBI consumers","Leucaspius delineatus",362,430,1,"ctmax",1
+"GloBI consumers","Leuciscus aspius",87,96,0,"ctmax",1
+"GloBI consumers","Leuciscus idus",3,12,0,"ctmax",1
+"GloBI consumers","Leuciscus leuciscus",586,716,0,"ctmax",1
+"GloBI consumers","Limnothrissa miodon",13,39,0,"ctmax",1
+"GloBI consumers","Linepithema humile",18,27,0,"ctmax;ctmin",2
+"GloBI consumers","Liopsetta glacialis",12,32,0,"ctmax",1
+"GloBI consumers","Lipophrys pholis",30,74,1,"ctmax",1
+"GloBI consumers","Lipophrys trigloides",18,52,1,"ctmax",1
+"GloBI consumers","Lota lota",695,832,1,"ctmax;ctmin",2
+"GloBI consumers","Lucania parva",142,226,0,"ctmax;lt50",2
+"GloBI consumers","Luciobarbus guiraonis",1,11,0,"ctmax",1
+"GloBI consumers","Lutjanus apodus",145,217,0,"ctmax",1
+"GloBI consumers","Lutjanus guttatus",19,50,0,"ctmax;ctmin",2
+"GloBI consumers","Luxilus cornutus",129,224,0,"ctmax",1
+"GloBI consumers","Maccullochella peelii",13,47,0,"ctmax",1
+"GloBI consumers","Macropelopia nebulosa",15,23,1,"lt50",1
+"GloBI consumers","Makaira nigricans",72,142,0,"ctmax",1
+"GloBI consumers","Masticophis lateralis",24,32,1,"ctmax",1
+"GloBI consumers","Megalops cyprinoides",4,31,0,"ctmax",1
+"GloBI consumers","Melanotaenia splendida",1,52,0,"ctmax",1
+"GloBI consumers","Menidia beryllina",99,243,1,"ctmax",1
+"GloBI consumers","Menidia menidia",35,59,0,"lt50",1
+"GloBI consumers","Menippe nodifrons",9,40,1,"ctmax",1
+"GloBI consumers","Metacarcinus magister",18,49,1,"lt50",1
+"GloBI consumers","Micropterus coosae",1,1,0,"ctmax",1
+"GloBI consumers","Micropterus dolomieu",37,98,1,"ctmax",1
+"GloBI consumers","Micropterus floridanus",2,2,1,"ctmax",1
+"GloBI consumers","Micropterus punctulatus",1,6,0,"ctmax",1
+"GloBI consumers","Micropterus salmoides",437,634,1,"ctmax;lt50;ctmin",3
+"GloBI consumers","Microthrissa congica",1,16,0,"ctmax",1
+"GloBI consumers","Monopterus albus",1,12,0,"ctmax",1
+"GloBI consumers","Morone americana",128,204,1,"ctmax",1
+"GloBI consumers","Morone chrysops",8,21,1,"ctmax;lt50",2
+"GloBI consumers","Morone mississippiensis",7,26,0,"ctmax",1
+"GloBI consumers","Morone saxatilis",194,300,1,"ctmax;lt50",2
+"GloBI consumers","Mullus surmuletus",117,230,0,"ctmax;lt50",2
+"GloBI consumers","Myoxocephalus quadricornis",14,30,1,"ctmax",1
+"GloBI consumers","Mytilus edulis",30,53,1,"lt50",1
+"GloBI consumers","Nandus nandus",1,4,0,"ctmax",1
+"GloBI consumers","Neogobius melanostomus",1160,1306,1,"ctmax",1
+"GloBI consumers","Neolamprologus meeli",1,1,0,"ctmax",1
+"GloBI consumers","Neolamprologus pulcher",4,4,0,"ctmax",1
+"GloBI consumers","Neolamprologus savoryi",1,7,0,"ctmax",1
+"GloBI consumers","Notechis scutatus",14,20,0,"ctmax",1
+"GloBI consumers","Notemigonus crysoleucas",58,144,0,"ctmax",1
+"GloBI consumers","Notothenia coriiceps",146,200,1,"ctmax",1
+"GloBI consumers","Notothenia rossii",29,70,0,"ctmax",1
+"GloBI consumers","Noturus flavus",1,23,0,"ctmax",1
+"GloBI consumers","Noturus stigmosus",1,7,0,"ctmax",1
+"GloBI consumers","Nucella lapillus",13,22,0,"lt50",1
+"GloBI consumers","Ocyurus chrysurus",230,315,0,"ctmax",1
+"GloBI consumers","Odontaster validus",163,202,1,"ctmax",1
+"GloBI consumers","Oedothorax apicatus",38,40,0,"ctmax",1
+"GloBI consumers","Oncorhynchus clarkii",22,73,1,"ctmax;lt50",2
+"GloBI consumers","Oncorhynchus gorbuscha",23,143,0,"ctmax",1
+"GloBI consumers","Oncorhynchus keta",33,145,0,"ctmax;ltmax",2
+"GloBI consumers","Oncorhynchus kisutch",73,174,1,"ctmax;lt50",2
+"GloBI consumers","Oncorhynchus mykiss",766,997,1,"ctmax;ctmin",2
+"GloBI consumers","Oncorhynchus nerka",31,130,0,"ctmax",1
+"GloBI consumers","Oncorhynchus tshawytscha",99,216,1,"ctmax;lt50",2
+"GloBI consumers","Oreochromis andersonii",1,20,0,"ctmax",1
+"GloBI consumers","Oreochromis esculentus",1,13,0,"ctmax",1
+"GloBI consumers","Oreochromis mossambicus",15,101,1,"ctmax",1
+"GloBI consumers","Oreochromis niloticus",15,84,1,"ctmax",1
+"GloBI consumers","Osmerus dentex",5,22,0,"ctmax",1
+"GloBI consumers","Osmerus eperlanus",23,87,1,"ctmax",1
+"GloBI consumers","Osmerus mordax",42,113,0,"ctmax",1
+"GloBI consumers","Pachycara brachycephalum",43,47,0,"ctmax",1
+"GloBI consumers","Pachygrapsus marmoratus",45,76,1,"ctmax",1
+"GloBI consumers","Padogobius bonelli",650,733,0,"ctmax",1
+"GloBI consumers","Pagellus bogaraveo",38,117,0,"ctmax",1
+"GloBI consumers","Pagrus auratus",12,68,0,"ctmax",1
+"GloBI consumers","Pagrus major",52,121,0,"ctmax",1
+"GloBI consumers","Pagurus bernhardus",39,59,0,"ctmax",1
+"GloBI consumers","Palaemon elegans",11,54,1,"ctmax",1
+"GloBI consumers","Palaemon longirostris",3,24,1,"ctmax",1
+"GloBI consumers","Palaemon macrodactylus",3,7,1,"ctmax",1
+"GloBI consumers","Pangasius pangasius",2,10,0,"ctmax",1
+"GloBI consumers","Parachondrostoma toxostoma",565,647,0,"ctmax",1
+"GloBI consumers","Paragnetina media",2,8,0,"ctmax;lt50",2
+"GloBI consumers","Paralabrax clathratus",41,81,1,"ctmax",1
+"GloBI consumers","Paralichthys californicus",80,109,1,"ctmax",1
+"GloBI consumers","Paralichthys lethostigma",25,101,1,"ctmax",1
+"GloBI consumers","Paralichthys olivaceus",25,55,1,"ctmax",1
+"GloBI consumers","Parasuta flagellum",8,11,0,"ctmax;ctmin",2
+"GloBI consumers","Parophrys vetulus",5,51,0,"ctmax",1
+"GloBI consumers","Pegusa lascaris",11,47,0,"ctmax",1
+"GloBI consumers","Pelecus cultratus",4,23,0,"ctmax",1
+"GloBI consumers","Perca flavescens",84,242,1,"ctmax",1
+"GloBI consumers","Perca fluviatilis",830,1053,1,"ctmax",1
+"GloBI consumers","Perccottus glenii",1,13,0,"ctmax",1
+"GloBI consumers","Perissodus microlepis",21,45,0,"ctmax",1
+"GloBI consumers","Petromyzon marinus",41,62,0,"ctmax",1
+"GloBI consumers","Petrus rupestris",1,4,0,"ctmax",1
+"GloBI consumers","Phoxinus lumaireul",0,0,0,"ctmax",1
+"GloBI consumers","Phyllorhynchus decurtatus",2,3,0,"ctmax",1
+"GloBI consumers","Pimephales notatus",5,34,0,"ctmax",1
+"GloBI consumers","Pimephales promelas",26,81,0,"ctmax",1
+"GloBI consumers","Pituophis catenifer",90,111,1,"ctmax",1
+"GloBI consumers","Platichthys flesus",192,343,1,"ctmax;lt50;ltmax",3
+"GloBI consumers","Plecodus straeleni",44,47,0,"ctmax",1
+"GloBI consumers","Pleuronectes platessa",313,534,1,"ctmax;lt50;ltmax",3
+"GloBI consumers","Pogonomyrmex rugosus",2,2,0,"ctmax",1
+"GloBI consumers","Pomacea canaliculata",1,1,0,"ltmax",1
+"GloBI consumers","Pomatoschistus microps",30,79,1,"ctmax",1
+"GloBI consumers","Pomatoschistus minutus",54,147,1,"ctmax",1
+"GloBI consumers","Pomoxis annularis",4,22,0,"ctmax",1
+"GloBI consumers","Pomoxis nigromaculatus",49,131,1,"ctmax",1
+"GloBI consumers","Ponticola kessleri",656,756,1,"ctmax",1
+"GloBI consumers","Potamopyrgus antipodarum",16,66,0,"ctmax",1
+"GloBI consumers","Prenolepis imparis",8,17,0,"ctmax",1
+"GloBI consumers","Pristolepis fasciata",1,20,0,"ctmax",1
+"GloBI consumers","Probarbus jullieni",1,7,0,"ctmax",1
+"GloBI consumers","Prognathodes aculeatus",106,152,0,"ctmax",1
+"GloBI consumers","Prosopium williamsoni",2,32,1,"ctmax;lt50",2
+"GloBI consumers","Pseudacris regilla",5,36,1,"ctmax",1
+"GloBI consumers","Pseudechis porphyriacus",30,41,1,"ctmin",1
+"GloBI consumers","Pseudonaja nuchalis",30,48,1,"ctmin",1
+"GloBI consumers","Pseudonaja textilis",51,71,1,"ctmax;ctmin",2
+"GloBI consumers","Pseudopleuronectes americanus",160,288,0,"ctmax;lt50",2
+"GloBI consumers","Pseudorasbora parva",566,681,1,"ctmax",1
+"GloBI consumers","Pterogymnus laniarius",7,28,0,"ctmax",1
+"GloBI consumers","Pterois volitans",22,71,0,"ctmax",1
+"GloBI consumers","Ptychocheilus grandis",3,3,1,"ctmax",1
+"GloBI consumers","Ptychocheilus oregonensis",16,49,1,"ctmax",1
+"GloBI consumers","Pygocentrus nattereri",8,28,0,"ctmax",1
+"GloBI consumers","Pylodictis olivaris",18,81,1,"ctmax",1
+"GloBI consumers","Regina alleni",8,16,0,"ctmax",1
+"GloBI consumers","Rhinichthys atratulus",9,46,0,"ctmax;lt50",2
+"GloBI consumers","Rhinocheilus lecontei",31,42,1,"ctmax",1
+"GloBI consumers","Rhodeus amarus",1,13,0,"ctmax",1
+"GloBI consumers","Rhyacophila dorsalis",225,276,1,"ctmax;ltmax",2
+"GloBI consumers","Richardsonius balteatus",2,15,1,"ctmax",1
+"GloBI consumers","Rutilus aula",565,648,0,"ctmax",1
+"GloBI consumers","Rutilus pigus",565,651,0,"ctmax",1
+"GloBI consumers","Rutilus rutilus",623,838,0,"ctmax;lt50",2
+"GloBI consumers","Sabanejewia larvata",565,644,0,"ctmax",1
+"GloBI consumers","Salariopsis fluviatilis",400,483,0,"ctmax",1
+"GloBI consumers","Salmo labrax",650,731,0,"ctmax",1
+"GloBI consumers","Salmo marmoratus",85,93,0,"ctmax",1
+"GloBI consumers","Salmo salar",745,976,1,"ctmax;ctmin",2
+"GloBI consumers","Salmo trutta",1365,1813,1,"ctmax",1
+"GloBI consumers","Salvelinus alpinus",90,313,1,"ctmax;lt50",2
+"GloBI consumers","Salvelinus fontinalis",758,961,1,"ctmax",1
+"GloBI consumers","Salvelinus leucomaenis",5,35,0,"ctmax",1
+"GloBI consumers","Salvelinus namaycush",692,812,1,"ctmax",1
+"GloBI consumers","Sander canadensis",18,30,1,"ctmax",1
+"GloBI consumers","Sander lucioperca",107,156,1,"ctmax",1
+"GloBI consumers","Sander vitreus",44,69,1,"ctmax",1
+"GloBI consumers","Sander volgensis",4,11,0,"ctmax",1
+"GloBI consumers","Sarda australis",4,8,0,"ctmax",1
+"GloBI consumers","Sarda chiliensis",17,30,0,"ctmax",1
+"GloBI consumers","Sarda orientalis",4,13,0,"ctmax",1
+"GloBI consumers","Sarda sarda",14,48,1,"ctmax",1
+"GloBI consumers","Sardinops sagax",9,96,0,"ctmax",1
+"GloBI consumers","Sarmarutilus rubilio",14,44,0,"ctmax",1
+"GloBI consumers","Scardinius erythrophthalmus",999,1139,0,"ctmax",1
+"GloBI consumers","Schilbe intermedius",12,52,1,"ctmax",1
+"GloBI consumers","Schilbe mystus",27,67,0,"ctmax",1
+"GloBI consumers","Sciaenops ocellatus",96,255,1,"ctmax;ctmin",2
+"GloBI consumers","Scomber australasicus",2,35,0,"ctmax",1
+"GloBI consumers","Scomber scombrus",237,552,1,"ctmax",1
+"GloBI consumers","Scomberomorus commerson",12,42,0,"ctmax",1
+"GloBI consumers","Scomberomorus munroi",2,7,0,"ctmax",1
+"GloBI consumers","Scomberomorus niphonius",13,26,0,"ctmax",1
+"GloBI consumers","Scomberomorus queenslandicus",1,18,0,"ctmax",1
+"GloBI consumers","Scomberomorus regalis",69,101,0,"ctmax",1
+"GloBI consumers","Scomberomorus tritor",1,4,0,"ctmax",1
+"GloBI consumers","Scorpaena porcus",32,113,0,"ctmax;lt50",2
+"GloBI consumers","Semotilus atromaculatus",64,185,0,"ctmax",1
+"GloBI consumers","Seriola lalandi",10,38,0,"ctmax",1
+"GloBI consumers","Serranochromis angusticeps",1,6,0,"ctmax",1
+"GloBI consumers","Serranus atricauda",20,32,0,"ctmax",1
+"GloBI consumers","Sialis lutaria",244,317,1,"ctmax;ltmax",2
+"GloBI consumers","Silurus asotus",5,10,1,"ctmax",1
+"GloBI consumers","Silurus glanis",104,178,1,"ctmax",1
+"GloBI consumers","Silurus meridionalis",1,2,0,"ctmax",1
+"GloBI consumers","Solea solea",207,438,0,"ctmax",1
+"GloBI consumers","Solenopsis invicta",36,55,0,"ctmax",1
+"GloBI consumers","Sparus aurata",23,164,0,"ctmax",1
+"GloBI consumers","Sperata seenghala",1,1,0,"ctmax",1
+"GloBI consumers","Sphoeroides maculatus",140,175,0,"ctmax;lt50",2
+"GloBI consumers","Sphoeroides spengleri",244,329,0,"ctmax",1
+"GloBI consumers","Spondyliosoma cantharus",1,61,0,"ctmax",1
+"GloBI consumers","Squalius cephalus",755,893,1,"ctmax",1
+"GloBI consumers","Stenodus leucichthys",11,21,1,"ctmax",1
+"GloBI consumers","Stenotomus chrysops",129,204,0,"ctmax",1
+"GloBI consumers","Sterechinus neumayeri",65,93,0,"ctmax",1
+"GloBI consumers","Strongylura marina",99,158,0,"ctmax",1
+"GloBI consumers","Symphodus melops",66,136,0,"ctmax",1
+"GloBI consumers","Syngnathus acus",18,79,0,"ctmax",1
+"GloBI consumers","Synodontis multipunctatus",1,10,0,"ctmax",1
+"GloBI consumers","Synodontis njassae",2,8,0,"ctmax",1
+"GloBI consumers","Synodontis petricola",8,10,0,"ctmax",1
+"GloBI consumers","Synodontis zambezensis",1,9,0,"ctmax",1
+"GloBI consumers","Tautoga onitis",52,66,0,"ctmax",1
+"GloBI consumers","Tautogolabrus adspersus",11,48,0,"ctmax",1
+"GloBI consumers","Telestes muticellus",565,642,1,"ctmax",1
+"GloBI consumers","Telestes souffia",565,649,0,"ctmax",1
+"GloBI consumers","Terapon jarbua",5,71,0,"ctmax",1
+"GloBI consumers","Tetrapturus angustirostris",2,7,0,"ctmax",1
+"GloBI consumers","Thalassoma bifasciatum",128,194,0,"ctmax",1
+"GloBI consumers","Thamnophis elegans",57,100,1,"ctmax;ctmin",2
+"GloBI consumers","Thamnophis marcianus",21,31,0,"ctmin",1
+"GloBI consumers","Thamnophis sirtalis",128,204,1,"ctmax;ctmin",2
+"GloBI consumers","Thunnus alalunga",66,125,0,"ctmax",1
+"GloBI consumers","Thunnus albacares",124,273,1,"ctmax",1
+"GloBI consumers","Thunnus maccoyii",3,10,0,"ctmax",1
+"GloBI consumers","Thunnus obesus",54,145,0,"ctmax",1
+"GloBI consumers","Thunnus thynnus",89,197,0,"ctmax",1
+"GloBI consumers","Thymallus arcticus",2,23,0,"ctmax",1
+"GloBI consumers","Thymallus thymallus",472,665,1,"ctmax",1
+"GloBI consumers","Tibellus maritimus",763,813,1,"ctmax;lt50",2
+"GloBI consumers","Tinca tinca",625,768,0,"ctmax",1
+"GloBI consumers","Tor tor",1,35,0,"ctmax",1
+"GloBI consumers","Trachurus japonicus",3,18,0,"ctmax",1
+"GloBI consumers","Trematomus bernacchii",125,249,0,"ctmax",1
+"GloBI consumers","Trematomus hansoni",97,178,1,"ctmax;lt50",2
+"GloBI consumers","Trematomus pennellii",170,227,1,"ctmax",1
+"GloBI consumers","Trimeresurus gracilis",8,10,0,"ctmax;ctmin",2
+"GloBI consumers","Trinectes maculatus",29,64,1,"ctmax",1
+"GloBI consumers","Tylochromis polylepis",1,6,0,"ctmax",1
+"GloBI consumers","Tylochromis pulcher",1,2,0,"ctmax",1
+"GloBI consumers","Umbra limi",11,76,1,"ctmax",1
+"GloBI consumers","Umbra pygmaea",4,34,0,"ctmax",1
+"GloBI consumers","Varanus gouldii",51,55,1,"ctmax",1
+"GloBI consumers","Wallago attu",2,10,0,"ctmax",1
+"GloBI consumers","Xiphias gladius",117,223,1,"ctmax",1
+"GloBI consumers","Xyrauchen texanus",1,14,0,"ctmax",1
+"GloBI consumers","Xyrichtys novacula",13,70,0,"ctmax",1
+"GloBI consumers","Zoarces viviparus",28,57,1,"ctmax",1
+"GloBI consumers","Zora spinimana",3284,3361,1,"ctmax",1
+"TetraEU consumers","Acanthodactylus boskianus",17,17,0,"",
+"TetraEU consumers","Acanthodactylus schreiberi",0,0,1,"",
+"TetraEU consumers","Accipiter brevipes",48,48,0,"",
+"TetraEU consumers","Accipiter gentilis",201,201,1,"",
+"TetraEU consumers","Accipiter nisus",226,226,1,"",
+"TetraEU consumers","Acrocephalus agricola",5,5,0,"",
+"TetraEU consumers","Acrocephalus arundinaceus",35,35,0,"",
+"TetraEU consumers","Actitis hypoleucos",23,23,0,"",
+"TetraEU consumers","Aegolius funereus",147,147,1,"",
+"TetraEU consumers","Aegypius monachus",32,32,0,"",
+"TetraEU consumers","Alcedo atthis",23,23,0,"",
+"TetraEU consumers","Alopex lagopus",188,188,0,"",
+"TetraEU consumers","Anas acuta",102,102,0,"",
+"TetraEU consumers","Anas clypeata",102,102,0,"",
+"TetraEU consumers","Anas penelope",102,102,0,"",
+"TetraEU consumers","Anas platyrhynchos",102,102,0,"",
+"TetraEU consumers","Anas querquedula",54,54,0,"",
+"TetraEU consumers","Anas strepera",102,102,0,"",
+"TetraEU consumers","Anguis cephallonica",155,155,1,"",
+"TetraEU consumers","Anguis fragilis",163,163,1,"",
+"TetraEU consumers","Anthus campestris",1,1,0,"",
+"TetraEU consumers","Aquila adalberti",102,102,0,"",
+"TetraEU consumers","Aquila chrysaetos",313,313,0,"",
+"TetraEU consumers","Aquila clanga",188,188,0,"",
+"TetraEU consumers","Aquila fasciata",167,167,0,"",
+"TetraEU consumers","Aquila heliaca",183,183,0,"",
+"TetraEU consumers","Aquila nipalensis",283,283,0,"",
+"TetraEU consumers","Aquila pomarina",486,486,0,"",
+"TetraEU consumers","Ardea alba",236,236,0,"",
+"TetraEU consumers","Ardea cinerea",221,221,0,"",
+"TetraEU consumers","Ardea purpurea",221,221,0,"",
+"TetraEU consumers","Ardeola ralloides",72,72,0,"",
+"TetraEU consumers","Asio flammeus",187,187,1,"",
+"TetraEU consumers","Asio otus",357,357,0,"",
+"TetraEU consumers","Atelerix algirus",362,362,0,"",
+"TetraEU consumers","Athene noctua",222,222,0,"",
+"TetraEU consumers","Aythya ferina",102,102,0,"",
+"TetraEU consumers","Aythya nyroca",102,102,0,"",
+"TetraEU consumers","Botaurus stellaris",143,143,0,"",
+"TetraEU consumers","Bubo bubo",445,445,1,"",
+"TetraEU consumers","Bubo scandiacus",344,344,0,"",
+"TetraEU consumers","Bubulcus ibis",403,403,0,"",
+"TetraEU consumers","Bucephala clangula",54,54,0,"",
+"TetraEU consumers","Burhinus oedicnemus",338,338,0,"",
+"TetraEU consumers","Buteo buteo",412,412,1,"",
+"TetraEU consumers","Buteo lagopus",294,294,1,"",
+"TetraEU consumers","Buteo rufinus",374,374,1,"",
+"TetraEU consumers","Calotriton asper",75,75,1,"",
+"TetraEU consumers","Canis aureus",549,549,0,"",
+"TetraEU consumers","Canis lupus",703,703,0,"",
+"TetraEU consumers","Ceryle rudis",23,23,0,"",
+"TetraEU consumers","Chamaeleo chamaeleon",133,133,1,"",
+"TetraEU consumers","Chlamydotis undulata",203,203,0,"",
+"TetraEU consumers","Chlidonias hybrida",66,66,0,"",
+"TetraEU consumers","Chlidonias leucopterus",54,54,0,"",
+"TetraEU consumers","Chlidonias niger",54,54,0,"",
+"TetraEU consumers","Chtoicocephalus ridibundus",79,79,0,"",
+"TetraEU consumers","Ciconia ciconia",499,499,0,"",
+"TetraEU consumers","Ciconia nigra",522,522,0,"",
+"TetraEU consumers","Circaetus gallicus",132,132,0,"",
+"TetraEU consumers","Circus aeruginosus",198,198,0,"",
+"TetraEU consumers","Circus cyaneus",328,328,0,"",
+"TetraEU consumers","Circus macrourus",276,276,0,"",
+"TetraEU consumers","Circus pygargus",324,324,0,"",
+"TetraEU consumers","Coloeus monedula",628,628,0,"",
+"TetraEU consumers","Coracias garrulus",238,238,0,"",
+"TetraEU consumers","Coronella austriaca",365,365,1,"",
+"TetraEU consumers","Coronella girondica",382,382,1,"",
+"TetraEU consumers","Corvus corax",898,898,1,"",
+"TetraEU consumers","Corvus corone",899,899,1,"",
+"TetraEU consumers","Corvus frugilegus",680,680,1,"",
+"TetraEU consumers","Crex crex",54,54,0,"",
+"TetraEU consumers","Cuculus canorus",88,88,0,"",
+"TetraEU consumers","Cursorius cursor",105,105,0,"",
+"TetraEU consumers","Cyanistes caeruleus",2,2,0,"",
+"TetraEU consumers","Cyanopica cyanus",68,68,0,"",
+"TetraEU consumers","Cygnus olor",54,54,0,"",
+"TetraEU consumers","Dendrocopos major",34,34,0,"",
+"TetraEU consumers","Dendrocopos medius",32,32,0,"",
+"TetraEU consumers","Dendrocopos syriacus",33,33,0,"",
+"TetraEU consumers","Desmana moschata",65,65,0,"",
+"TetraEU consumers","Discoglossus montalentii",2,2,0,"",
+"TetraEU consumers","Discoglossus pictus",0,0,1,"",
+"TetraEU consumers","Discoglossus sardus",2,2,0,"",
+"TetraEU consumers","Dolichophis caspius",584,584,1,"",
+"TetraEU consumers","Dolichophis cypriensis",134,134,0,"",
+"TetraEU consumers","Dolichophis jugularis",584,584,1,"",
+"TetraEU consumers","Dolichophis schmidti",584,584,1,"",
+"TetraEU consumers","Dryomys laniger",124,124,1,"",
+"TetraEU consumers","Dryomys nitedula",124,124,1,"",
+"TetraEU consumers","Egretta garzetta",172,172,0,"",
+"TetraEU consumers","Eirenis aurolineatus",132,132,0,"",
+"TetraEU consumers","Eirenis barani",132,132,0,"",
+"TetraEU consumers","Eirenis coronelloides",132,132,0,"",
+"TetraEU consumers","Eirenis modestus",132,132,0,"",
+"TetraEU consumers","Elanus caeruleus",209,209,0,"",
+"TetraEU consumers","Elaphe dione",912,912,1,"",
+"TetraEU consumers","Elaphe quatuorlineata",499,499,0,"",
+"TetraEU consumers","Elaphe sauromates",791,791,0,"",
+"TetraEU consumers","Eliomys melanurus",124,124,1,"",
+"TetraEU consumers","Eliomys quercinus",125,125,1,"",
+"TetraEU consumers","Emys orbicularis",71,71,0,"",
+"TetraEU consumers","Emys trinacris",71,71,0,"",
+"TetraEU consumers","Erinaceus concolor",362,362,0,"",
+"TetraEU consumers","Erinaceus europaeus",362,362,0,"",
+"TetraEU consumers","Erinaceus roumanicus",362,362,0,"",
+"TetraEU consumers","Erithacus rubecula",90,90,0,"",
+"TetraEU consumers","Eryx jaculus",282,282,0,"",
+"TetraEU consumers","Eumeces schneideri",131,131,1,"",
+"TetraEU consumers","Euproctus montanus",80,80,1,"",
+"TetraEU consumers","Falco biarmicus",336,336,0,"",
+"TetraEU consumers","Falco cherrug",340,340,0,"",
+"TetraEU consumers","Falco columbarius",353,353,0,"",
+"TetraEU consumers","Falco eleonorae",149,149,0,"",
+"TetraEU consumers","Falco naumanni",42,42,0,"",
+"TetraEU consumers","Falco peregrinus",337,337,0,"",
+"TetraEU consumers","Falco rusticolus",162,162,0,"",
+"TetraEU consumers","Falco subbuteo",182,182,0,"",
+"TetraEU consumers","Falco tinnunculus",494,494,1,"",
+"TetraEU consumers","Falco vespertinus",354,354,0,"",
+"TetraEU consumers","Felis chaus",369,369,0,"",
+"TetraEU consumers","Felis manul",120,120,0,"",
+"TetraEU consumers","Felis margarita",38,38,0,"",
+"TetraEU consumers","Felis silvestris",615,615,0,"",
+"TetraEU consumers","Francolinus francolinus",145,145,0,"",
+"TetraEU consumers","Fulica atra",55,55,1,"",
+"TetraEU consumers","Fulica cristata",55,55,1,"",
+"TetraEU consumers","Fulmarus glacialis",3,3,0,"",
+"TetraEU consumers","Gallinago gallinago",23,23,0,"",
+"TetraEU consumers","Gallinula chloropus",51,51,0,"",
+"TetraEU consumers","Gallotia stehlini",0,0,1,"",
+"TetraEU consumers","Garrulus glandarius",356,356,1,"",
+"TetraEU consumers","Gavia immer",23,23,0,"",
+"TetraEU consumers","Gavia stellata",23,23,0,"",
+"TetraEU consumers","Gelochelidon nilotica",40,40,0,"",
+"TetraEU consumers","Genetta genetta",471,471,0,"",
+"TetraEU consumers","Glaucidium passerinum",142,142,0,"",
+"TetraEU consumers","Glis glis",124,124,1,"",
+"TetraEU consumers","Gloydius intermedius",160,160,0,"",
+"TetraEU consumers","Grus grus",510,510,0,"",
+"TetraEU consumers","Gulo gulo",211,211,0,"",
+"TetraEU consumers","Gypaetus barbatus",3,3,0,"",
+"TetraEU consumers","Haematopus ostralegus",26,26,0,"",
+"TetraEU consumers","Halcyon smyrnensis",426,426,0,"",
+"TetraEU consumers","Haliaeetus albicilla",255,255,0,"",
+"TetraEU consumers","Hemiechinus auritus",362,362,0,"",
+"TetraEU consumers","Hemorrhois algirus",635,635,0,"",
+"TetraEU consumers","Hemorrhois hippocrepis",544,544,0,"",
+"TetraEU consumers","Hemorrhois nummifer",545,545,0,"",
+"TetraEU consumers","Hemorrhois ravergieri",513,513,0,"",
+"TetraEU consumers","Herpestes ichneumon",834,834,1,"",
+"TetraEU consumers","Hieraaetus pennatus",99,99,0,"",
+"TetraEU consumers","Hierophis gemonensis",579,579,1,"",
+"TetraEU consumers","Hierophis viridiflavus",914,914,1,"",
+"TetraEU consumers","Himantopus himantopus",85,85,0,"",
+"TetraEU consumers","Hyaena hyaena",307,307,0,"",
+"TetraEU consumers","Hydroprogne caspia",1,1,0,"",
+"TetraEU consumers","Ichthyaetus audouinii",162,162,0,"",
+"TetraEU consumers","Ichthyaetus ichthyaetus",114,114,1,"",
+"TetraEU consumers","Ichthyaetus melanocephalus",128,128,0,"",
+"TetraEU consumers","Ichthyosaura alpestris",72,72,1,"",
+"TetraEU consumers","Ixobrychus minutus",134,134,0,"",
+"TetraEU consumers","Jynx torquilla",29,29,1,"",
+"TetraEU consumers","Lacerta agilis",131,131,1,"",
+"TetraEU consumers","Lacerta bilineata",574,574,1,"",
+"TetraEU consumers","Lacerta media",131,131,1,"",
+"TetraEU consumers","Lacerta strigata",131,131,1,"",
+"TetraEU consumers","Lacerta trilineata",357,357,1,"",
+"TetraEU consumers","Lacerta viridis",575,575,1,"",
+"TetraEU consumers","Lagopus muta",4,4,0,"",
+"TetraEU consumers","Lanius collurio",411,411,1,"",
+"TetraEU consumers","Lanius excubitor",518,518,1,"",
+"TetraEU consumers","Lanius meridionalis",518,518,1,"",
+"TetraEU consumers","Lanius minor",45,45,0,"",
+"TetraEU consumers","Lanius nubicus",127,127,0,"",
+"TetraEU consumers","Lanius senator",379,379,0,"",
+"TetraEU consumers","Larus argentatus",540,540,1,"",
+"TetraEU consumers","Larus armenicus",540,540,1,"",
+"TetraEU consumers","Larus cachinnans",540,540,1,"",
+"TetraEU consumers","Larus canus",123,123,0,"",
+"TetraEU consumers","Larus fuscus",120,120,0,"",
+"TetraEU consumers","Larus hyperboreus",8,8,0,"",
+"TetraEU consumers","Larus marinus",127,127,1,"",
+"TetraEU consumers","Limosa lapponica",102,102,0,"",
+"TetraEU consumers","Lissotriton helveticus",0,0,1,"",
+"TetraEU consumers","Lissotriton italicus",72,72,1,"",
+"TetraEU consumers","Lutra lutra",70,70,0,"",
+"TetraEU consumers","Lynx lynx",119,119,0,"",
+"TetraEU consumers","Lynx pardinus",29,29,0,"",
+"TetraEU consumers","Macroprotodon brevis",287,287,0,"",
+"TetraEU consumers","Macroprotodon cucullatus",304,304,0,"",
+"TetraEU consumers","Macroprotodon mauritanicus",287,287,0,"",
+"TetraEU consumers","Macrovipera lebetina",499,499,0,"",
+"TetraEU consumers","Macrovipera schweizeri",524,524,1,"",
+"TetraEU consumers","Malpolon monspessulanus",697,697,1,"",
+"TetraEU consumers","Martes foina",483,483,0,"",
+"TetraEU consumers","Martes martes",325,325,0,"",
+"TetraEU consumers","Martes zibellina",230,230,1,"",
+"TetraEU consumers","Mauremys caspica",82,82,0,"",
+"TetraEU consumers","Mauremys leprosa",71,71,1,"",
+"TetraEU consumers","Mauremys rivulata",71,71,0,"",
+"TetraEU consumers","Meles leucurus",67,67,0,"",
+"TetraEU consumers","Meles meles",427,427,0,"",
+"TetraEU consumers","Mergellus albellus",54,54,0,"",
+"TetraEU consumers","Mergus merganser",11,11,0,"",
+"TetraEU consumers","Mergus serrator",11,11,0,"",
+"TetraEU consumers","Milvus migrans",316,316,0,"",
+"TetraEU consumers","Milvus milvus",350,350,0,"",
+"TetraEU consumers","Monticola saxatilis",94,94,0,"",
+"TetraEU consumers","Monticola solitarius",227,227,0,"",
+"TetraEU consumers","Montivipera albizona",579,579,1,"",
+"TetraEU consumers","Montivipera bulgardaghica",579,579,1,"",
+"TetraEU consumers","Montivipera raddei",499,499,0,"",
+"TetraEU consumers","Montivipera wagneri",499,499,0,"",
+"TetraEU consumers","Montivipera xanthina",579,579,1,"",
+"TetraEU consumers","Motacilla cinerea",54,54,0,"",
+"TetraEU consumers","Muscardinus avellanarius",124,124,1,"",
+"TetraEU consumers","Mustela erminea",231,231,0,"",
+"TetraEU consumers","Mustela eversmanii",389,389,0,"",
+"TetraEU consumers","Mustela lutreola",182,182,0,"",
+"TetraEU consumers","Mustela nivalis",520,520,0,"",
+"TetraEU consumers","Mustela putorius",239,239,0,"",
+"TetraEU consumers","Mustela sibirica",236,236,0,"",
+"TetraEU consumers","Natrix maura",80,80,0,"",
+"TetraEU consumers","Natrix natrix",226,226,0,"",
+"TetraEU consumers","Natrix tessellata",72,72,0,"",
+"TetraEU consumers","Neophron percnopterus",4,4,0,"",
+"TetraEU consumers","Netta rufina",102,102,0,"",
+"TetraEU consumers","Nucifraga caryocatactes",200,200,1,"",
+"TetraEU consumers","Numenius arquata",298,298,0,"",
+"TetraEU consumers","Numenius phaeopus",1,1,0,"",
+"TetraEU consumers","Nyctalus lasiopterus",20,20,0,"",
+"TetraEU consumers","Nycticorax nycticorax",160,160,0,"",
+"TetraEU consumers","Oenanthe chrysopygia",105,105,0,"",
+"TetraEU consumers","Oenanthe cypriaca",105,105,0,"",
+"TetraEU consumers","Oenanthe deserti",105,105,0,"",
+"TetraEU consumers","Oenanthe finschii",105,105,0,"",
+"TetraEU consumers","Oenanthe isabellina",105,105,0,"",
+"TetraEU consumers","Oenanthe leucura",105,105,0,"",
+"TetraEU consumers","Oenanthe oenanthe",32,32,0,"",
+"TetraEU consumers","Oenanthe pleschanka",105,105,0,"",
+"TetraEU consumers","Ommatotriton ophryticus",81,81,1,"",
+"TetraEU consumers","Ommatotriton vittatus",81,81,1,"",
+"TetraEU consumers","Otis tarda",393,393,0,"",
+"TetraEU consumers","Otus brucei",207,207,0,"",
+"TetraEU consumers","Otus scops",313,313,1,"",
+"TetraEU consumers","Pandion haliaetus",49,49,0,"",
+"TetraEU consumers","Panthera pardus",20,20,0,"",
+"TetraEU consumers","Paralaudakia caucasia",131,131,1,"",
+"TetraEU consumers","Parus major",4,4,0,"",
+"TetraEU consumers","Passer domesticus",23,23,0,"",
+"TetraEU consumers","Pastor roseus",97,97,0,"",
+"TetraEU consumers","Pelobates cultripes",29,29,1,"",
+"TetraEU consumers","Pelophylax bedriagae",80,80,1,"",
+"TetraEU consumers","Pelophylax bergeri",80,80,1,"",
+"TetraEU consumers","Pelophylax caralitanus",80,80,1,"",
+"TetraEU consumers","Pelophylax cerigensis",80,80,1,"",
+"TetraEU consumers","Pelophylax cretensis",80,80,1,"",
+"TetraEU consumers","Pelophylax epeiroticus",80,80,1,"",
+"TetraEU consumers","Pelophylax esculentus",80,80,1,"",
+"TetraEU consumers","Pelophylax kl",80,80,1,"",
+"TetraEU consumers","Pelophylax kurtmuelleri",80,80,1,"",
+"TetraEU consumers","Pelophylax lessonae",80,80,1,"",
+"TetraEU consumers","Pelophylax ridibundus",80,80,1,"",
+"TetraEU consumers","Perisoreus infaustus",121,121,0,"",
+"TetraEU consumers","Pernis apivorus",128,128,0,"",
+"TetraEU consumers","Phalacrocorax carbo",7,7,0,"",
+"TetraEU consumers","Phalacrocorax pygmaeus",3,3,0,"",
+"TetraEU consumers","Phalaropus lobatus",54,54,0,"",
+"TetraEU consumers","Phasianus colchicus",393,393,0,"",
+"TetraEU consumers","Philomachus pugnax",23,23,0,"",
+"TetraEU consumers","Pica pica",588,588,0,"",
+"TetraEU consumers","Platalea leucorodia",62,62,0,"",
+"TetraEU consumers","Platyceps collaris",518,518,0,"",
+"TetraEU consumers","Platyceps najadum",499,499,0,"",
+"TetraEU consumers","Platyceps ventromaculatus",282,282,0,"",
+"TetraEU consumers","Plegadis falcinellus",83,83,0,"",
+"TetraEU consumers","Pleurodeles waltl",82,82,1,"",
+"TetraEU consumers","Podarcis gaigeae",0,0,1,"",
+"TetraEU consumers","Podarcis hispanicus",0,0,1,"",
+"TetraEU consumers","Podarcis lilfordi",0,0,1,"",
+"TetraEU consumers","Podarcis liolepis",0,0,1,"",
+"TetraEU consumers","Podarcis melisellensis",0,0,1,"",
+"TetraEU consumers","Podarcis raffoneae",0,0,1,"",
+"TetraEU consumers","Podarcis vaucheri",0,0,1,"",
+"TetraEU consumers","Podiceps cristatus",44,44,0,"",
+"TetraEU consumers","Podiceps grisegena",23,23,0,"",
+"TetraEU consumers","Podiceps nigricollis",23,23,0,"",
+"TetraEU consumers","Porphyrio porphyrio",100,100,1,"",
+"TetraEU consumers","Psammodromus jeanneae",0,0,1,"",
+"TetraEU consumers","Psammodromus manuelae",0,0,1,"",
+"TetraEU consumers","Pseudocerastes persicus",282,282,0,"",
+"TetraEU consumers","Pseudopus apodus",499,499,0,"",
+"TetraEU consumers","Pteromys volans",128,128,1,"",
+"TetraEU consumers","Pyrrhocorax graculus",260,260,0,"",
+"TetraEU consumers","Pyrrhocorax pyrrhocorax",291,291,0,"",
+"TetraEU consumers","Rallus aquaticus",112,112,1,"",
+"TetraEU consumers","Rana temporaria",1,1,1,"",
+"TetraEU consumers","Rissa tridactyla",1,1,0,"",
+"TetraEU consumers","Salamandra corsica",0,0,1,"",
+"TetraEU consumers","Salamandra infraimmaculata",82,82,1,"",
+"TetraEU consumers","Salamandra salamandra",0,0,1,"",
+"TetraEU consumers","Saxicola torquatus",105,105,0,"",
+"TetraEU consumers","Sciurus anomalus",128,128,1,"",
+"TetraEU consumers","Sciurus vulgaris",128,128,1,"",
+"TetraEU consumers","Sitta neumayer",92,92,0,"",
+"TetraEU consumers","Sitta tephronota",92,92,0,"",
+"TetraEU consumers","Spalerosophis diadema",499,499,0,"",
+"TetraEU consumers","Spermophilus citellus",43,43,0,"",
+"TetraEU consumers","Spermophilus fulvus",43,43,0,"",
+"TetraEU consumers","Spermophilus major",43,43,0,"",
+"TetraEU consumers","Spermophilus musicus",43,43,0,"",
+"TetraEU consumers","Spermophilus pygmaeus",43,43,0,"",
+"TetraEU consumers","Spermophilus suslicus",43,43,0,"",
+"TetraEU consumers","Spermophilus taurensis",43,43,0,"",
+"TetraEU consumers","Spermophilus xanthoprymnus",43,43,0,"",
+"TetraEU consumers","Stellagama stellio",131,131,1,"",
+"TetraEU consumers","Stercorarius longicaudus",241,241,0,"",
+"TetraEU consumers","Stercorarius parasiticus",261,261,0,"",
+"TetraEU consumers","Stercorarius pomarinus",260,260,0,"",
+"TetraEU consumers","Stercorarius skua",274,274,1,"",
+"TetraEU consumers","Strix aluco",714,714,1,"",
+"TetraEU consumers","Strix nebulosa",287,287,0,"",
+"TetraEU consumers","Strix uralensis",239,239,0,"",
+"TetraEU consumers","Sturnus unicolor",227,227,0,"",
+"TetraEU consumers","Sturnus vulgaris",253,253,1,"",
+"TetraEU consumers","Surnia ulula",157,157,1,"",
+"TetraEU consumers","Sus scrofa",566,566,0,"",
+"TetraEU consumers","Tachybaptus ruficollis",23,23,0,"",
+"TetraEU consumers","Tadorna ferruginea",102,102,0,"",
+"TetraEU consumers","Tamias sibiricus",128,128,1,"",
+"TetraEU consumers","Tatera indica",43,43,0,"",
+"TetraEU consumers","Telescopus fallax",597,597,1,"",
+"TetraEU consumers","Telescopus nigriceps",887,887,1,"",
+"TetraEU consumers","Testudo graeca",0,0,1,"",
+"TetraEU consumers","Testudo hermanni",1,1,0,"",
+"TetraEU consumers","Tetrax tetrax",49,49,0,"",
+"TetraEU consumers","Timon lepidus",622,622,1,"",
+"TetraEU consumers","Trachylepis vittata",0,0,1,"",
+"TetraEU consumers","Tringa nebularia",4,4,0,"",
+"TetraEU consumers","Triturus carnifex",72,72,1,"",
+"TetraEU consumers","Triturus marmoratus",28,28,1,"",
+"TetraEU consumers","Triturus pygmaeus",82,82,1,"",
+"TetraEU consumers","Turdus merula",142,142,1,"",
+"TetraEU consumers","Turdus philomelos",96,96,0,"",
+"TetraEU consumers","Turdus pilaris",40,40,1,"",
+"TetraEU consumers","Turdus torquatus",98,98,0,"",
+"TetraEU consumers","Turdus viscivorus",3,3,0,"",
+"TetraEU consumers","Tyto alba",365,365,0,"",
+"TetraEU consumers","Upupa epops",162,162,0,"",
+"TetraEU consumers","Ursus arctos",213,213,0,"",
+"TetraEU consumers","Ursus maritimus",53,53,0,"",
+"TetraEU consumers","Vanellus spinosus",54,54,0,"",
+"TetraEU consumers","Vanellus vanellus",23,23,0,"",
+"TetraEU consumers","Varanus griseus",878,878,1,"",
+"TetraEU consumers","Vipera ammodytes",507,507,0,"",
+"TetraEU consumers","Vipera aspis",282,282,0,"",
+"TetraEU consumers","Vipera berus",589,589,0,"",
+"TetraEU consumers","Vipera darevskii",282,282,0,"",
+"TetraEU consumers","Vipera dinniki",499,499,0,"",
+"TetraEU consumers","Vipera eriwanensis",282,282,0,"",
+"TetraEU consumers","Vipera kaznakovi",499,499,0,"",
+"TetraEU consumers","Vipera latastei",630,630,0,"",
+"TetraEU consumers","Vipera renardi",282,282,0,"",
+"TetraEU consumers","Vipera seoanei",611,611,0,"",
+"TetraEU consumers","Vipera ursinii",282,282,0,"",
+"TetraEU consumers","Vormela peregusna",357,357,0,"",
+"TetraEU consumers","Vulpes corsac",278,278,0,"",
+"TetraEU consumers","Vulpes vulpes",838,838,0,"",
+"TetraEU consumers","Zamenis hohenackeri",282,282,0,"",
+"TetraEU consumers","Zamenis lineatus",499,499,0,"",
+"TetraEU consumers","Zamenis longissimus",499,499,0,"",
+"TetraEU consumers","Zamenis persicus",375,375,0,"",
+"TetraEU consumers","Zamenis scalaris",385,385,0,"",
+"TetraEU consumers","Zamenis situla",836,836,0,"",

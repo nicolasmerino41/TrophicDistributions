@@ -10,13 +10,10 @@ Dikerogammarus villosus,23.4,26.28125,ThermoFresh,8
 Dorosoma cepedianum,28.5,32.1,ThermoFresh,2
 Esox lucius,25.5,26.35362173913044,ThermoFresh,20
 Gammarus pulex,25.5,30.776,ThermoFresh,10
-Girella nigricans,19.9,-7.55,GlobTherm,2
 Gobiomorphus cotidianus,30.9,29.075,ThermoFresh,2
-Gobius paganellus,30.5,-4.3500000000000005,GlobTherm,2
+Gobius paganellus,30.5,10.9,GlobTherm,1
 Kuhlia sandvicensis,24.05,24.695,GlobTherm,1
 Lepomis macrochirus,33.0,32.17083333333333,ThermoFresh,4
-Littorina littorea,11.15,-14.55,GlobTherm,2
-Littorina saxatilis,35.0,-9.5,ThermoFresh,1
 Lucania parva,37.1,25.855000000000004,GlobTherm,6
 Macropelopia nebulosa,30.5,30.0,ThermoFresh,1
 Menidia menidia,15.8125,32.1,ThermoFresh,2
@@ -24,9 +21,9 @@ Metacarcinus magister,33.5,32.0,GlobTherm,1
 Micropterus salmoides,35.6,29.115829900839056,ThermoFresh,19
 Morone chrysops,35.6,30.75,ThermoFresh,2
 Morone saxatilis,20.55,26.536359126984124,ThermoFresh,12
-Mullus surmuletus,29.4,9.183333333333334,GlobTherm,6
+Mullus surmuletus,29.4,14.940000000000001,GlobTherm,5
 Mytilus edulis,11.15,9.1,GlobTherm,1
-Nucella lapillus,10.9,3.349999999999999,GlobTherm,7
+Nucella lapillus,10.9,10.51,GlobTherm,5
 Oncorhynchus clarkii,23.504,16.725370370370367,ThermoFresh,6
 Oncorhynchus kisutch,13.72,21.390888888888888,ThermoFresh,7
 Oncorhynchus tshawytscha,15.1333333333333,23.002222222222223,ThermoFresh,4
@@ -40,6 +37,5 @@ Rutilus rutilus,30.168,26.024999999999995,ThermoFresh,12
 Salvelinus alpinus,19.9,26.864363636363638,ThermoFresh,11
 Scorpaena porcus,31.2,29.4,GlobTherm,1
 Sphoeroides maculatus,22.1571428571429,32.1,ThermoFresh,2
-Steromphala cineraria,12.95,-14.55,GlobTherm,2
 Tibellus maritimus,-13.0,-7.5,GlobTherm,1
 Trematomus hansoni,8.98,6.02,GlobTherm,1
