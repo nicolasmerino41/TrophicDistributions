@@ -6,10 +6,10 @@ interactions to four thermal metrics: `ctmax`, `lt50`, `ctmin`, and `ltmax`.
 ## Workflow
 
 1. Run `BuildThermalDataset.R`. It harmonizes ThermoFresh, GlobTherm, and
-   Comte–Olden; queries the GloBI `eats` interaction umbrella for every
-   taxonomically verified animal with a usable thermal metric; incorporates the
-   shared TetraEU metaweb; and writes the canonical files below. Non-animal taxa
-   remain eligible as resources, but cannot enter the consumer role.
+   Comte–Olden; queries the GloBI `eats` interaction umbrella for every animal
+   with a usable thermal metric; incorporates the shared TetraEU metaweb; and
+   writes the canonical files below. Only animal consumers and animal resources
+   are retained.
 2. Run `MainThermalAnalysis.jl`. It reads only the canonical interaction file,
    produces the four metric-specific analyses, and reports recorded-prey trait
    coverage.
@@ -58,8 +58,6 @@ snapshot.
   partners' selected thermal values and metric-specific eligibility flags.
 - `Data/thermal_consumer_coverage.csv`: recorded prey count and same-metric trait
   coverage for every consumer.
-- `Data/thermal_consumer_taxon_audit.csv`: taxonomic status and inclusion reason
-  for every species considered as a possible GloBI consumer.
 - `Data/thermal_data_manifest.csv`: source, extraction, and row-count metadata.
 
 When the same species and metric occur in more than one trait source, every

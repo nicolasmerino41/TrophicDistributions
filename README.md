@@ -79,7 +79,6 @@ TROPHICDISTRIBUTIONS/
 │   ├── Functions.R
 │   ├── MainEmpiricalDegrees.R
 │   ├── PlotEmpiricalDegrees.R
-│   ├── ConsumerValidation.R
 │   └── README.md
 ├── test/
 │   ├── runtests.jl

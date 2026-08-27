@@ -25,6 +25,6 @@ All returned GloBI resource names are retained in `globi_resource_links.csv`. Tw
 - `degree_all_taxa`: unique recorded resource names at any taxonomic resolution;
 - `degree_species`: unique species-level resources supported by GloBI's resolved taxonomic path, with subspecies collapsed to their binomial species name.
 
-The figure and combined table use `degree_species`, excluding self-links, because this most closely matches the simulation's degree definition. Self-links remain flagged in the link tables. A value of zero means that no species-level resource was returned, and the plotting script excludes zero-degree records. Only taxonomically verified animals enter the consumer sample.
+The figure and combined table use `degree_species`, excluding self-links, because this most closely matches the simulation's degree definition. Self-links remain flagged in the link tables.
 
 Panel B reports the proportion of consumers above every degree class used in the simulations.
