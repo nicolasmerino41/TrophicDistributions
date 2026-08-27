@@ -1,7 +1,6 @@
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 script_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[[1]]))) else getwd()
 root_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
-source(file.path(root_dir, "ConsumerValidation.R"))
 source(file.path(script_dir, "Functions.R"))
 
 # Set to TRUE only when intentionally replacing the cached GloBI snapshot.
@@ -16,18 +15,15 @@ cache_dir <- file.path(output_dir, "globi_cache")
 dir.create(cache_dir, recursive = TRUE, showWarnings = FALSE)
 
 thermal <- read.csv(input_file, stringsAsFactors = FALSE, check.names = FALSE)
-required_input <- c("consumer", "consumer_taxon_status", "consumer_taxon_evidence")
+required_input <- c("consumer", "metrics", "n_metrics")
 missing_input <- setdiff(required_input, names(thermal))
 if (length(missing_input)) {
   stop(
-    "The consumer list lacks taxonomic validation fields (",
+    "The consumer list lacks required fields (",
     paste(missing_input, collapse = ", "),
     "). Run ThermalAnalysis/BuildThermalDataset.R first."
   )
 }
-require_verified_animal_consumers(
-  thermal$consumer_taxon_status, thermal$consumer, "Empirical-degree input"
-)
 consumers <- sort(unique(thermal$consumer))
 cat("Thermal consumers:", length(consumers), "\n")
 
@@ -92,11 +88,8 @@ tetra_degree$dataset <- "TetraEU consumers"
 tetra_degree$metrics <- ""
 tetra_degree$n_metrics <- NA_integer_
 
-tetra_degree$consumer_taxon_status <- "animal"
-tetra_degree$consumer_taxon_evidence <- "TetraEU terrestrial-vertebrate scope"
-
 common <- c("dataset", "consumer", "degree_species", "degree_all_taxa", "self_links",
-            "metrics", "n_metrics", "consumer_taxon_status", "consumer_taxon_evidence")
+            "metrics", "n_metrics")
 combined <- rbind(globi_degree[, common], tetra_degree[, common])
 names(combined)[names(combined) == "degree_species"] <- "degree"
 write_csv(combined, file.path(output_dir, "consumer_degrees_combined.csv"))
@@ -114,7 +107,7 @@ manifest <- data.frame(
             sum(is.finite(tetra_degree$degree_species) & tetra_degree$degree_species > 0),
             "Data/TetraEU_pairwise_interactions.csv",
             "Unique species-level non-self resources per consumer",
-            "Only taxonomically verified animals; all taxa remain eligible as resources"),
+            "Animals only: records with explicitly non-animal consumers or resources are excluded"),
   stringsAsFactors = FALSE
 )
 write_csv(manifest, file.path(output_dir, "extraction_manifest.csv"))

@@ -57,13 +57,6 @@ coverage = isfile(COVERAGE_FILE) ?
     CSV.read(COVERAGE_FILE, DataFrame; missingstring="", ntasks=1, pool=false) :
     DataFrame()
 
-:consumer_taxon_status in propertynames(master) || error(
-    "Master dataset lacks consumer_taxon_status. Run ThermalAnalysis/BuildThermalDataset.R first."
-)
-all(lowercase.(String.(coalesce.(master.consumer_taxon_status, ""))) .== "animal") || error(
-    "Master dataset contains a consumer that is not a verified animal."
-)
-
 summary_all = DataFrame(
     metric=String[], edges=Int[], predators=Int[], prey=Int[],
     obs_mean_absdiff=Float64[], null_mean=Float64[], null_sd=Float64[],

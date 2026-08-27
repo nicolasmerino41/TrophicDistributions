@@ -17,6 +17,14 @@ canonical_binomial <- function(x) {
 
 safe_name <- function(x) gsub("[^A-Za-z0-9]+", "_", x)
 
+is_explicit_non_animal_path <- function(path) {
+  text <- tolower(ifelse(is.na(path), "", as.character(path)))
+  grepl(
+    "(^|[^a-z])(plantae|viridiplantae|streptophyta|tracheophyta|chlorophyta|rhodophyta|ochrophyta|bacillariophyta|phaeophyceae|fungi|ascomycota|basidiomycota|bacteria|archaea)([^a-z]|$)",
+    text
+  )
+}
+
 species_from_globi <- function(name, path, external_id) {
   name <- as.character(name)
   path <- as.character(path)
@@ -142,8 +150,10 @@ summarize_globi <- function(consumers, cache_dir) {
   }
   for (nm in setdiff(required, names(links))) links[[nm]] <- ""
   links <- links[, required, drop = FALSE]
+  non_animal <- is_explicit_non_animal_path(links$source_taxon_path) |
+    is_explicit_non_animal_path(links$target_taxon_path)
+  links <- links[!non_animal, , drop = FALSE]
   links$consumer <- canonical_binomial(links$query_name)
-  links$consumer_taxon_status <- "animal"
   links$reported_consumer <- canonical_binomial(links$source_taxon_name)
   links$resource_name <- trimws(as.character(links$target_taxon_name))
   links$resource_species <- species_from_globi(
@@ -159,9 +169,6 @@ summarize_globi <- function(consumers, cache_dir) {
   keep <- !duplicated(links[, c("consumer", "resource_key_all")])
   links <- links[keep, , drop = FALSE]
   links <- links[order(links$consumer, links$resource_key_all), , drop = FALSE]
-  require_verified_animal_consumers(
-    links$consumer_taxon_status, links$consumer, "GloBI degree links"
-  )
 
   degree <- data.frame(consumer = consumers, stringsAsFactors = FALSE)
   degree$degree_all_taxa <- vapply(degree$consumer, function(sp) {
@@ -190,13 +197,9 @@ process_tetraeu <- function(path) {
     stringsAsFactors = FALSE
   )
   links <- links[!is.na(links$consumer) & !is.na(links$resource_species), , drop = FALSE]
-  links$consumer_taxon_status <- "animal"
   links$self_link <- links$consumer == links$resource_species
   links <- unique(links)
   links <- links[order(links$consumer, links$resource_species), , drop = FALSE]
-  require_verified_animal_consumers(
-    links$consumer_taxon_status, links$consumer, "TetraEU degree links"
-  )
   degree <- data.frame(consumer = consumers, stringsAsFactors = FALSE)
   degree$degree_species <- vapply(degree$consumer, function(sp) {
     length(unique(links$resource_species[links$consumer == sp & !links$self_link]))

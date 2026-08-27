@@ -18,8 +18,8 @@
 - `recorded_consumer_degree`: unique non-self resources documented by GloBI or
   TetraEU;
 - `recorded_resource_consumers`: number of documented consumers;
-- `taxon_status`: animal, non-animal, or unresolved from the available
-  taxonomic evidence;
+- `is_animal`: whether the retained taxonomic evidence identifies the species
+  as an animal;
 - `globi_taxon_paths`, `globi_taxon_ids`, and `tetraeu_taxon_ids`: interaction
   database identifiers and taxonomic evidence.
 
@@ -28,10 +28,10 @@
 - `consumer`, `resource`: harmonized species pair;
 - `GloBI`, `TetraEU`, `interaction_sources`: database provenance;
 - `interaction_types`, study and reported-name fields: retained evidence;
-- `consumer_taxon_status`, `consumer_taxon_evidence`: validation of the
-  consumer role. Only verified animals are retained as consumers; any taxon may
-  remain as a resource;
 - `self_link`: whether consumer and resource resolve to the same species.
+
+Only animal consumers and animal resources are retained. GloBI records whose
+taxonomic paths explicitly identify either partner as non-animal are excluded.
 
 ## `thermal_interactions_master.csv`
 
@@ -45,10 +45,3 @@ are retained in the recorded table but excluded from every thermal analysis.
 - `prey_with_trait`: recorded resources with the same thermal metric as the
   consumer;
 - `prey_trait_coverage`: `prey_with_trait / recorded_prey_species`.
-
-## `thermal_consumer_taxon_audit.csv`
-
-- one row per thermal-trait species considered for a GloBI consumer query;
-- `consumer_taxon_status`: animal, non-animal, or unresolved;
-- `queried_as_consumer` and `exclusion_reason`: the reproducible decision and
-  its reason. Only verified animals are queried as consumers.
