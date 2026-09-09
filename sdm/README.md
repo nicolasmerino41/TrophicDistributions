@@ -4,7 +4,7 @@ This pipeline tests whether resource information improves fitted SDMs in
 the degree-correlation conditions where the simulation predicts larger trophic
 mismatch.
 
-For every eligible focal consumer of degree 2 and 6 in each simulated community, it:
+For every eligible focal consumer in each simulated community, it:
 
 1. draws up to 50 spatially biased presences from the recursive `AB` truth;
 2. draws 180 (5% of the landscape, 3600 cells) biased background cells;
@@ -14,13 +14,11 @@ For every eligible focal consumer of degree 2 and 6 in each simulated community,
 
 Consumers are first averaged within their community and communities are then
 treated as replicates. This avoids treating consumers sharing the same simulated
-world as independent observations and removes random focal-consumer selection.
+world as independent observations.
 
 The correlation treatments use matched seeds: within each environment, niche
 regime, and replicate they begin with the same degree assignment, trophic
-community, environment, and niche breadth. Consumer optima and therefore focal eligibility can
-change with the correlation treatment. Figure 3 highlights the low and high
-correlation treatments (`0` and `0.95`) at degrees 2 and 6.
+community, environment, and niche breadth.
 
 The primary result is
 `AUC(resource-informed) - AUC(abiotic)`. Brier-score improvement is retained as
@@ -44,7 +42,4 @@ Outputs:
 - `Figure3.png`: the final two-panel figure;
 - `run_metadata.tsv`: run settings.
 
-The pipeline checkpoints communities and resumes safely after interruption.
-Temporary checkpoints are removed on a best-effort basis after the final tables
-are written.
-The SDM outputs must be regenerated whenever the simulation framework changes.
+The SDM outputs must be regenerated whenever the simulation framework changes!!!
