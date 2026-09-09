@@ -1,6 +1,7 @@
 include(joinpath(@__DIR__, "..", "SimulationsCode", "Functions.jl"))
 include(joinpath(@__DIR__, "Parameters.jl"))
 include(joinpath(@__DIR__, "Functions.jl"))
+include(joinpath(@__DIR__, "SupplementaryTable.jl"))
 
 using Dates
 using .Functions.IO: save_table_tsv
@@ -18,6 +19,7 @@ summary = summarize_results(community_results)
 save_table_tsv(joinpath(OUTPUT_DIR, "oracle_comparisons.tsv"), results.rows)
 save_table_tsv(joinpath(OUTPUT_DIR, "oracle_community_results.tsv"), community_results)
 save_table_tsv(joinpath(OUTPUT_DIR, "oracle_summary.tsv"), summary)
+write_supplementary_table(community_results, OUTPUT_DIR; comparisons=results.rows)
 if !isempty(results.exclusions)
     save_table_tsv(joinpath(OUTPUT_DIR, "exclusions.tsv"), results.exclusions)
 end
@@ -40,8 +42,7 @@ metadata = [(
 )]
 save_table_tsv(joinpath(OUTPUT_DIR, "run_metadata.tsv"), metadata)
 
-# Checkpoints are only needed while a run is incomplete. Once the final tables
-# are safely written, remove them so the published output stays compact.
+# Checkpoints are only needed while a run is incomplete.
 function remove_checkpoints(path; attempts=5)
     !isdir(path) && return true
     GC.gc()
