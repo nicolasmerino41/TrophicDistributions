@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-Open_Access-blue)](link_to_paper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.txt)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19053674.svg)](https://doi.org/10.5281/zenodo.19053674)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22704967.svg)](https://doi.org/10.5281/zenodo.22704967)
 
 Official repository for the paper:
 > **"When trophic interactions affect species distributions"**  
