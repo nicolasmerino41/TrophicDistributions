@@ -82,7 +82,7 @@ selected <- selected[c(1, 3, 2, 4), ]
 selected$requested_correlation <- rep(requested_correlations, each = 2)[c(1, 3, 2, 4)]
 selected$label <- c("Degree 2 / correlation 0", "Degree 2 / correlation 0.95",
                     "Degree 6 / correlation 0", "Degree 6 / correlation 0.95")
-selected$colour <- c("#D55E00", "#E69F00", "#0072B2", "#009E73")
+selected$colour <- c("#D73027", "#FF8C00", "#D01C8B", "#808080")
 selected <- merge(selected, sdm_average, by = c("degree", "target_r"), sort = FALSE)
 selected$order <- match(paste(selected$degree, selected$target_r),
                         paste(c(2, 2, 6, 6),
@@ -92,7 +92,7 @@ selected <- selected[order(selected$order), ]
 selected$requested_correlation <- rep(requested_correlations, each = 2)[c(1, 3, 2, 4)]
 selected$label <- c("Degree 2 / correlation 0", "Degree 2 / correlation 0.95",
                     "Degree 6 / correlation 0", "Degree 6 / correlation 0.95")
-selected$colour <- c("#D55E00", "#E69F00", "#0072B2", "#009E73")
+selected$colour <- c("#D73027", "#FF8C00", "#D01C8B", "#808080")
 
 truth_matrix <- make_matrix(truth_average, "value", degrees, correlations)
 palette <- hcl.colors(100, "Viridis")
